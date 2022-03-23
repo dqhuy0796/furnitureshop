@@ -1,5 +1,6 @@
 @import url(../themify-icons/themify-icons.css);
 @import url(./base.css);
+@import url(./animate.css);
 @import url(./product.css);
 @import url(./swiper.css);
 
@@ -626,13 +627,15 @@
     width: 100%;
     max-width: 480px;
 }
-.login__btn.split-btn{
-    margin-top: 64px;
-}
 .switch-to-login-btn,
 .switch-to-register-btn{
     margin: 32px auto;
-    box-shadow: 0 2px 4px 1px #8a8a8a;
+    color: var(--text);
+    background-color: var(--light-border);
+}
+.switch-to-login-btn::before,
+.switch-to-register-btn::before{
+    background: linear-gradient(to bottom, var(--white), var(--light-border));
 }
 .switch-to-login-btn.hidden,
 .switch-to-register-btn.hidden{
@@ -644,9 +647,8 @@
     position: absolute;
     left: 16px;
 }
-.link-btn{
+.link-btn:hover{
     color: var(--light);
-    box-shadow: 0 2px 4px 1px #8a8a8a;
 }
 .google-login-btn{
     background-color: #db4437;
@@ -655,6 +657,18 @@
     background-color: #000;
 }
 .facebook-login-btn{
+    background-color: #0b69dd;
+}
+.google-login-btn::before{
+    background: linear-gradient(to bottom, #ff7669, #db4437);
+    background-color: #db4437;
+}
+.apple-login-btn::before{
+    background: linear-gradient(to bottom, #555, #000);
+    background-color: #000;
+}
+.facebook-login-btn::before{
+    background: linear-gradient(to bottom, #65aaff, #0b69dd);
     background-color: #0b69dd;
 }
 .login__form,
