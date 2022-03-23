@@ -5,7 +5,7 @@
 
 // swiper in banner
 const bannerSwiper = new Swiper(".banner-swiper", {
-    spaceBetween: 20,
+    spaceBetween: 0,
     loop: true,
     centeredSlides: true,
     autoplay: {
@@ -20,7 +20,7 @@ const bannerSwiper = new Swiper(".banner-swiper", {
 
 // swiper in stylish
 const stylishSwiper = new Swiper(".stylish-swiper", {
-  spaceBetween: 20,
+  spaceBetween: 0,
   loop: true,
   centeredSlides: true,
   pagination: {

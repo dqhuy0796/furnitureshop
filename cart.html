@@ -20,471 +20,479 @@
     <!-- HEADER -->
 
     <header class="header">
-        <nav class="nav">
-            <a href="./index.html" class="header__logo">
-                <img src="./src/image/navigator/color.png" alt="Logo Uẩn Nụ">
-            </a>
+        <div class="wrapper">
+            <nav class="nav">
+                <!-- Collapse button -->
+                <div class="mobile-btn collapse-menu-btn">
+                    <span></span>
+                </div> 
 
-            <!-- Desktop menu -->
-            <div class="desktop-menu">
-                <ul class="nav__list">
+                <!-- Logo -->
+                <a href="./index.html" class="header__img logo">
+                    <img src="https://nhaxinh.com/wp-content/uploads/2021/09/logo.png" alt="Logo Uẩn Nụ">
+                </a>
+    
+                <!-- Cart -->
+                <a href="./cart.html" class="mobile-btn home-cart">
+                    <i class="ti-shopping-cart"></i>
+                    <span class="cart-quantity">9</span>
+                </a>
 
-                    <!-- Room -->
-                    <li class="nav__item rotate-on-hovered">
-                        <a href="#" class="nav__link">
-                            Phòng
-                            <i class="fas fa-angle-down"></i>
-                        </a>
-                        <div class="subnav">
-                            <!-- cột 1 -->
-                            <div class="subnav__col col-5">
-                                <!-- Phòng khách -->
-                                <h3 class="subnav__category">Phòng khách</h3>
-                                <img src="./src/image/navigator/room-livingroom.jpg" alt="Phòng khách" class="subnav__img">
-                            </div>
-                            <!-- cột 2 -->
-                            <div class="subnav__col col-5">
-                                <!-- Phòng làm việc -->
-                                <h3 class="subnav__category">Phòng làm việc</h3>
-                                <img src="./src/image/navigator/room-workroom.jpg" alt="Phòng làm việc" class="subnav__img">
-                            
-                            </div>
-                            <!-- cột 3 -->
-                            <div class="subnav__col col-5">
-                                <!-- Phòng ngủ -->
-                                <h3 class="subnav__category">Phòng ngủ</h3>
-                                <img src="./src/image/navigator/room-bedroom.jpg" alt="Phòng ngủ" class="subnav__img">
-                            
-                            </div>
-                            <!-- cột 4 -->
-                            <div class="subnav__col col-5">
-                                <!-- Phòng bếp -->
-                                <h3 class="subnav__category">Phòng bếp</h3>
-                                <img src="./src/image/navigator/room-kitchen.jpg" alt="Phòng bếp" class="subnav__img">
-                            
-                            </div>
-                            <!-- cột 5 -->
-                            <div class="subnav__col col-5">
-                                <!-- Phòng ăn -->
-                                <h3 class="subnav__category">Phòng ăn</h3>
-                                <img src="./src/image/navigator/room-diningroom.jpg" alt="Phòng ăn" class="subnav__img">
-                            
-                            </div>
-                        </div>
-                    </li>
-
-                    <!-- Product -->
-                    <li class="nav__item rotate-on-hovered">
-                        <a href="./category.html" class="nav__link">
-                            Sản phẩm
-                            <i class="fas fa-angle-down"></i>
-                        </a>
-                        <div class="subnav">
-                            <!-- cột 1 -->
-                            <div class="subnav__col col-5">
-                                <!-- Sofa & Armchair -->
-                                <h3 class="subnav__category">Sofa & Armchair</h3>
-                                <ul class="subnav__list">
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Sofa</a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Sofa góc</a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Armchair</a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Ghế dài & đôn</a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Ghế thư giãn</a>
-                                    </li>
-                                </ul>
-
-                                <!-- Giường ngủ -->
-                                <h3 class="subnav__category">Giường ngủ</h3>
-                                <ul class="subnav__list">
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Giường</a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Bàn đầu giường</a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Nệm</a>
-                                    </li>
-                                </ul>                                
-                            </div>
-
-                            <!-- cột 2 -->
-                            <div class="subnav__col col-5">
-                                <!-- Bàn -->
-                                <h3 class="subnav__category">Bàn</h3>
-                                <ul class="subnav__list">
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Bàn nước</a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Bàn ăn</a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Bàn làm việc</a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Bàn trang điểm</a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Bàn ngoài trời</a>
-                                    </li>
-                                </ul>
-
-                                <!-- Ghế -->
-                                <h3 class="subnav__category">Ghế</h3>
-                                <ul class="subnav__list">
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Ghế ăn</a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Ghế bar</a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Ghế làm việc</a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Ghế ngoài trời</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <!-- cột 3 -->
-                            <div class="subnav__col col-5">
-                                <!-- Tủ & kệ -->
-                                <h3 class="subnav__category">Tủ & kệ</h3>
-                                <ul class="subnav__list">
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Tủ tivi</a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Tủ trưng bày</a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Tủ ly</a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Tủ rượu</a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Tủ hộc kéo</a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Tủ áo</a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Tủ âm tường</a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Tủ giầy</a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Kệ phòng khách</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <!-- cột 4 -->
-                            <div class="subnav__col col-5">
-                                <!-- Decor -->
-                                <h3 class="subnav__category">Trang trí</h3>
-                                <ul class="subnav__list">
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Bình</a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Đèn</a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Tượng</a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Đồng hồ</a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Cây & hoa</a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Gối & thú bông</a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Gương & khung gương</a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Tranh & khung tranh, ảnh</a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Thảm</a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Đồ trang trí khác</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            
-                            <!-- cột 5 -->
-                            <div class="subnav__col col-5">
-                                <!-- Bếp và dụng cụ bếp -->
-                                <h3 class="subnav__category">Bếp & Dụng cụ bếp</h3>
-                                <ul class="subnav__list">
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Tủ bếp</a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Tủ bát</a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Quầy bar</a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="./category.html" class="subnav__link">Dụng cụ bếp</a>
-                                    </li>
-                                </ul>
-                            </div>                            
-                        </div>
-                    </li>
-
-                    <!-- Stylish -->
-                    <li class="nav__item rotate-on-hovered">
-                        <a href="#" class="nav__link">
-                            Phong cách
-                            <i class="fas fa-angle-down"></i>
-                        </a>
-                        <div class="subnav">
-                            <!-- cột 1 -->
-                            <div class="subnav__col col-5">
-                                <!-- Tối giản -->
-                                <h3 class="subnav__category">Tối giản</h3>
-                                <img src="./src/image/navigator/style-minimalism.jpg" alt="Tối giản" class="subnav__img">
-                            
-                            </div>
-                            <!-- cột 2 -->
-                            <div class="subnav__col col-5">
-                                <!-- Hiện đại -->
-                                <h3 class="subnav__category">Hiện đại</h3>
-                                <img src="./src/image/navigator/style-mordern.jpg" alt="Hiện đại" class="subnav__img">
-                            
-                            </div>
-                            <!-- cột 3 -->
-                            <div class="subnav__col col-5">
-                                <!-- Cổ điển -->
-                                <h3 class="subnav__category">Cổ điển</h3>
-                                <img src="./src/image/navigator/style-classic.jpg" alt="Cổ điển" class="subnav__img">
-                            
-                            </div>
-                            <!-- cột 4 -->
-                            <div class="subnav__col col-5">
-                                <!-- Rustic-->
-                                <h3 class="subnav__category">Rustic</h3>
-                                <img src="./src/image/navigator/style-rustic.jpg" alt="Rustic" class="subnav__img">
-                            
-                            </div>
-                            <!-- cột 5 -->
-                            <div class="subnav__col col-5">
-                                <!-- Khác -->
-                                <h3 class="subnav__category">Khác</h3>
-                                <img src="./src/image/navigator/style-others.jpg" alt="Khác" class="subnav__img">
-                            
-                            </div>
-                        </div>
-                    </li>
-
-                    <!-- News -->
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">
-                            Tin tức
-                        </a>
-                    </li>
-
-                    <!-- Search -->
-                    <li class="nav__item header-search">
-                        <input type="text" class="search-box" placeholder="Bạn tìm gì hôm nay...">
-                        <button class="btn search-btn">
-                            <i class="ti-search"></i>
-                        </button>
-                    </li>
-
-                    <!-- Login -->
-                    <li class="nav__item home-login">
-                        <a href="./login.html" class="btn split-btn login-btn">
-                            <span class="content">
-                                <i class="fas fa-user-circle"></i>
-                                Đăng nhập
-                            </span>
-                        </a>
-                    </li> 
-                </ul>
-            </div>
-
-            <!-- Mobile -->
-            <div class="mobile-menu">
-                <ul class="nav__list">
-
-                    <!-- Đăng nhập -->
-                    <li class="nav__item user-info">
-                        <div class="nav__category">
-                            <a href="./login.html" class="nav__link">Đăng nhập</a>
-                            <a href="./cart.html" class="nav__btn client-cart">
-                                <i class="ti-shopping-cart"></i>
-                                <span class="cart-quantity">9</span>
+                <!-- Desktop menu -->
+                <div class="desktop-menu">
+                    <ul class="nav__list">
+    
+                        <!-- Room -->
+                        <li class="nav__item rotate-on-hovered">
+                            <a href="#" class="nav__link">
+                                Phòng
+                                <i class="fas fa-angle-down"></i>
                             </a>
-                        </div>
-                    </li>
-
-                    <!-- Tìm kiếm -->
-                    <li class="nav__item mobile-search">
-                        <div class="nav__category">
+                            <div class="subnav">
+                                <!-- cột 1 -->
+                                <div class="subnav__column col-5">
+                                    <!-- Phòng khách -->
+                                    <h3 class="subnav__category">Phòng khách</h3>
+                                    <img src="./src/image/navigator/room-livingroom.jpg" alt="Phòng khách" class="subnav__img">
+                                </div>
+                                <!-- cột 2 -->
+                                <div class="subnav__column col-5">
+                                    <!-- Phòng làm việc -->
+                                    <h3 class="subnav__category">Phòng làm việc</h3>
+                                    <img src="./src/image/navigator/room-workroom.jpg" alt="Phòng làm việc" class="subnav__img">
+                                
+                                </div>
+                                <!-- cột 3 -->
+                                <div class="subnav__column col-5">
+                                    <!-- Phòng ngủ -->
+                                    <h3 class="subnav__category">Phòng ngủ</h3>
+                                    <img src="./src/image/navigator/room-bedroom.jpg" alt="Phòng ngủ" class="subnav__img">
+                                
+                                </div>
+                                <!-- cột 4 -->
+                                <div class="subnav__column col-5">
+                                    <!-- Phòng bếp -->
+                                    <h3 class="subnav__category">Phòng bếp</h3>
+                                    <img src="./src/image/navigator/room-kitchen.jpg" alt="Phòng bếp" class="subnav__img">
+                                
+                                </div>
+                                <!-- cột 5 -->
+                                <div class="subnav__column col-5">
+                                    <!-- Phòng ăn -->
+                                    <h3 class="subnav__category">Phòng ăn</h3>
+                                    <img src="./src/image/navigator/room-diningroom.jpg" alt="Phòng ăn" class="subnav__img">
+                                
+                                </div>
+                            </div>
+                        </li>
+    
+                        <!-- Product -->
+                        <li class="nav__item rotate-on-hovered">
+                            <a href="./category.html" class="nav__link">
+                                Sản phẩm
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                            <div class="subnav">
+                                <!-- cột 1 -->
+                                <div class="subnav__column col-5">
+                                    <!-- Sofa & Armchair -->
+                                    <h3 class="subnav__category">Sofa & Armchair</h3>
+                                    <ul class="subnav__list">
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Sofa</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Sofa góc</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Armchair</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Ghế dài & đôn</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Ghế thư giãn</a>
+                                        </li>
+                                    </ul>
+    
+                                    <!-- Giường ngủ -->
+                                    <h3 class="subnav__category">Giường ngủ</h3>
+                                    <ul class="subnav__list">
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Giường</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Bàn đầu giường</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Nệm</a>
+                                        </li>
+                                    </ul>                                
+                                </div>
+    
+                                <!-- cột 2 -->
+                                <div class="subnav__column col-5">
+                                    <!-- Bàn -->
+                                    <h3 class="subnav__category">Bàn</h3>
+                                    <ul class="subnav__list">
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Bàn nước</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Bàn ăn</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Bàn làm việc</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Bàn trang điểm</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Bàn ngoài trời</a>
+                                        </li>
+                                    </ul>
+    
+                                    <!-- Ghế -->
+                                    <h3 class="subnav__category">Ghế</h3>
+                                    <ul class="subnav__list">
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Ghế ăn</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Ghế bar</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Ghế làm việc</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Ghế ngoài trời</a>
+                                        </li>
+                                    </ul>
+                                </div>
+    
+                                <!-- cột 3 -->
+                                <div class="subnav__column col-5">
+                                    <!-- Tủ & kệ -->
+                                    <h3 class="subnav__category">Tủ & kệ</h3>
+                                    <ul class="subnav__list">
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Tủ tivi</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Tủ trưng bày</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Tủ ly</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Tủ rượu</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Tủ hộc kéo</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Tủ áo</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Tủ âm tường</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Tủ giầy</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Kệ phòng khách</a>
+                                        </li>
+                                    </ul>
+                                </div>
+    
+                                <!-- cột 4 -->
+                                <div class="subnav__column col-5">
+                                    <!-- Decor -->
+                                    <h3 class="subnav__category">Trang trí</h3>
+                                    <ul class="subnav__list">
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Bình</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Đèn</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Tượng</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Đồng hồ</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Cây & hoa</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Gối & thú bông</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Gương & khung gương</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Tranh & khung tranh, ảnh</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Thảm</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Đồ trang trí khác</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <!-- cột 5 -->
+                                <div class="subnav__column col-5">
+                                    <!-- Bếp và dụng cụ bếp -->
+                                    <h3 class="subnav__category">Bếp & Dụng cụ bếp</h3>
+                                    <ul class="subnav__list">
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Tủ bếp</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Tủ bát</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Quầy bar</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="./category.html" class="subnav__link">Dụng cụ bếp</a>
+                                        </li>
+                                    </ul>
+                                </div>                            
+                            </div>
+                        </li>
+    
+                        <!-- Stylish -->
+                        <li class="nav__item rotate-on-hovered">
+                            <a href="#" class="nav__link">
+                                Phong cách
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                            <div class="subnav">
+                                <!-- cột 1 -->
+                                <div class="subnav__column col-5">
+                                    <!-- Tối giản -->
+                                    <h3 class="subnav__category">Tối giản</h3>
+                                    <img src="./src/image/navigator/style-minimalism.jpg" alt="Tối giản" class="subnav__img">
+                                
+                                </div>
+                                <!-- cột 2 -->
+                                <div class="subnav__column col-5">
+                                    <!-- Hiện đại -->
+                                    <h3 class="subnav__category">Hiện đại</h3>
+                                    <img src="./src/image/navigator/style-mordern.jpg" alt="Hiện đại" class="subnav__img">
+                                
+                                </div>
+                                <!-- cột 3 -->
+                                <div class="subnav__column col-5">
+                                    <!-- Cổ điển -->
+                                    <h3 class="subnav__category">Cổ điển</h3>
+                                    <img src="./src/image/navigator/style-classic.jpg" alt="Cổ điển" class="subnav__img">
+                                
+                                </div>
+                                <!-- cột 4 -->
+                                <div class="subnav__column col-5">
+                                    <!-- Rustic-->
+                                    <h3 class="subnav__category">Rustic</h3>
+                                    <img src="./src/image/navigator/style-rustic.jpg" alt="Rustic" class="subnav__img">
+                                
+                                </div>
+                                <!-- cột 5 -->
+                                <div class="subnav__column col-5">
+                                    <!-- Khác -->
+                                    <h3 class="subnav__category">Khác</h3>
+                                    <img src="./src/image/navigator/style-others.jpg" alt="Khác" class="subnav__img">
+                                
+                                </div>
+                            </div>
+                        </li>
+    
+                        <!-- News -->
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                Tin tức
+                            </a>
+                        </li>
+    
+                        <!-- Search -->
+                        <li class="nav__item header-search">
                             <input type="text" class="search-box" placeholder="Bạn tìm gì hôm nay...">
                             <button class="btn search-btn">
                                 <i class="ti-search"></i>
                             </button>
-                        </div>
-                    </li>       
+                        </li>
+    
+                        <!-- Login -->
+                        <li class="nav__item home-login">
+                            <a href="./login.html" class="btn split-btn login-btn">
+                                <span class="content">
+                                    <i class="fas fa-user-circle"></i>
+                                    Đăng nhập
+                                </span>
+                            </a>
+                        </li> 
+                    </ul>
+                </div>
+    
+                <!-- Mobile -->
+                <div class="mobile-menu">
+                    <ul class="nav__list">
+    
+                        <!-- Đăng nhập -->
+                        <li class="nav__item user-info">
+                            <div class="nav__category">
+                                <a href="./login.html" class="nav__link">Đăng nhập</a>
+                            </div>
+                        </li>
+    
+                        <!-- Tìm kiếm -->
+                        <li class="nav__item mobile-search">
+                            <div class="nav__category">
+                                <input type="text" class="search-box" placeholder="Bạn tìm gì hôm nay...">
+                                <button class="btn search-btn">
+                                    <i class="ti-search"></i>
+                                </button>
+                            </div>
+                        </li>       
+    
+                        <!-- Phòng -->
+                        <li class="nav__item">
+                            <div class="nav__category">
+                                <a href="#" class="nav__link">Phòng</a>
+                                <label class="nav__btn" for="room-checkbox">
+                                    <i class="ti-angle-down"></i>
+                                </label>
+                            </div>
+                            <input type="checkbox"name="" id="room-checkbox"  hidden>
+                            <div class="subnav">
+                                <ul class="subnav__list">
+                                    <li class="subnav__item">
+                                        <a href="./category.html" class="subnav__link">Phòng khách</a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="./category.html" class="subnav__link">Phòng ngủ</a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="./category.html" class="subnav__link">Phòng ăn</a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="./category.html" class="subnav__link">Phòng làm việc</a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="./category.html" class="subnav__link">Nhà bếp</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+    
+                        <!-- Sản phẩm -->
+                        <li class="nav__item">
+                            <div class="nav__category">
+                                <a href="#" class="nav__link">Sản phẩm</a>
+                                <label class="nav__btn" for="product-checkbox">
+                                    <i class="ti-angle-down"></i>
+                                </label>
+                            </div>
+                            <input type="checkbox" name="" id="product-checkbox" hidden>
+                            <div class="subnav">
+                                <ul class="subnav__list">
+                                    <li class="subnav__item">
+                                        <a href="./category.html" class="subnav__link">Sofa & Armchair</a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="./category.html" class="subnav__link">Giường ngủ</a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="./category.html" class="subnav__link">Bàn</a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="./category.html" class="subnav__link">Ghế</a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="./category.html" class="subnav__link">Tủ & kệ</a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="./category.html" class="subnav__link">Trang trí</a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="./category.html" class="subnav__link">Bếp và dụng cụ bếp</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+    
+                        <!-- Phong cách -->
+                        <li class="nav__item">
+                            <div class="nav__category">
+                                <a href="#" class="nav__link">Phong cách</a>
+                                <label class="nav__btn" for="style-checkbox">
+                                    <i class="ti-angle-down"></i>
+                                </label>
+                            </div>
+                            <input type="checkbox" name="" id="style-checkbox" hidden>
+                            <div class="subnav">
+                                <ul class="subnav__list">
+                                    <li class="subnav__item">
+                                        <a href="./category.html" class="subnav__link">Tối giản</a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="./category.html" class="subnav__link">Hiện đại</a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="./category.html" class="subnav__link">Cổ điển</a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="./category.html" class="subnav__link">Rustic</a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="./category.html" class="subnav__link">Khác</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+    
+                        <!-- Tin tức -->
+                        <li class="nav__item">
+                            <div class="nav__category">
+                                <a href="#" class="nav__link">Tin tức</a>
+                            </div>
+                        </li>
+    
+                        <!-- Giới thiệu -->
+                        <li class="nav__item">
+                            <div class="nav__category">
+                                <a href="#" class="nav__link">Giới thiệu</a>
+                            </div>
+                        </li>
+    
+                        <!-- Khuyến mãi -->
+                        <li class="nav__item">
+                            <div class="nav__category">
+                                <a href="#" class="nav__link">Khuyến mãi</a>
+                            </div>
+                        </li>
+    
+                        <!-- Flash sale -->
+                        <li class="nav__item">
+                            <div class="nav__category">
+                                <a href="#" class="nav__link">Flash sale</a>
+                            </div>
+                        </li>  
+    
+                        <!-- Tìm cửa hàng -->
+                        <li class="nav__item">
+                            <div class="nav__category">
+                                <a href="#" class="nav__link">Tìm cửa hàng</a>
+                            </div>
+                        </li>  
+                    </ul>
+                </div>
 
-                    <!-- Phòng -->
-                    <li class="nav__item">
-                        <div class="nav__category">
-                            <a href="#" class="nav__link">Phòng</a>
-                            <label class="nav__btn" for="room-checkbox">
-                                <i class="ti-angle-down"></i>
-                            </label>
-                        </div>
-                        <input type="checkbox"name="" id="room-checkbox"  hidden>
-                        <div class="subnav">
-                            <ul class="subnav__list">
-                                <li class="subnav__item">
-                                    <a href="./category.html" class="subnav__link">Phòng khách</a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="./category.html" class="subnav__link">Phòng ngủ</a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="./category.html" class="subnav__link">Phòng ăn</a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="./category.html" class="subnav__link">Phòng làm việc</a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="./category.html" class="subnav__link">Nhà bếp</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <!-- Sản phẩm -->
-                    <li class="nav__item">
-                        <div class="nav__category">
-                            <a href="#" class="nav__link">Sản phẩm</a>
-                            <label class="nav__btn" for="product-checkbox">
-                                <i class="ti-angle-down"></i>
-                            </label>
-                        </div>
-                        <input type="checkbox" name="" id="product-checkbox" hidden>
-                        <div class="subnav">
-                            <ul class="subnav__list">
-                                <li class="subnav__item">
-                                    <a href="./category.html" class="subnav__link">Sofa & Armchair</a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="./category.html" class="subnav__link">Giường ngủ</a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="./category.html" class="subnav__link">Bàn</a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="./category.html" class="subnav__link">Ghế</a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="./category.html" class="subnav__link">Tủ & kệ</a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="./category.html" class="subnav__link">Trang trí</a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="./category.html" class="subnav__link">Bếp và dụng cụ bếp</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <!-- Phong cách -->
-                    <li class="nav__item">
-                        <div class="nav__category">
-                            <a href="#" class="nav__link">Phong cách</a>
-                            <label class="nav__btn" for="style-checkbox">
-                                <i class="ti-angle-down"></i>
-                            </label>
-                        </div>
-                        <input type="checkbox" name="" id="style-checkbox" hidden>
-                        <div class="subnav">
-                            <ul class="subnav__list">
-                                <li class="subnav__item">
-                                    <a href="./category.html" class="subnav__link">Tối giản</a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="./category.html" class="subnav__link">Hiện đại</a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="./category.html" class="subnav__link">Cổ điển</a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="./category.html" class="subnav__link">Rustic</a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="./category.html" class="subnav__link">Khác</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <!-- Tin tức -->
-                    <li class="nav__item">
-                        <div class="nav__category">
-                            <a href="#" class="nav__link">Tin tức</a>
-                        </div>
-                    </li>
-
-                    <!-- Giới thiệu -->
-                    <li class="nav__item">
-                        <div class="nav__category">
-                            <a href="#" class="nav__link">Giới thiệu</a>
-                        </div>
-                    </li>
-
-                    <!-- Khuyến mãi -->
-                    <li class="nav__item">
-                        <div class="nav__category">
-                            <a href="#" class="nav__link">Khuyến mãi</a>
-                        </div>
-                    </li>
-
-                    <!-- Flash sale -->
-                    <li class="nav__item">
-                        <div class="nav__category">
-                            <a href="#" class="nav__link">Flash sale</a>
-                        </div>
-                    </li>  
-
-                    <!-- Tìm cửa hàng -->
-                    <li class="nav__item">
-                        <div class="nav__category">
-                            <a href="#" class="nav__link">Tìm cửa hàng</a>
-                        </div>
-                    </li>  
-                </ul>
-            </div>
-            <div class="collapse-menu-btn">
-                <span></span>
-            </div>            
-        </nav>
+            </nav>
+        </div>
     </header>
 
     <!-- CONTAINER -->
@@ -579,74 +587,94 @@
     </div>
 
     <!-- FOOTER -->
+
     <footer class="footer">
-        <div class="footer-contact">
-            <div class="wrapper">
-                <ul class="contact__list">
-                    <li class="contact__item col-4">
-                        <a href="#" class="contact__link footer__logo">
-                            <img src="./src/image/navigator/color.png" alt="Logo Uẩn Nụ">
-                        </a>
+        <div class="wrapper">
+
+            <!-- Footer content -->
+            <div class="footer__content">
+
+                <!-- Footer list -->
+                <ul class="footer__list">
+
+                    <!-- Column 1: About -->
+                    <li class="footer__column js-scroll fade-in">
+                        <p class="footer__title">Về chúng tôi</p>
+                        <ul>
+                            <li><a href="#"> Giới thiệu </a></li>
+                            <li><a href="#"> Hệ thống cửa hàng </a></li>
+                            <li><a href="#"> Tuyển dụng </a></li>
+                            <li><a href="#"> Điều khoản </a></li>
+                            <li><a href="#"> Liên hệ hợp tác </a></li>
+                        </ul>
                     </li>
-                    <li class="contact__item col-4">
-                        <h2>#UanNu</h2>
-                        <div>
-                            <a href="#" class="contact__link col-5">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                            <a href="#" class="contact__link col-5">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="#" class="contact__link col-5">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                            <a href="#" class="contact__link col-5">
-                                <i class="fab fa-tiktok"></i>
-                            </a>
-                        </div>
+
+                    <!-- Column 2: Customer care -->
+                    <li class="footer__column js-scroll fade-in">
+                        <p class="footer__title">Chăm sóc khách hàng</p>
+                        <ul>
+                            <li><a href="#"> Trung tâm trợ giúp </a></li>
+                            <li><a href="#"> Hướng dẫn đặt hàng </a></li>
+                            <li><a href="#"> Hướng dẫn thanh toán </a></li>
+                            <li><a href="#"> Chính sách vận chuyển </a></li>
+                            <li><a href="#"> Chính sách bảo hành </a></li>
+                            <li><a href="#"> Đổi trả & hoàn tiền </a></li>
+                        </ul>
                     </li>
-                    <li class="contact__item col-4">
-                        <h2>
-                            <i class="fas fa-phone-alt"></i>
-                            Hotline
-                        </h2>
-                        <a href="#" class="contact__link">
-                            (+84) 989.999.999
-                        </a>
+
+                    <!-- Column 3: Ideas & Inspiration -->
+                    <li class="footer__column js-scroll fade-in">
+                        <p class="footer__title">Ý tưởng và cảm hứng</p>
+                        <ul>
+                            <li><a href="#"> Cảm hứng </a></li>
+                            <li><a href="#"> Ý tưởng </a></li>
+                            <li><a href="#"> Đội ngũ thiết kế </a></li>
+                        </ul>
                     </li>
-                    <li class="contact__item col-4">
-                        <h2>
-                            <i class="far fa-envelope"></i>
-                            Email
-                        </h2>
-                        <a href="#" class="contact__link">
-                            uannu@gmail.com
-                        </a>
+
+                    <!-- Column 4: Contact -->
+                    <li class="footer__column js-scroll fade-in">
+                        <p class="footer__title">Liên hệ #UanNu</p>
+                        <ul>
+                            <li><a href="#"> Hotline: 0989.999.999 </a></li>
+                            <li><a href="#"> email: cskh@uannu.com </a></li>
+                        </ul>
                     </li>
+
+                    <!-- Column 5: Social network -->
+                    <li class="footer__column js-scroll fade-in">
+                        <p class="footer__title">
+                            <a href="./index.html" class="footer__img logo">
+                                <img src="https://nhaxinh.com/wp-content/uploads/2021/09/logo.png" alt="Logo Uẩn Nụ">
+                            </a>
+                        </p>
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </li>
+                            <li>Đăng ký để nhận những thông tin mới nhất và chính sách ưu đãi hấp dẫn từ UanNu</li>
+                            <li><a href="#">Sign up</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Footer policy -->
+                <ul class="footer__list footer__policy">
+                    <li><a href="#">Điều khoản và điều kiện</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Chính sách về cookies</a></li>
+                    <li><a href="#">Thông báo bản quyền</a></li>
                 </ul>
             </div>
-        </div>
-        <div class="footer-policy">
-            <div class="wrapper">
-                <img src="./src/image/footer/payment.webp" alt="Payment Method" class="payment-method"/>
-                <ul class="policy__list">
-                    <li class="policy__item">
-                        <a href="#" class="policy__link">Tìm kiếm</a>
-                    </li>
-                    <li class="policy__item">
-                        <a href="#" class="policy__link">Giới thiệu</a>
-                    </li>
-                    <li class="policy__item">
-                        <a href="#" class="policy__link">Chính sách đổi trả</a>
-                    </li>
-                    <li class="policy__item">
-                        <a href="#" class="policy__link">Chính sách bảo mật</a>
-                    </li>
-                    <li class="policy__item">
-                        <a href="#" class="policy__link">Điều khoản dịch vụ</a>
-                    </li>
-                </ul>
-                <p class="copyright">Copyright © 2022 dqhuy</p>
+
+            <!-- Footer copyright -->
+            <div class="footer__copyright">
+                <p class="footer__title">    
+                    Copyright © 2010-2022 UanNu Company S.L. <span>All rights reserved.</span>
+                </p>
             </div>
         </div>
     </footer>
