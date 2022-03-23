@@ -1,0 +1,197 @@
+@media (max-width: 767px) {
+    
+    /* INDEX */
+    
+    .desktop-menu{
+        display: none;
+    }
+    ::placeholder{
+        font-size: 2rem;
+    }
+    ::-moz-placeholder{
+        font-size: 2rem;
+    }
+    ::-webkit-input-placeholder{
+        font-size: 2rem;
+    }
+    
+    /* Home policy */
+    .home-policy__list{
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    /* Home shop by room */
+    .home-shop-by-room__list{
+        padding: 0 10px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .home-shop-by-room__item{
+        width: 100%;
+    }
+    .room{
+        padding-top: calc(100% * 2 / 3);
+    }
+    .room__description{
+        display: initial;
+    }
+    .room__link{
+        display: block;
+    }
+    
+    /* Home contact */
+    .home-contact .contact__form{
+        padding: 0;
+    }
+    .home-contact .contact__img{
+        display: none;
+    }
+    
+    /* Home about */
+    .about__container{
+        padding-top: 80%;
+    }
+    .about__content{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 20px 16px;
+    }
+    .about__title{
+        font-size: 2rem;
+    }
+    .about__text{
+        margin-top: 12px;
+    }
+    .about__btn{
+        margin-top: 12px;
+    }
+
+    /* CART */
+    
+    .col-cart-product{
+        width: calc(100% - 120px);
+    }
+    .col-cart-calculator{
+        width: 120px;
+    }
+    .cart-calculator{
+        display: block;
+    }
+    .cart-quantity{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    .cart-subtotal{
+        width: 100%;
+    }
+    .cart-product .product__brand span:first-child,
+    .cart-product .product__size span:first-child{
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    
+    /* INDEX */
+    
+    .desktop-menu{
+        display: none;
+    }
+    .header-search{
+        width: 400px;
+    }
+    ::placeholder{
+        font-size: 2rem;
+    }
+    ::-moz-placeholder{
+        font-size: 2rem;
+    }
+    ::-webkit-input-placeholder{
+        font-size: 2rem;
+    }
+    
+    /* Home shop by room */
+    .home-shop-by-room__list{
+        padding: 0 10px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .home-shop-by-room__item{
+        width: 100%;
+    }
+    .room{
+        padding-top: 50%;
+    }
+    .room__description{
+        font-size: 2.4rem;
+        display: initial;
+    }
+    .room__link{
+        display: block;
+    }
+    
+    /* Home stylish */
+    .stylish__img{
+        padding-top: 50%;
+        width: 50%;
+    }
+    
+    /* Home contact */
+    .home-contact .contact__img{
+        width: calc(100% / 3);
+    }
+    
+    /* Home about */
+    .about__container{
+        padding-top: calc(100% * 2 / 3);
+    }
+    .about__content{
+        padding: 24px 20px;
+    }
+    .about__title{
+        font-size: 2rem;
+    }
+    .about__text{
+        margin-top: 16px;
+    }
+    .about__btn{
+        margin-top: 16px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1239px){
+    .desktop-menu{
+        display: none;
+    }
+}
+@media (min-width: 1240px){
+
+    /* INDEX */
+    
+    .mobile-menu{
+        display: none;
+    }
+    .collapse-menu-btn{
+        display: none;
+    }
+
+    /* SUBPAGE */
+    
+    .page-container{
+        display: flex;
+    }
+    
+    /* LOGIN */
+    
+    .register-container .login__title{
+        margin-top: 0;
+    }
+    
+    /* PRODUCT DETAIL */
+    
+    .image-container,
+    .detail-container{
+        width: 50%;
+    }
+}
