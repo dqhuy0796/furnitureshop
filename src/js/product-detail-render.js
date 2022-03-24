@@ -88,4 +88,4 @@ const renderThumbItem = (imageUrl) => {
     thumbItem.innerHTML = `<img src="${imageUrl}" alt=""/>`;     
     thumbList.appendChild(thumbItem);
 };
-renderProductDetail(products[2]);
+renderProductDetail(products[0]);

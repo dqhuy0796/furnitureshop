@@ -122,6 +122,11 @@
     .cart-product .product__size span:first-child{
         display: none;
     }
+    
+    /* Shortcut */
+    .shortcut{
+        display: none;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1023px){
@@ -205,9 +210,17 @@
     .footer__column:last-child ul li:last-child{
         text-align: left;
     }
+
+    /* Shortcut */
+    .shortcut{
+        display: none;
+    }
 }
 @media (min-width: 1024px) and (max-width: 1239px){
     .desktop-menu{
+        display: none;
+    }
+    .shortcut{
         display: none;
     }
 }
