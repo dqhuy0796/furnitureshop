@@ -750,7 +750,7 @@ input[type=number] {
 .footer__column ul li{
     margin-bottom: 8px;
     width: 100%;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 500;
     color: var(--gray);
     text-align: justify;
@@ -761,7 +761,7 @@ input[type=number] {
     width: 100%;
     height: 100%;
     text-transform: capitalize;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 500;
     color: var(--gray);
 }
