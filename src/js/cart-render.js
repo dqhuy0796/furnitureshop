@@ -3,7 +3,7 @@ const cartProductList = document.querySelector(".cart__list");
 const cartSubtotal = document.querySelector(".order-detail .order__subtotal .value");
 const cartTotalPayment = document.querySelector(".order-detail .order__total .value");
 const shortcutCartQuantity = document.querySelector(".shortcut .shortcut__cart-quantity");
-const mobileCartQuantity = document.querySelector(".mobile-menu .nav__btn .cart-quantity");
+const mobileCartQuantity = document.querySelector(".mobile-btn.home-cart-btn .cart-quantity");
 
 let globalSubtotal = 0;
 let globalQuantity = 0;

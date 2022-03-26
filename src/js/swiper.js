@@ -5,23 +5,23 @@
 
 // swiper in banner
 const bannerSwiper = new Swiper(".banner-swiper", {
-    spaceBetween: 0,
-    loop: true,
-    centeredSlides: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    }
+  loop: true,
+  spaceBetween: 0,
+  centeredSlides: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  }
 });
 
 // swiper in stylish
 const stylishSwiper = new Swiper(".stylish-swiper", {
-  spaceBetween: 0,
   loop: true,
+  spaceBetween: 1,
   centeredSlides: true,
   pagination: {
     el: ".swiper-pagination",
@@ -31,9 +31,9 @@ const stylishSwiper = new Swiper(".stylish-swiper", {
 
 // swiper in latest
 const latestSwiper = new Swiper(".latest-swiper", {
-  slidesPerView: 2,
-  spaceBetween: 10,
   loop: true,
+  spaceBetween: 10,
+  slidesPerView: 2,
   autoplay: {
     delay: 2000,
     disableOnInteraction: false,
@@ -57,9 +57,9 @@ const latestSwiper = new Swiper(".latest-swiper", {
 
 // swiper in featured
 const featuredSwiper = new Swiper(".featured-swiper", {
-  slidesPerView: 2,
-  spaceBetween: 10,
   loop: true,
+  spaceBetween: 10,
+  slidesPerView: 2,
   autoplay: {
     delay: 2000,
     disableOnInteraction: false,

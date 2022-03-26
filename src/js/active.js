@@ -1,4 +1,4 @@
-//
+// Collapse mobile menu
 const collapseBtn = document.querySelector(".collapse-menu-btn");
 const collapseMenu = document.querySelector(".mobile-menu");
 collapseBtn.addEventListener('click', () => {
@@ -11,6 +11,9 @@ const emptylinks = document.querySelectorAll("a[href='#']");
 for (let index = 0; index < emptylinks.length; index++) {
     emptylinks[index].addEventListener('click', (event) => {event.preventDefault();});   
 }
+
+// Dropdown mobile subnav
+const dropdownBtns = document.querySelectorAll(".subnav-checkbox");
 
 
 // Scrolling

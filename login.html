@@ -34,9 +34,9 @@
                 </a>
     
                 <!-- Cart -->
-                <a href="./cart.html" class="mobile-btn home-cart">
+                <a href="./cart.html" class="mobile-btn home-cart-btn">
                     <i class="ti-shopping-cart"></i>
-                    <span class="cart-quantity">9</span>
+                    <span class="cart-quantity">0</span>
                 </a>
 
                 <!-- Desktop menu -->
@@ -327,8 +327,8 @@
                         </li>
     
                         <!-- Login -->
-                        <li class="nav__item home-login">
-                            <a href="./login.html" class="btn split-btn login-btn">
+                        <li class="nav__item desktop-login">
+                            <a href="./login.html" class="btn split-btn desktop-login-btn">
                                 <span class="content">
                                     <i class="fas fa-user-circle"></i>
                                     Đăng nhập
@@ -341,13 +341,6 @@
                 <!-- Mobile -->
                 <div class="mobile-menu">
                     <ul class="nav__list">
-    
-                        <!-- Đăng nhập -->
-                        <li class="nav__item user-info">
-                            <div class="nav__category">
-                                <a href="./login.html" class="nav__link">Đăng nhập</a>
-                            </div>
-                        </li>
     
                         <!-- Tìm kiếm -->
                         <li class="nav__item mobile-search">
@@ -363,11 +356,11 @@
                         <li class="nav__item">
                             <div class="nav__category">
                                 <a href="#" class="nav__link">Phòng</a>
-                                <label class="nav__btn" for="room-checkbox">
+                                <label class="collapse-subnav-btn" for="room-checkbox">
                                     <i class="ti-angle-down"></i>
                                 </label>
                             </div>
-                            <input type="checkbox"name="" id="room-checkbox"  hidden>
+                            <input type="checkbox"name="" id="room-checkbox" class="subnav-checkbox" hidden>
                             <div class="subnav">
                                 <ul class="subnav__list">
                                     <li class="subnav__item">
@@ -393,11 +386,11 @@
                         <li class="nav__item">
                             <div class="nav__category">
                                 <a href="#" class="nav__link">Sản phẩm</a>
-                                <label class="nav__btn" for="product-checkbox">
+                                <label class="collapse-subnav-btn" for="product-checkbox">
                                     <i class="ti-angle-down"></i>
                                 </label>
                             </div>
-                            <input type="checkbox" name="" id="product-checkbox" hidden>
+                            <input type="checkbox" name="" id="product-checkbox" class="subnav-checkbox" hidden>
                             <div class="subnav">
                                 <ul class="subnav__list">
                                     <li class="subnav__item">
@@ -429,11 +422,11 @@
                         <li class="nav__item">
                             <div class="nav__category">
                                 <a href="#" class="nav__link">Phong cách</a>
-                                <label class="nav__btn" for="style-checkbox">
+                                <label class="collapse-subnav-btn" for="style-checkbox">
                                     <i class="ti-angle-down"></i>
                                 </label>
                             </div>
-                            <input type="checkbox" name="" id="style-checkbox" hidden>
+                            <input type="checkbox" name="" id="style-checkbox" class="subnav-checkbox" hidden>
                             <div class="subnav">
                                 <ul class="subnav__list">
                                     <li class="subnav__item">
@@ -474,21 +467,24 @@
                             <div class="nav__category">
                                 <a href="#" class="nav__link">Khuyến mãi</a>
                             </div>
-                        </li>
-    
-                        <!-- Flash sale -->
-                        <li class="nav__item">
-                            <div class="nav__category">
-                                <a href="#" class="nav__link">Flash sale</a>
-                            </div>
-                        </li>  
+                        </li> 
     
                         <!-- Tìm cửa hàng -->
                         <li class="nav__item">
                             <div class="nav__category">
                                 <a href="#" class="nav__link">Tìm cửa hàng</a>
                             </div>
-                        </li>  
+                        </li>
+
+                        <!-- Đăng nhập -->
+                        <li class="nav__item mobile-login">
+                            <div class="nav__category">
+                                <a href="./login.html" class="mobile-login-btn btn split-btn primary">Đăng nhập</a>
+                            </div>
+                            <div class="nav__category">
+                                <a href="./login.html" class="mobile-login-btn btn split-btn">Đăng ký</a>
+                            </div>
+                        </li>
                     </ul>
                 </div>
 
@@ -597,7 +593,7 @@
                                 <li class="form__item d-flex">
                                     <input type="checkbox" name="email-notify-checkbox" id="email-notify-checkbox">
                                     <label class="email-notify" for="email-notify-checkbox">
-                                        Tôi muốn UanNu gửi cho tôi các chương trình khuyến mãi, giảm giá và xu hướng độc quyền và đồng ý nắm bắt các tương tác của tôi với nội dung đó. Tôi có thể chọn không nhận những thông báo này bất cứ lúc nào.
+                                        Tôi muốn Nội thất Công Uẩn gửi cho tôi các chương trình khuyến mãi, giảm giá và xu hướng độc quyền và đồng ý nắm bắt các tương tác của tôi với nội dung đó. Tôi có thể chọn không nhận những thông báo này bất cứ lúc nào.
                                     </label>
                                 </li>
                                 <li class="form__item d-flex">
@@ -702,10 +698,11 @@
 
                     <!-- Column 4: Contact -->
                     <li class="footer__column js-scroll fade-in">
-                        <p class="footer__title">Liên hệ #UanNu</p>
+                        <p class="footer__title">Liên hệ #CongUan</p>
                         <ul>
-                            <li><a href="#"> Hotline: 0989.999.999 </a></li>
-                            <li><a href="#"> email: cskh@uannu.com </a></li>
+                            <li><a href="#"> Hotline: 0989.989.989 </a></li>
+                            <li><a href="#"> Hotline: 0889.989.989 </a></li>
+                            <li><a href="#"> email: cskh@CongUan.com </a></li>
                         </ul>
                     </li>
 
@@ -723,7 +720,7 @@
                                 <a href="#"><i class="fab fa-twitter"></i></a>
                                 <a href="#"><i class="fab fa-youtube"></i></a>
                             </li>
-                            <li>Đăng ký để nhận những thông tin mới nhất và chính sách ưu đãi hấp dẫn từ UanNu</li>
+                            <li>Đăng ký để nhận những thông tin mới nhất và chính sách ưu đãi hấp dẫn từ Nội thất Công Uẩn</li>
                             <li><a href="#">Đăng ký</a></li>
                         </ul>
                     </li>
@@ -741,7 +738,7 @@
             <!-- Footer copyright -->
             <div class="footer__copyright">
                 <p class="footer__title">    
-                    Copyright © 2010-2022 UanNu Company S.L. <span>All rights reserved.</span>
+                    Copyright © 2010-2022 CongUan Company S.L. <span>All rights reserved.</span>
                 </p>
             </div>
         </div>
