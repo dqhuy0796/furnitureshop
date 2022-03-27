@@ -16,9 +16,8 @@
     }
     
     /* Home policy */
-    .home-policy__list{
-        flex-direction: column;
-        gap: 10px;
+    .policy__item{
+        width: 100%;
     }
     
     /* Home shop by room */
@@ -45,6 +44,7 @@
         padding-top: calc(100% * 2 / 3);
         width: calc(100% / 3);
     }
+
     /* Home contact */
     .home-contact .contact__form{
         padding: 0;
@@ -124,7 +124,6 @@
         display: block;
     }
     .cart-quantity{
-        width: 100%;
         margin-bottom: 24px;
     }
     .cart-subtotal{
@@ -143,9 +142,6 @@
     .desktop-menu{
         display: none;
     }
-    .header-search{
-        width: 400px;
-    }
     ::placeholder{
         font-size: 2rem;
     }
@@ -156,6 +152,11 @@
         font-size: 2rem;
     }
     
+    /* Home policy */
+    .policy__item{
+        width: 50%;
+    }
+
     /* Home shop by room */
     .home-shop-by-room__list{
         padding: 0 10px;
@@ -229,7 +230,11 @@
     .desktop-menu{
         display: none;
     }
-
+    
+    /* Home policy */
+    .policy__item{
+        width: 50%;
+    }
     /* Shortcut */
     .shortcut{
         display: none;

@@ -9,7 +9,7 @@ const bannerSwiper = new Swiper(".banner-swiper", {
   spaceBetween: 0,
   centeredSlides: true,
   autoplay: {
-    delay: 3000,
+    delay: 5000,
     disableOnInteraction: false,
   },
   pagination: {

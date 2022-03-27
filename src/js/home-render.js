@@ -20,11 +20,13 @@ const renderLatestItem = (product) => {
       <div class="product__img">
         <img src="${product.imageUrl[0]}" alt="${product.name}"/>
       </div>
+      <div class="product__info">
         <p class="product__name">${product.name}</p>
         <div class="product__price">
           <span class="old">${product.oldPrice.toLocaleString('vn-VI', { style: 'currency', currency: 'VND' })}</span>
           <span class="new">${product.newPrice.toLocaleString('vn-VI', { style: 'currency', currency: 'VND' })}</span>
         </div>
+      </div>
     </a>
     `;
     latestList.appendChild(latestItem);     
@@ -80,7 +82,7 @@ const renderStylishItem = (stylish) => {
             <h3 class="stylish__title">${stylish.title}</h3>
             <h4 class="stylish__subtitle">${stylish.subtitle}</h4>
             <p class="stylish__description">${stylish.description}</p>
-            <a class="btn split-btn stylish__btn">
+            <a href="#" class="btn split-btn stylish__btn">
                 <span class="content">Chi tiết</span>
             </a>
         </div>

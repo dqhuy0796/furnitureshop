@@ -502,38 +502,64 @@
             <div class="swiper banner-swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="./src/image/banner/banner-2.jpg" alt="" />
+                        <img src="./src/image/banner/banner-1.jpg" alt="Nội thất Công Uẩn" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="./src/image/banner/banner-2.jpg" alt="" />
+                        <img src="./src/image/banner/banner-2.jpg" alt="Nội thất Công Uẩn" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./src/image/banner/banner-4.jpg" alt="Nội thất Công Uẩn" />
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
         </div>
 
+        <!-- NEED TO FIX -->
         <!-- Policy -->
         <div class="home-policy">
-            <div class="wrapper">
-                <ul class="home-policy__list">
-                    <li class="home-policy__item">
-                        <img src="./src/image/policy/policy_icon1.webp" alt="freeship" class="home-policy__img"/>
-                        <p class="home-policy__content">FREESHIP COD với đơn hàng > 10tr</p>
-                    </li>
-                    <li class="home-policy__item">
-                        <img src="./src/image/policy/policy_icon2.webp" alt="freeship" class="home-policy__img"/>
-                        <p class="home-policy__content">Thanh toán khi nhận hàng</p>
-                    </li>
-                    <li class="home-policy__item">
-                        <img src="./src/image/policy/policy_icon3.webp" alt="freeship" class="home-policy__img"/>
-                        <p class="home-policy__content">Hỗ trợ tư vấn khách hàng 24/7</p>
-                    </li>
-                </ul>
-            </div>
+            <ul class="policy__list">
+                <li class="policy__item">
+                    <div class="policy__img">
+                        <i class="fas fa-couch"></i>
+                    </div>
+                    <p class="policy__content">
+                        <span>Sản phẩm hiện đại, </span>
+                        <span>Thiết kế thông minh</span>
+                    </p>
+                </li>
+                <li class="policy__item">
+                    <div class="policy__img">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <p class="policy__content">
+                        <span>Hỗ trợ tư vấn </span>
+                        <span>CSKH khách hàng 24/7</span>
+                    </p>
+                </li>
+                <li class="policy__item">
+                    <div class="policy__img">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <p class="policy__content">
+                        <span>FREESHIP COD </span>
+                        <span>với đơn hàng > 10tr</span>                    
+                    </p>
+                </li>
+                <li class="policy__item">
+                    <div class="policy__img">
+                        <i class="far fa-handshake"></i>
+                    </div>
+                    <p class="policy__content">
+                        <span>Chính sách bảo hành </span>
+                        <span>lên tới 24 tháng</span>
+                    </p>
+                </li>
+            </ul>
         </div>
 
         <!-- latest product -->
-        <div class="home-section home-latest">
+        <div class="home-section home-latest js-scroll fade-in">
             <div class="wrapper">
                 <h2 class="home-section-title home-latest__title">Sản phẩm mới</h2>
                 <div class="swiper latest-swiper">
@@ -550,7 +576,7 @@
           </div>
 
         <!-- Shop by room -->
-        <div class="home-section home-shop-by-room">
+        <div class="home-section home-shop-by-room js-scroll fade-in">
             <h2 class="home-section-title home-shop-by-room__title">Không gian</h2>
             <ul class="home-shop-by-room__list">
                 <li class="home-shop-by-room__item js-scroll fade-in">
@@ -593,7 +619,7 @@
         </div>
 
         <!-- Feature product -->
-        <div class="home-section home-featured">
+        <div class="home-section home-featured js-scroll fade-in">
             <div class="wrapper">
                 <h2 class="home-section-title home-featured__title">Sản phẩm nổi bật</h2>
                 <div class="swiper featured-swiper">
@@ -611,7 +637,7 @@
                     <span class="content">Xem tất cả</span>
                 </a>
             </div>
-          </div>
+        </div>
 
         <!-- Stylish -->
         <div class="home-section home-stylish js-scroll fade-in">
@@ -627,6 +653,8 @@
         <div class="home-section home-contact">
             <div class="wrapper">
                 <div class="contact__container">
+
+                    <!-- Contact form -->
                     <form id="contact-form" name="contact-form" class="contact__form js-scroll fade-in" action="" method="post">
                         <p class="title">Bạn cần hỗ trợ ?!</p>
                         <p class="subtitle">Xin vui lòng để lại yêu cầu hỗ trợ của bạn.</p>
@@ -639,6 +667,8 @@
                             <span class="content">Gửi yêu cầu</span>
                         </label>
                     </form>
+
+                    <!-- Contact image -->
                     <div class="contact__img  js-scroll fade-in">
                         <img src="./src/image/product/1001-sofa-penny-3-cho-vai-cam-5-600x400.jpg" alt="Ảnh bìa hỗ trợ">
                     </div>
@@ -649,7 +679,11 @@
         <!-- Inspiration -->
         <div class="home-section home-inspiration">
             <h2 class="home-section-title home-inspiration__title">Khám phá và cảm hứng sáng tạo</h2>
+            
+            <!-- Inspiration list -->
             <ul class="home-inspiration__list">
+                
+                <!-- Inspiration item -->
                 <li class="home-inspiration__item js-scroll fade-in">
                     <a href="#" class="home-inspiration__link">
                         <div class="home-inspiration__img">
@@ -658,6 +692,8 @@
                         <h3>Trang hooàng phòng khách đón mùa mới</h3>
                     </a>
                 </li>
+                
+                <!-- Inspiration item -->
                 <li class="home-inspiration__item js-scroll fade-in">
                     <a href="#" class="home-inspiration__link">
                         <div class="home-inspiration__img">
@@ -666,6 +702,8 @@
                         <h3>5 gợi ý thiết kế nội thất hiện đại sang trọng cho căn hộ</h3>
                     </a>
                 </li>
+                
+                <!-- Inspiration item -->
                 <li class="home-inspiration__item js-scroll fade-in">
                     <a href="#" class="home-inspiration__link">
                         <div class="home-inspiration__img">
@@ -674,6 +712,8 @@
                         <h3>5 mẫu sofa trưng đâu cũng đẹp</h3>
                     </a>
                 </li>
+                
+                <!-- Inspiration item -->
                 <li class="home-inspiration__item js-scroll fade-in">
                     <a href="#" class="home-inspiration__link">
                         <div class="home-inspiration__img">
@@ -683,6 +723,11 @@
                     </a>
                 </li>
             </ul>
+            
+            <!-- See more button -->
+            <a href="#" class="btn split-btn see-more-btn home-featured__link">
+                <span class="content">Xem tất cả</span>
+            </a>
         </div>
 
         <!-- About -->
@@ -691,7 +736,7 @@
                 <div class="about__container js-scroll fade-in">
                     <div class="about__content">
                         <h3 class="about__title">Hơn 20 năm chăm lo cho tổ ấm của gia đình Việt</h3>
-                        <p class="about__text">Trong suốt hơn 22 năm qua, cảm hứng từ gu thẩm mỹ tinh tế và tinh thần Việt đã giúp chúng tôi tạo ra những thiết kế độc đáo, hợp thời và chất lượng. Nội thất Công Uẩn hiện đã mở 99+ showroom tại Việt Nam.</p>
+                        <p class="about__text">Trong suốt hơn 22 năm qua, cảm hứng từ gu thẩm mỹ tinh tế và tinh thần Việt đã giúp chúng tôi tạo ra những thiết kế độc đáo, hợp thời và chất lượng. Nội thất Công Uẩn hiện đã mở nhiều showroom trên khắp Việt Nam.</p>
                         <a href="#" class="btn split-btn about__btn">
                             <span class="content">Về chúng tôi</span>
                         </a>
@@ -701,6 +746,7 @@
         </div>
     </div>
 
+    <!-- NEED TO UPGRADE -->
     <!-- SHORTCUT -->
 
     <div class="shortcut">
