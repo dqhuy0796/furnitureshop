@@ -11,6 +11,7 @@ const renderproductItem = (product) => {
     const productItem = document.createElement("a");
     productItem.className = "product";
     productItem.setAttribute("href", "./product-detail.html");
+    productItem.setAttribute("id", product.id);
     productItem.innerHTML = `
     <p class="product__discount">
         ${discountPercent(product.newPrice, product.oldPrice)}%

@@ -463,42 +463,31 @@
     transform: translateY(-50%);
 }
 .shortcut__list{
+    position: relative;
+    text-align: right;
     list-style: none;
-    display: flex;
-    flex-direction: column;
     border: none;
 }
-.shortcut__list:first-child{
-    margin-bottom: 40px;
-    background-color: var(--primary);
-}
-.shortcut__list:first-child:hover{
-    background: linear-gradient(to  right bottom, #ffe77b, var(--primary));
-}
-.shortcut__list:last-child{
-    background-color: var(--gray-dark);
-}
 .shortcut__item{
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 36px;
     height: 36px;
 }
-.shortcut__item:hover .shortcut__link{
-    color: var(--white);
-}
 .shortcut__link{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
     text-decoration: none;
     font-size: 2rem;
-    text-align: center;
     color: var(--light-border);
+}
+
+/* 1:: Shortcut cart */
+.shortcut__list:first-child{
+    margin-bottom: 40px;
+    background-color: var(--primary);
+}
+.shortcut__list:first-child:hover{
+    background: linear-gradient(to  right bottom, #ffe77b, var(--primary));
 }
 .shortcut__list:first-child .shortcut__link{
     font-size: 2.4rem;
@@ -511,6 +500,17 @@
     color: var(--text);
     border-radius: 16px;
 }
+
+/* 2:: Shortcut tool */
+.shortcut__list:last-child{
+    background-color: var(--gray-dark);
+}
+.shortcut__list:last-child .shortcut__item:hover .shortcut__link{
+    color: var(--white);
+}
+
+/* 3:: bubble chat */
+
 
 /* FOOTER */
 

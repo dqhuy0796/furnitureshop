@@ -25,7 +25,7 @@ const renderCartProductItem = (product) => {
         const cartProductItem = document.createElement("li");
         cartProductItem.className = "cart__item";
         cartProductItem.innerHTML = `
-        <a href="#" class="product cart-product col-cart-product">
+        <a href="./product-detail.html" id="${product.id}" class="product cart-product col-cart-product">
             <div class="product__img">
                 <img src="${product.imageUrl[0]}" alt="${product.name}"/>
             </div>
@@ -37,7 +37,7 @@ const renderCartProductItem = (product) => {
                     <span class="old">${product.oldPrice.toLocaleString('vn-VI', { style: 'currency', currency: 'VND' })}</span>
                     <span class="new">${product.newPrice.toLocaleString('vn-VI', { style: 'currency', currency: 'VND' })}</span>
                 </div>
-                <button class="product__remove" onclick="removeCartProduct();"> Xoá </button>
+                <button class="product__remove"> Xoá </button>
             </div>
         </a>
         <div class="cart-calculator col-cart-calculator">
@@ -61,47 +61,46 @@ const renderCartProductItem = (product) => {
 renderCartProductList();
 
 // Render order detail
-const cartListProductItem = document.querySelectorAll(".cart__item");
+const cartListItem = document.querySelectorAll(".cart__item");
 
-cartListProductItem.forEach(product => {
-    let qty = product.querySelector(".product__quantity .quantity-value");
+cartListItem.forEach(product => {
+    let quantity = product.querySelector(".product__quantity .quantity-value");
     let btnPlus = product.querySelector(".product__quantity .quantity-btn.increase");
     let btnMinus = product.querySelector(".product__quantity .quantity-btn.decrease");
     let unitPrice = product.querySelector(".product__price .new");
     let price = product.querySelector(".cart-subtotal .subtotal");
-    // when click to increase
+    let removeProductCart = product.querySelector(".product__remove");
+    
+    // Increase on click
     btnPlus.addEventListener('click', () => {
-        let quantity = Number(qty.value);
-        quantity = (isNaN(quantity)) ? 0 : quantity;
-        quantity = quantity + 1;
-        qty.value = quantity;
-        let digitPrice = quantity * Number(unitPrice.textContent.replace(/[^\d.-]/g, ''));
+        let qtyValue = Number(quantity.value);
+        qtyValue = (isNaN(qtyValue)) ? 0 : qtyValue;
+        qtyValue = qtyValue + 1;
+        quantity.value = qtyValue;
+        let digitPrice = qtyValue * Number(unitPrice.textContent.replace(/[^\d.-]/g, ''));
         price.innerText = `${digitPrice.toLocaleString('vn-VI', { style: 'currency', currency: 'VND' })}`;
-        autoCalculate();
+        updateCartNumber();
     });
-    // when click to decrease
+    
+    // Decrease on click
     btnMinus.addEventListener('click', () => {
-        let quantity = Number(qty.value);
-        quantity = (isNaN(quantity) || quantity < 2) ? 2 : quantity;
-        quantity = quantity - 1;
-        qty.value = quantity;
-        let digitPrice = quantity * Number(unitPrice.textContent.replace(/[^\d.-]/g, ''));
+        let qtyValue = Number(quantity.value);
+        qtyValue = (isNaN(qtyValue) || qtyValue < 2) ? 2 : qtyValue;
+        qtyValue = qtyValue - 1;
+        quantity.value = qtyValue;
+        let digitPrice = qtyValue * Number(unitPrice.textContent.replace(/[^\d.-]/g, ''));
         price.innerText = `${digitPrice.toLocaleString('vn-VI', { style: 'currency', currency: 'VND' })}`;
-        autoCalculate();
+        updateCartNumber();
     });
-    // update subtotal and total payment
-    function autoCalculate() {
-        let totalQty = 0;
-        cartListProductItem.forEach(product => {
-            totalQty += Number(product.querySelector(".product__quantity .quantity-value").value);
-        });
-        mobileCartQuantity.innerText = `${totalQty}`;
-        shortcutCartQuantity.innerText = `${totalQty}`;
-        let subTotal = 0;
-        cartListProductItem.forEach(product => {
-            subTotal += Number(product.querySelector(".cart-subtotal .subtotal").textContent.replace(/[^\d.-]/g, ''))
-        });
-        cartSubtotal.innerText = `${subTotal.toLocaleString('vn-VI', { style: 'currency', currency: 'VND' })}`;
-        cartTotalPayment.innerText = `${subTotal.toLocaleString('vn-VI', { style: 'currency', currency: 'VND' })}`;
-    }
+
+    //  Remove on click
+    removeProductCart.addEventListener('click', removeCartItem);
 });
+
+// Remove cart item
+function removeCartItem(event){
+    var buttonClicked = event.target;
+    buttonClicked.parentElement.parentElement.parentElement.remove();
+    updateCartNumber();
+}
+

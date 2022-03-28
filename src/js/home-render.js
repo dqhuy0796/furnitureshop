@@ -12,7 +12,7 @@ const renderLatestItem = (product) => {
     const latestItem = document.createElement("div");
     latestItem.className = "swiper-slide";
     latestItem.innerHTML = `
-    <a href="./product-detail.html" class="product">
+    <a href="./product-detail.html" id="${product.id}" class="product">
       <p class="product__discount">
         ${discountPercent(product.newPrice, product.oldPrice)}%
         <span>off</span>
@@ -45,7 +45,7 @@ const renderFeaturedItem = (product) => {
     const featuredItem = document.createElement("div");
     featuredItem.className = "swiper-slide";
     featuredItem.innerHTML = `
-    <a href="./product-detail.html" class="product">
+    <a href="./product-detail.html" id="${product.id}" class="product">
       <p class="product__discount">
         ${discountPercent(product.newPrice, product.oldPrice)}%
         <span>off</span>

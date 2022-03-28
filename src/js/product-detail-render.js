@@ -88,4 +88,11 @@ const renderThumbItem = (imageUrl) => {
     thumbItem.innerHTML = `<img src="${imageUrl}" alt=""/>`;     
     thumbList.appendChild(thumbItem);
 };
-renderProductDetail(products[0]);
+
+
+let currentItemId = localStorage.getItem('currentItemId');
+products.forEach(item => {
+    if(item.id == currentItemId){
+        renderProductDetail(item);
+    }
+});
