@@ -1,6 +1,6 @@
 const imageList = document.querySelector(".image-swiper-wrapper");
 const thumbList = document.querySelector(".thumb-swiper-wrapper");
-const productDetail = document.querySelector(".detail-container");
+const productDetail = document.querySelector(".detail-section");
 const productDiscount = document.querySelector(".product__discount");
 const productName = productDetail.querySelector(".product__name");
 const productPrice = productDetail.querySelector(".product__price");
@@ -14,9 +14,11 @@ const renderElement = (father, data, array) => {
         father.appendChild(child);        
     });
 };
+
 let discountPercent = (newPrice, oldPrice) => {
     return Math.round((newPrice-oldPrice)/oldPrice*100);
 };
+
 const renderProductInfo = (product) => {
     // Render Discount
     productDiscount.innerHTML = `
@@ -67,11 +69,13 @@ const renderProductInfo = (product) => {
     // Render Description
     productDescription.innerHTML = `${product.description}`;
 };
+
 const renderProductDetail = (product) => {
     renderProductInfo(product);
     product.imageUrl.map((imageUrl) => renderImageItem(imageUrl));
     product.imageUrl.map((imageUrl) => renderThumbItem(imageUrl));
 };
+
 const renderImageItem = (imageUrl) => {
     const imageItem = document.createElement("div");
     imageItem.className = "swiper-slide";
@@ -82,6 +86,7 @@ const renderImageItem = (imageUrl) => {
     `;
     imageList.appendChild(imageItem);
 };
+
 const renderThumbItem = (imageUrl) => {
     const thumbItem = document.createElement("div");
     thumbItem.className = "swiper-slide";
@@ -89,10 +94,43 @@ const renderThumbItem = (imageUrl) => {
     thumbList.appendChild(thumbItem);
 };
 
-
+// Render clicked product
 let currentItemId = localStorage.getItem('currentItemId');
 products.forEach(item => {
     if(item.id == currentItemId){
         renderProductDetail(item);
     }
 });
+
+// List of latest products
+const suggestionList = document.querySelector(".suggestion-swiper-wrapper");
+const renderSuggestionList = () => {
+  products.map((product) => renderSuggestionItem(product));
+};
+
+const renderSuggestionItem = (product) => {
+  if (product.tag.includes(0)) {
+    const suggestionItem = document.createElement("div");
+    suggestionItem.className = "swiper-slide";
+    suggestionItem.innerHTML = `
+    <a href="./product-detail.html" id="${product.id}" class="product">
+      <p class="product__discount">
+        ${discountPercent(product.newPrice, product.oldPrice)}%
+        <span>off</span>
+      </p>
+      <div class="product__img">
+        <img src="${product.imageUrl[0]}" alt="${product.name}"/>
+      </div>
+      <div class="product__info">
+        <p class="product__name">${product.name}</p>
+        <div class="product__price">
+          <span class="old">${product.oldPrice.toLocaleString('vn-VI', { style: 'currency', currency: 'VND' })}</span>
+          <span class="new">${product.newPrice.toLocaleString('vn-VI', { style: 'currency', currency: 'VND' })}</span>
+        </div>
+      </div>
+    </a>
+    `;
+    suggestionList.appendChild(suggestionItem);     
+  }
+};
+renderSuggestionList();

@@ -5,6 +5,7 @@
 
 // swiper in banner
 const bannerSwiper = new Swiper(".banner-swiper", {
+  // effect: "cube",
   loop: true,
   spaceBetween: 0,
   centeredSlides: true,
@@ -31,7 +32,7 @@ const stylishSwiper = new Swiper(".stylish-swiper", {
 
 // swiper in latest
 const latestSwiper = new Swiper(".latest-swiper", {
-  loop: true,
+  rewind: true,
   spaceBetween: 10,
   slidesPerView: 2,
   autoplay: {
@@ -57,7 +58,7 @@ const latestSwiper = new Swiper(".latest-swiper", {
 
 // swiper in featured
 const featuredSwiper = new Swiper(".featured-swiper", {
-  loop: true,
+  rewind: true,
   spaceBetween: 10,
   slidesPerView: 2,
   autoplay: {
@@ -81,7 +82,7 @@ const featuredSwiper = new Swiper(".featured-swiper", {
   },
 });
 
-// swiper in product detail
+// swiper in product image
 const swiper = new Swiper(".thumb-swiper", {
   loop: true,
   spaceBetween: 8,
@@ -89,6 +90,8 @@ const swiper = new Swiper(".thumb-swiper", {
   freeMode: true,
   watchSlidesProgress: true,
 });
+
+//  swiper in product thumb
 const swiper2 = new Swiper(".image-swiper", {
   loop: true,
   spaceBetween: 1,
@@ -105,3 +108,28 @@ const swiper2 = new Swiper(".image-swiper", {
   }
 });
 
+// swiper in maybe you like
+const suggestionSwiper = new Swiper(".suggestion-swiper", {
+  rewind: true,
+  spaceBetween: 10,
+  slidesPerView: 2,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    700: {
+      slidesPerView: 2,
+    },
+    950: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

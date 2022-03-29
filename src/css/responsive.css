@@ -268,8 +268,8 @@
     
     /* PRODUCT DETAIL */
     
-    .image-container,
-    .detail-container{
+    .image-section,
+    .detail-section{
         width: 50%;
     }
 }

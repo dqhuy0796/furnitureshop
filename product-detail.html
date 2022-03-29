@@ -496,138 +496,167 @@
     <!-- CONTAINER -->
     <div class="container">
 
-        <!-- Product detail -->
-        <div class="product-detail">
+        <!-- Breadcrumbs -->
+
+        <section class="breadcrumbs">
+            <div class="wrapper">
+                <a href="./index.html" class="title__link">Trang chủ</a>
+                <span> > </span>
+                <a href="#" class="title__link">Phòng khách</a>
+                <span> > </span>
+                <a href="#" class="title__link">Sofa & Armchair</a>
+                <span> > </span>
+                <a href="#" class="title__link">Chi tiết</a>
+            </div>
+        </section>
+
+        <!-- Main container -->
+
+        <section class="product-detail">
             <div class="wrapper">
 
-                <!-- Breadcrumbs -->
-
-                <div class="breadcrumbs">
-                    <a href="./index.html" class="title__link">Trang chủ</a>
-                    <span> > </span>
-                    <a href="#" class="title__link">Phòng khách</a>
-                    <span> > </span>
-                    <a href="#" class="title__link">Sofa & Armchair</a>
-                    <span> > </span>
-                    <a href="#" class="title__link">Chi tiết</a>
-                </div>
-
-                <!-- Main container -->
-
-                <div class="page-container">
-                    <div class="image-container">
-
-                        <!-- Image swiper -->
+                <!-- Image section -->
+                <div class="image-section">
+    
+                    <!-- Image swiper -->
+                    
+                    <div class="swiper image-swiper">
+                                                
+                        <!-- Discount -->
                         
-                        <div class="swiper image-swiper">
-                            <div class="swiper-wrapper image-swiper-wrapper">
-                                <!-- JS RENDER -->
-                            </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
-
-                        <!-- Thumb swiper -->
-
-                        <div thumbsSlider="" class="swiper thumb-swiper">
-                            <div class="swiper-wrapper thumb-swiper-wrapper">
-                                <!-- JS RENDER -->
-                            </div>
-                        </div>
-                        
+                        <div class="product__discount">
+                            <!-- JS Render -->
+                        </div> 
+                    
                         <!-- Favorite -->
                         
                         <div class="product__favorite">
                             <input type="checkbox" name="favorite-checkbox" id="favorite-checkbox" hidden>
                             <label for="favorite-checkbox">
                                 <i class="yes fas fa-heart"></i>
-                                <i class="no far fa-heart"></i>
+                                <i class="no fal fa-heart"></i>
                             </label>
                         </div>
-                        
-                        <!-- Discount -->
-                        
-                        <div class="product__discount">
-                            <!-- JS render -->
-                        </div>                        
+    
+                        <!-- Image -->
+                        <div class="swiper-wrapper image-swiper-wrapper">
+                            <!-- JS Render -->
+                        </div>
+    
+                        <!-- Pagination -->
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <div class="detail-container">
-                        <ul class="detail__list">
-                        
-                            <!-- Name -->
-                        
-                            <li class="detail__item">
-                                <p class="detail__title product__name">
-                                    <!-- JS render -->
-                                </p>
-                            </li>
-                        
-                            <!-- Rating -->
-                        
-                            <li class="detail__item">
-                                <div class="detail__rate product__rate">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                </div>
-                            </li>                            
-                        
-                            <!-- Price -->
-                        
-                            <li class="detail__item">
-                                <div class="detail__price product__price">
-                                    <!-- JS render -->
-                                </div>
-                            </li>
-                        
-                            <!-- Infomation -->
-                        
-                            <li class="detail__item">
-                                <div class="detail__info product__info">
-                                    <!-- JS render -->
-                                </div>
-                            </li>
-                        
-                            <!-- Quantity -->
-                        
-                            <li class="detail__item">
-                                <div class="cart-quantity product__quantity">
-                                    <button class="quantity-btn decrease">
-                                        <i class="fas fa-minus"></i>
-                                    </button>
-                                    <input type="number" class="quantity-value" name="" id="" min="1" max="99" value="1" readonly>
-                                    <button class="quantity-btn increase">
-                                        <i class="fas fa-plus"></i>
-                                    </button>
-                                </div>
-                            </li>
-                        
-                            <!-- Button -->
-                        
-                            <li class="detail__item">
-                                <button class="btn split-btn add-to-cart-btn">
-                                    <span class="content">Thêm vào giỏ hàng</span>
-                                </button>
-                                <button class="btn split-btn checkout-now-btn">
-                                    <span class="content">Mua ngay</span>
-                                </button>
-                            </li>
-                        
-                            <!-- Description -->
-                        
-                            <li class="detail__item">
-                                <p class="detail__description product__description">
-                                    <!-- JS render -->
-                                </p>
-                            </li>
-                        </ul>
+    
+                    <!-- Thumb swiper -->
+    
+                    <div thumbsSlider="" class="swiper thumb-swiper">
+                        <div class="swiper-wrapper thumb-swiper-wrapper">
+                            <!-- JS RENDER -->
+                        </div>
                     </div>
+                    
+                </div>
+    
+                <!-- Detail section -->
+                <div class="detail-section">
+                    <ul class="detail__list">
+                    
+                        <!-- Name -->
+                    
+                        <li class="detail__item">
+                            <p class="detail__title product__name">
+                                <!-- JS render -->
+                            </p>
+                        </li>
+                    
+                        <!-- Rating -->
+                    
+                        <li class="detail__item">
+                            <div class="detail__rate product__rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </li>                            
+                    
+                        <!-- Price -->
+                    
+                        <li class="detail__item">
+                            <div class="detail__price product__price">
+                                <!-- JS render -->
+                            </div>
+                        </li>
+                    
+                        <!-- Infomation -->
+                    
+                        <li class="detail__item">
+                            <div class="detail__info product__info">
+                                <!-- JS render -->
+                            </div>
+                        </li>
+                    
+                        <!-- Quantity -->
+                    
+                        <li class="detail__item">
+                            <div class="cart-quantity product__quantity">
+                                <button class="quantity-btn decrease">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <input type="number" class="quantity-value" name="" id="" min="1" max="99" value="1" readonly>
+                                <button class="quantity-btn increase">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </li>
+                    
+                        <!-- Button -->
+                    
+                        <li class="detail__item">
+                            <button class="btn split-btn add-to-cart-btn">
+                                <span class="content">Thêm vào giỏ hàng</span>
+                            </button>
+                            <button class="btn split-btn checkout-now-btn">
+                                <span class="content">Mua ngay</span>
+                            </button>
+                        </li>
+                    
+                        <!-- Description -->
+                    
+                        <li class="detail__item">
+                            <p class="detail__description product__description">
+                                <!-- JS render -->
+                            </p>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Maybe you like -->
+        <section class="home-section maybe-you-like">
+            <div class="wrapper">
+
+                <!-- Section title -->
+                <h2 class="section-title">Có thể bạn cũng thích</h2>
+                
+                <!-- Suggestion swiper -->
+                <div class="swiper suggestion-swiper">
+                    <div class="swiper-wrapper suggestion-swiper-wrapper">
+                    <!-- JS HERE -->
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+                <!-- See more button -->
+                <a href="#" class="btn split-btn see-more-btn">
+                    <span class="content">Xem tất cả</span>
+                </a>
+            </div>
+        </section>
+
     </div>
 
     <!-- SHORTCUT -->
@@ -764,7 +793,7 @@
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./src/js/active.js"></script>
-    <script src="./src/js/async-data.js" async></script>
+    <script src="./src/js/async-data.js"></script>
     <script src="./src/js/rest-api.js"></script>
     <script src="./src/js/product-detail-render.js"></script>
     <script src="./src/js/swiper.js"></script>

@@ -511,153 +511,152 @@
 
             <div class="page-container">
                 <div class="wrapper">
-                    <div class="main">
                         
-                        <!-- Sidebar -->
-    
-                        <div class="sidebar">
-                            <ul class="sidebar__list">
-                                <!-- Filter by room -->
-                                <li class="sidebar__item room-filter">
-                                    <p class="sidebar__title"> Phòng </p>
-                                    <ul class="filter__list">
-                                        <li class="filter__item">
-                                            <input type="radio" name="room-filter" id="no-room-filter" data-filter="*"  checked>
-                                            <label for="no-room-filter"> Tất cả </label>
-                                        </li>
-                                        <li class="filter__item">
-                                            <input type="radio" name="room-filter" id="livingroom-filter" data-filter=".livingroom">
-                                            <label for="livingroom-filter"> Phòng khách </label>
-                                        </li>
-                                        <li class="filter__item">
-                                            <input type="radio" name="room-filter" id="bedroom-filter" data-filter=".bedroom">
-                                            <label for="bedroom-filter"> Phòng ngủ </label>
-                                        </li>
-                                        <li class="filter__item">
-                                            <input type="radio" name="room-filter" id="workroom-filter" data-filter=".workroom">
-                                            <label for="workroom-filter"> Phòng làm việc </label>
-                                        </li>
-                                        <li class="filter__item">
-                                            <input type="radio" name="room-filter" id="diningroom-filter" data-filter=".diningroom">
-                                            <label for="diningroom-filter"> Phòng ăn </label>
-                                        </li>
-                                        <li class="filter__item">
-                                            <input type="radio" name="room-filter" id="kitchen-filter" data-filter=".kitchen">
-                                            <label for="kitchen-filter"> Nhà bếp </label>
-                                        </li>
-                                    </ul>
-                                </li>
-        
-                                <!-- Filter by price -->
-                                <li class="sidebar__item price-filter">
-                                    <p class="sidebar__title">Giá</p>
-                                    <div class="slider-range">
-                                        <p class="value"></p>
-                                        <input type="range" id="price-range" min="1" max="100" value="10" step="0.1" class="range">
-                                    </div>
-                                    <button class="btn split-btn filter__btn">
-                                        <span class="content">Áp dụng</span>
-                                    </button>
-                                </li>
-        
-                                <!-- Filter by brand -->
-                                <li class="sidebar__item brand-filter">
-                                    <p class="sidebar__title">Thương hiệu</p>
-                                    <ul class="filter__list">
-                                        <li class="filter__item">
-                                            <input type="checkbox" name="brand-filter" id="penny-filter" data-filter=".penny">
-                                            <label for="penny-filter">Penny</label>
-                                        </li>
-                                        <li class="filter__item">
-                                            <input type="checkbox" name="brand-filter" id="bride-filter" data-filter=".bride">
-                                            <label for="bride-filter">Bride</label>
-                                        </li>
-                                        <li class="filter__item">
-                                            <input type="checkbox" name="brand-filter" id="jazz-filter" data-filter=".jazz">
-                                            <label for="jazz-filter">Jazz</label>
-                                        </li>
-                                        <li class="filter__item">
-                                            <input type="checkbox" name="brand-filter" id="elegance-filter" data-filter=".elegance">
-                                            <label for="elegance-filter">Elegance</label>
-                                        </li>
-                                        <li class="filter__item">
-                                            <input type="checkbox" name="brand-filter" id="rap-filter" data-filter=".rap">
-                                            <label for="rap-filter">Rap</label>
-                                        </li>
-                                    </ul>
-                                </li>
-    
-                                <!-- Filter by category -->
-                                <li class="sidebar__item category-filter">
-                                    <p class="sidebar__title"> Danh mục </p>
-                                    <ul class="filter__list">
-                                        <li class="filter__item">
-                                            <input type="radio" name="category-filter" id="no-category-filter" data-filter="*" checked>
-                                            <label for="no-category-filter"> Tất cả </label>
-                                        </li>
-                                        <li class="filter__item">
-                                            <input type="radio" name="category-filter" id="sofa-armchair-filter" data-filter=".sofa-armchair">
-                                            <label for="sofa-armchair-filter"> Sofa & Armchair </label>
-                                        </li>
-                                        <li class="filter__item">
-                                            <input type="radio" name="category-filter" id="bed-filter" data-filter=".bed">
-                                            <label for="bed-filter"> Giường ngủ </label>
-                                        </li>
-                                        <li class="filter__item">
-                                            <input type="radio" name="category-filter" id="table-filter" data-filter=".table">
-                                            <label for="table-filter"> Bàn </label>
-                                        </li>
-                                        <li class="filter__item">
-                                            <input type="radio" name="category-filter" id="chair-filter" data-filter=".chair">
-                                            <label for="chair-filter"> Ghế </label>
-                                        </li>
-                                        <li class="filter__item">
-                                            <input type="radio" name="category-filter" id="shelf-filter" data-filter=".shelf">
-                                            <label for="shelf-filter"> Tủ kệ </label>
-                                        </li>
-                                        <li class="filter__item">
-                                            <input type="radio" name="category-filter" id="decoration-filter" data-filter=".decoration">
-                                            <label for="decoration-filter"> Trang trí </label>
-                                        </li>
-                                        <li class="filter__item">
-                                            <input type="radio" name="category-filter" id="kitchen-tool-filter" data-filter=".kitchen-tool">
-                                            <label for="kitchen-tool-filter"> Dụng cụ bếp </label>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-    
-                        <!-- Grid of products -->
-    
-                        <div class="grid">
+                    <!-- Sidebar -->
 
-                            <!-- Filterbar -->
-                            <div class="filterbar">
-                                <div class="custom-select">
-                                    <select>
-                                      <option value="0">Mặc định</option>
-                                      <option value="1">Phổ biến nhất</option>
-                                      <option value="2">Mới nhất</option>
-                                      <option value="3">Giảm giá</option>
-                                    </select>
-                                  </div>
-
-                                <div class="custom-select">
-                                    <select>
-                                        <option value="0">Mặc định</option>
-                                        <option value="1">Phổ biến nhất</option>
-                                        <option value="2">Mới nhất</option>
-                                        <option value="3">Giảm giá</option>
-                                    </select>
+                    <div class="sidebar">
+                        <ul class="sidebar__list">
+                            <!-- Filter by room -->
+                            <li class="sidebar__item room-filter">
+                                <p class="sidebar__title"> Phòng </p>
+                                <ul class="filter__list">
+                                    <li class="filter__item">
+                                        <input type="radio" name="room-filter" id="no-room-filter" data-filter="*"  checked>
+                                        <label for="no-room-filter"> Tất cả </label>
+                                    </li>
+                                    <li class="filter__item">
+                                        <input type="radio" name="room-filter" id="livingroom-filter" data-filter=".livingroom">
+                                        <label for="livingroom-filter"> Phòng khách </label>
+                                    </li>
+                                    <li class="filter__item">
+                                        <input type="radio" name="room-filter" id="bedroom-filter" data-filter=".bedroom">
+                                        <label for="bedroom-filter"> Phòng ngủ </label>
+                                    </li>
+                                    <li class="filter__item">
+                                        <input type="radio" name="room-filter" id="workroom-filter" data-filter=".workroom">
+                                        <label for="workroom-filter"> Phòng làm việc </label>
+                                    </li>
+                                    <li class="filter__item">
+                                        <input type="radio" name="room-filter" id="diningroom-filter" data-filter=".diningroom">
+                                        <label for="diningroom-filter"> Phòng ăn </label>
+                                    </li>
+                                    <li class="filter__item">
+                                        <input type="radio" name="room-filter" id="kitchen-filter" data-filter=".kitchen">
+                                        <label for="kitchen-filter"> Nhà bếp </label>
+                                    </li>
+                                </ul>
+                            </li>
+    
+                            <!-- Filter by price -->
+                            <li class="sidebar__item price-filter">
+                                <p class="sidebar__title">Giá</p>
+                                <div class="slider-range">
+                                    <p class="value"></p>
+                                    <input type="range" id="price-range" min="1" max="100" value="10" step="0.1" class="range">
                                 </div>
-                            </div>
+                                <button class="btn split-btn filter__btn">
+                                    <span class="content">Áp dụng</span>
+                                </button>
+                            </li>
+    
+                            <!-- Filter by brand -->
+                            <li class="sidebar__item brand-filter">
+                                <p class="sidebar__title">Thương hiệu</p>
+                                <ul class="filter__list">
+                                    <li class="filter__item">
+                                        <input type="checkbox" name="brand-filter" id="penny-filter" data-filter=".penny">
+                                        <label for="penny-filter">Penny</label>
+                                    </li>
+                                    <li class="filter__item">
+                                        <input type="checkbox" name="brand-filter" id="bride-filter" data-filter=".bride">
+                                        <label for="bride-filter">Bride</label>
+                                    </li>
+                                    <li class="filter__item">
+                                        <input type="checkbox" name="brand-filter" id="jazz-filter" data-filter=".jazz">
+                                        <label for="jazz-filter">Jazz</label>
+                                    </li>
+                                    <li class="filter__item">
+                                        <input type="checkbox" name="brand-filter" id="elegance-filter" data-filter=".elegance">
+                                        <label for="elegance-filter">Elegance</label>
+                                    </li>
+                                    <li class="filter__item">
+                                        <input type="checkbox" name="brand-filter" id="rap-filter" data-filter=".rap">
+                                        <label for="rap-filter">Rap</label>
+                                    </li>
+                                </ul>
+                            </li>
 
-                            <!-- Grid of products -->
-                            <div class="product-grid">
-                                <!-- JS -->
+                            <!-- Filter by category -->
+                            <li class="sidebar__item category-filter">
+                                <p class="sidebar__title"> Danh mục </p>
+                                <ul class="filter__list">
+                                    <li class="filter__item">
+                                        <input type="radio" name="category-filter" id="no-category-filter" data-filter="*" checked>
+                                        <label for="no-category-filter"> Tất cả </label>
+                                    </li>
+                                    <li class="filter__item">
+                                        <input type="radio" name="category-filter" id="sofa-armchair-filter" data-filter=".sofa-armchair">
+                                        <label for="sofa-armchair-filter"> Sofa & Armchair </label>
+                                    </li>
+                                    <li class="filter__item">
+                                        <input type="radio" name="category-filter" id="bed-filter" data-filter=".bed">
+                                        <label for="bed-filter"> Giường ngủ </label>
+                                    </li>
+                                    <li class="filter__item">
+                                        <input type="radio" name="category-filter" id="table-filter" data-filter=".table">
+                                        <label for="table-filter"> Bàn </label>
+                                    </li>
+                                    <li class="filter__item">
+                                        <input type="radio" name="category-filter" id="chair-filter" data-filter=".chair">
+                                        <label for="chair-filter"> Ghế </label>
+                                    </li>
+                                    <li class="filter__item">
+                                        <input type="radio" name="category-filter" id="shelf-filter" data-filter=".shelf">
+                                        <label for="shelf-filter"> Tủ kệ </label>
+                                    </li>
+                                    <li class="filter__item">
+                                        <input type="radio" name="category-filter" id="decoration-filter" data-filter=".decoration">
+                                        <label for="decoration-filter"> Trang trí </label>
+                                    </li>
+                                    <li class="filter__item">
+                                        <input type="radio" name="category-filter" id="kitchen-tool-filter" data-filter=".kitchen-tool">
+                                        <label for="kitchen-tool-filter"> Dụng cụ bếp </label>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Grid of products -->
+
+                    <div class="grid">
+
+                        <!-- Filterbar -->
+                        <div class="filterbar">
+                            <div class="custom-select">
+                                <select>
+                                    <option value="0">Mặc định</option>
+                                    <option value="1">Phổ biến nhất</option>
+                                    <option value="2">Mới nhất</option>
+                                    <option value="3">Giảm giá</option>
+                                </select>
+                                </div>
+
+                            <div class="custom-select">
+                                <select>
+                                    <option value="0">Mặc định</option>
+                                    <option value="1">Phổ biến nhất</option>
+                                    <option value="2">Mới nhất</option>
+                                    <option value="3">Giảm giá</option>
+                                </select>
                             </div>
                         </div>
+
+                        <!-- Grid of products -->
+                        <div class="product-grid">
+                            <!-- JS -->
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -799,6 +798,7 @@
     <script src="./src/js/active.js"></script>
     <script src="./src/js/rest-api.js"></script>
     <script src="./src/js/category-render.js"></script>
+    <script src="./src/js/async-data.js"></script>
 
     <!-- Custom select option -->
     <script>
