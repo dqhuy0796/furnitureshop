@@ -118,7 +118,7 @@ const products = [
       "./src/image/product/1005-sofa-elegance-mau-den-da-brown-1-600x400.jpg",
       "./src/image/product/1005-sofa-elegance-mau-den-da-brown-2-600x400.jpg",
     ],
-    description: "",
+    description: "Asshhh cái thằng chớt tiệc này, mày đang làm cái quái gì vậy hả?!",
   },
   {
     id: 1006,

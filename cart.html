@@ -494,57 +494,101 @@
 
     <!-- CONTAINER -->
     <div class="container">
-        <div class="cart">
+
+        <!-- Breadcrumbs -->
+        <section class="home-section breadcrumbs">
             <div class="wrapper">
-                <div class="breadcrumbs">
-                    <a href="./index.html" class="title__link">Trang chủ</a>
-                    <span> > </span>
-                    <a href="#" class="title__link">Giỏ hàng</a>
-                </div>
-                <div class="page-container">
-                    <div class="cart-container">
-                        <ul class="cart__list">
-                            <!-- JS -->
-                        </ul>
-                    </div>
+                <a href="./index.html" class="title__link">Trang chủ</a>
+                <span> > </span>
+                <a href="#" class="title__link">Giỏ hàng</a>
+            </div>
+        </section>
+
+        <!-- Cart -->
+        <section class="home-section cart">
+            <div class="wrapper">
+
+                <!-- List item -->
+                <ul class="cart__list cart-container">
+                    <!-- JS -->
+                </ul>
+
+                <!-- Order -->
+                <div class="order-container">
 
                     <div class="order">
-                        <div class="order-detail">
-                            <div class="order-header">
-                                <h3 class="order__title">Chi tiết hoá đơn</h3>
-                            </div>
-                            <ul class="order-container">
-                                <li class="order__item order__subtotal">
-                                    <span class="subtitle">Tạm tính:</span>
-                                    <span class="value">0</span>
-                                </li>
-                                <li class="order__item order__delivery">
-                                    <span class="subtitle">Phí vận chuyển:</span>
-                                    <span class="value">Miễn phí</span>
-                                </li>
-                                <li class="order__item order__voucher">
-                                    <span class="subtitle">Mã giảm giá:</span>
-                                    <span class="value">Chưa cập nhật</span>
-                                </li>
-                                <li class="order__item order__total">
-                                    <span class="subtitle">Tổng thanh toán:</span>
-                                    <span class="value">0</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <a href="#" class="btn split-btn order-btn">
-                            <span class="content">Đặt hàng</span>
-                        </a>
-                        <a href="./index.html" class="btn split-btn back-to-shop-btn">                           
-                            <span class="content">
-                                <i class="fas fa-arrow-left"></i>
-                                Tiếp tục mua hàng
-                            </span>
-                        </a>
+
+                        <!-- Title -->
+                        <h3 class="order__title">Chi tiết hoá đơn</h3>
+
+                        <!-- Order container -->
+                        <ul class="order__list">
+
+                            <!-- Subtotal -->
+                            <li class="order__item order__subtotal">
+                                <span class="subtitle">Tạm tính:</span>
+                                <span class="value">0</span>
+                            </li>
+
+                            <!-- Delivery -->
+                            <li class="order__item order__delivery">
+                                <span class="subtitle">Phí vận chuyển:</span>
+                                <span class="value">Miễn phí</span>
+                            </li>
+
+                            <!-- Discount Voucher -->
+                            <li class="order__item order__voucher">
+                                <span class="subtitle">Mã giảm giá:</span>
+                                <span class="value">Chưa cập nhật</span>
+                            </li>
+
+                            <!-- Total Payment -->
+                            <li class="order__item order__total">
+                                <span class="subtitle">Tổng thanh toán:</span>
+                                <span class="value">0</span>
+                            </li>
+
+                            <!-- Order button -->
+                            <li class="order__item">
+                                <a href="#" class="btn split-btn primary order-btn">
+                                    <span class="content">Đặt hàng</span>
+                                </a>
+                                <a href="./index.html" class="btn split-btn back-to-shop-btn">                           
+                                    <span class="content">
+                                        <i class="fas fa-arrow-left"></i>
+                                        Tiếp tục mua hàng
+                                    </span>
+                                </a>
+                            </li>
+
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- Maybe you like -->
+        <section class="home-section maybe-you-like">
+            <div class="wrapper">
+
+                <!-- Section title -->
+                <h2 class="section-title">Có thể bạn cũng thích</h2>
+                
+                <!-- Suggestion swiper -->
+                <div class="swiper suggestion-swiper">
+                    <div class="swiper-wrapper suggestion-swiper-wrapper">
+                    <!-- JS HERE -->
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+                <!-- See more button -->
+                <a href="#" class="btn split-btn see-more-btn">
+                    <span class="content">Xem tất cả</span>
+                </a>
+            </div>
+        </section>
     </div>
 
     <!-- SHORTCUT -->
@@ -683,5 +727,7 @@
     <script src="./src/js/rest-api.js"></script>
     <script src="./src/js/cart-render.js"></script>
     <script src="./src/js/async-data.js"></script>
+    <script src="./src/js/swiper-bundle.min.js"></script>
+    <script src="./src/js/swiper.js"></script>
 </body>
 </html>

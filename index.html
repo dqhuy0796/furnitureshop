@@ -14,7 +14,6 @@
     
     <link rel="stylesheet" href="./src/css/main.css">
     <link rel="stylesheet" href="./src/css/responsive.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
 
@@ -496,68 +495,71 @@
 
     <div class="container">
 
-        <!-- Banner -->
-        <div class="home-banner">
-            <div class="swiper banner-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="./src/image/banner/banner-1.jpg" alt="Nội thất Công Uẩn" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./src/image/banner/banner-2.jpg" alt="Nội thất Công Uẩn" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./src/image/banner/banner-4.jpg" alt="Nội thất Công Uẩn" />
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
+        <section class="home-section">
 
-        <!-- Policy -->
-        <div class="home-policy">
-            <ul class="policy__list">
-                <li class="policy__item">
-                    <div class="policy__img">
-                        <i class="fal fa-couch"></i>
+            <!-- Banner -->
+            <div class="home-banner">
+                <div class="swiper banner-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./src/image/banner/banner-1.jpg" alt="Nội thất Công Uẩn" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./src/image/banner/banner-2.jpg" alt="Nội thất Công Uẩn" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./src/image/banner/banner-4.jpg" alt="Nội thất Công Uẩn" />
+                        </div>
                     </div>
-                    <p class="policy__content">
-                        <span>Sản phẩm hiện đại, </span>
-                        <span>Thiết kế thông minh</span>
-                    </p>
-                </li>
-                <li class="policy__item">
-                    <div class="policy__img">
-                        <i class="fal fa-user-headset"></i>
-                    </div>
-                    <p class="policy__content">
-                        <span>Hỗ trợ tư vấn </span>
-                        <span>CSKH khách hàng 24/7</span>
-                    </p>
-                </li>
-                <li class="policy__item">
-                    <div class="policy__img">
-                        <i class="fal fa-shipping-fast"></i>
-                    </div>
-                    <p class="policy__content">
-                        <span>FREESHIP COD </span>
-                        <span>với đơn hàng > 10tr</span>                    
-                    </p>
-                </li>
-                <li class="policy__item">
-                    <div class="policy__img">
-                        <i class="fal fa-shield-check"></i>
-                    </div>
-                    <p class="policy__content">
-                        <span>Chính sách bảo hành </span>
-                        <span>lên tới 24 tháng</span>
-                    </p>
-                </li>
-            </ul>
-        </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+    
+            <!-- Policy -->
+            <div class="home-policy">
+                <ul class="policy__list">
+                    <li class="policy__item">
+                        <div class="policy__img">
+                            <i class="fal fa-couch"></i>
+                        </div>
+                        <p class="policy__content">
+                            <span>Sản phẩm hiện đại, </span>
+                            <span>Thiết kế thông minh</span>
+                        </p>
+                    </li>
+                    <li class="policy__item">
+                        <div class="policy__img">
+                            <i class="fal fa-user-headset"></i>
+                        </div>
+                        <p class="policy__content">
+                            <span>Hỗ trợ tư vấn </span>
+                            <span>CSKH khách hàng 24/7</span>
+                        </p>
+                    </li>
+                    <li class="policy__item">
+                        <div class="policy__img">
+                            <i class="fal fa-shipping-fast"></i>
+                        </div>
+                        <p class="policy__content">
+                            <span>FREESHIP COD </span>
+                            <span>với đơn hàng > 10tr</span>                    
+                        </p>
+                    </li>
+                    <li class="policy__item">
+                        <div class="policy__img">
+                            <i class="fal fa-shield-check"></i>
+                        </div>
+                        <p class="policy__content">
+                            <span>Chính sách bảo hành </span>
+                            <span>lên tới 24 tháng</span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
         <!-- latest product -->
-        <div class="home-section home-latest js-scroll fade-in">
+        <section class="home-section home-latest js-scroll fade-in">
             <div class="wrapper">
                 <h2 class="section-title">Sản phẩm mới</h2>
                 <div class="swiper latest-swiper">
@@ -571,10 +573,10 @@
                     <span class="content">Xem tất cả</span>
                 </a>
             </div>
-          </div>
+        </section>
 
         <!-- Shop by room -->
-        <div class="home-section home-shop-by-room js-scroll fade-in">
+        <section class="home-section home-shop-by-room js-scroll fade-in">
             <h2 class="section-title">Không gian</h2>
             <ul class="home-shop-by-room__list">
                 <li class="home-shop-by-room__item js-scroll fade-in">
@@ -614,10 +616,10 @@
                     </div>
                 </li>
             </ul>
-        </div>
+        </section>
 
         <!-- Feature product -->
-        <div class="home-section home-featured js-scroll fade-in">
+        <section class="home-section home-featured js-scroll fade-in">
             <div class="wrapper">
                 <h2 class="section-title">Sản phẩm nổi bật</h2>
                 <div class="swiper featured-swiper">
@@ -635,20 +637,20 @@
                     <span class="content">Xem tất cả</span>
                 </a>
             </div>
-        </div>
+        </section>
 
         <!-- Stylish -->
-        <div class="home-section home-stylish js-scroll fade-in">
+        <section class="home-section home-stylish js-scroll fade-in">
             <div class="swiper stylish-swiper">
                 <div class="swiper-wrapper stylish-swiper-wrapper">
                     <!-- JS HERE -->
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
-        </div>
+        </section>
 
         <!-- Contact form -->
-        <div class="home-section home-contact js-scroll fade-in">
+        <section class="home-section home-contact js-scroll fade-in">
             <div class="wrapper">
                 <div class="contact__container">
 
@@ -672,10 +674,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Inspiration -->
-        <div class="home-section home-inspiration js-scroll fade-in">
+        <section class="home-section home-inspiration js-scroll fade-in">
             <h2 class="section-title">Khám phá và cảm hứng sáng tạo</h2>
             
             <!-- Inspiration list -->
@@ -726,10 +728,10 @@
             <a href="#" class="btn split-btn see-more-btn home-featured__link">
                 <span class="content">Xem tất cả</span>
             </a>
-        </div>
+        </section>
 
         <!-- About -->
-        <div class="home-section home-about js-scroll fade-in">
+        <section class="home-section home-about js-scroll fade-in">
             <div class="wrapper">
                 <div class="about__container">
                     <div class="about__content">
@@ -741,7 +743,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
 
     <!-- SHORTCUT -->
@@ -881,7 +883,7 @@
     </footer>
 
     <!-- JS -->
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./src/js/swiper-bundle.min.js"></script>
     <script src="./src/js/swiper.js"></script>
     <script src="./src/js/active.js"></script>
     <script src="./src/js/rest-api.js"></script>

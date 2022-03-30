@@ -28,14 +28,14 @@ html {
     --text: #292929;
     --primary: #fec734;
     --secondary: #724935;
-    --red: #ff0001;
+    --red: #ff3737;
     --gold: #ffd900;
 }
 
 .wrapper{
+    margin: 0 auto;
     width: calc(100% - 16px);
     max-width: 1240px;
-    margin: 0 auto;
 }
 .d-flex{
     display: flex;
@@ -107,13 +107,11 @@ a {
 
 /* Input range */
 
-/* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-/* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
 }

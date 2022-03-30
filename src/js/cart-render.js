@@ -1,9 +1,9 @@
 // Render cart's product
 const cartProductList = document.querySelector(".cart__list");
-const cartSubtotal = document.querySelector(".order-detail .order__subtotal .value");
-const cartTotalPayment = document.querySelector(".order-detail .order__total .value");
-const shortcutCartQuantity = document.querySelector(".shortcut .shortcut__cart-quantity");
-const mobileCartQuantity = document.querySelector(".mobile-btn.home-cart-btn .cart-quantity");
+const cartSubtotal = document.querySelector(".order__subtotal .value");
+const cartTotalPayment = document.querySelector(".order__total .value");
+const shortcutCartQuantity = document.querySelector(".shortcut__cart-quantity");
+const mobileCartQuantity = document.querySelector(".home-cart-btn .cart-quantity");
 
 let globalSubtotal = 0;
 let globalQuantity = 0;
@@ -58,6 +58,7 @@ const renderCartProductItem = (product) => {
         cartProductList.appendChild(cartProductItem);     
     }
 };
+
 renderCartProductList();
 
 // Render order detail
@@ -100,7 +101,46 @@ cartListItem.forEach(product => {
 // Remove cart item
 function removeCartItem(event){
     var buttonClicked = event.target;
-    buttonClicked.parentElement.parentElement.parentElement.remove();
+    let itemClicked = buttonClicked.parentElement.parentElement.parentElement;
+    itemClicked.addEventListener('click', (event) => {event.preventDefault();});
+    itemClicked.remove();
     updateCartNumber();
 }
 
+// List of latest products
+let discountPercent = (newPrice, oldPrice) => {
+    return Math.round((newPrice-oldPrice)/oldPrice*100);
+};
+
+const suggestionList = document.querySelector(".suggestion-swiper-wrapper");
+const renderSuggestionList = () => {
+  products.map((product) => renderSuggestionItem(product));
+};
+
+const renderSuggestionItem = (product) => {
+  if (product.tag.includes(0)) {
+    const suggestionItem = document.createElement("div");
+    suggestionItem.className = "swiper-slide";
+    suggestionItem.innerHTML = `
+    <a href="./product-detail.html" id="${product.id}" class="product">
+      <p class="product__discount">
+        ${discountPercent(product.newPrice, product.oldPrice)}%
+        <span>off</span>
+      </p>
+      <div class="product__img">
+        <img src="${product.imageUrl[0]}" alt="${product.name}"/>
+      </div>
+      <div class="product__info">
+        <p class="product__name">${product.name}</p>
+        <div class="product__price">
+          <span class="old">${product.oldPrice.toLocaleString('vn-VI', { style: 'currency', currency: 'VND' })}</span>
+          <span class="new">${product.newPrice.toLocaleString('vn-VI', { style: 'currency', currency: 'VND' })}</span>
+        </div>
+      </div>
+    </a>
+    `;
+    suggestionList.appendChild(suggestionItem);     
+  }
+};
+
+renderSuggestionList();

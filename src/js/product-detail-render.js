@@ -109,7 +109,7 @@ const renderSuggestionList = () => {
 };
 
 const renderSuggestionItem = (product) => {
-  if (product.tag.includes(0)) {
+  if (product.id != currentItemId) {
     const suggestionItem = document.createElement("div");
     suggestionItem.className = "swiper-slide";
     suggestionItem.innerHTML = `
@@ -133,4 +133,5 @@ const renderSuggestionItem = (product) => {
     suggestionList.appendChild(suggestionItem);     
   }
 };
+
 renderSuggestionList();
