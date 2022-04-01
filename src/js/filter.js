@@ -9,9 +9,7 @@ function filterSelection(filterArray) {
     else{
         for (let i = 0; i < filterProducts.length; i++) {
             removeFilterClass(filterProducts[i], "display");
-            console.log(filterProducts[i]);
             for (let j = 0; j < filterArray.length; j++) {          
-                console.log(filterArray[j]);
                 if (filterProducts[i].getAttribute("data-category").indexOf(filterArray[j]) > -1){
                     addFilterClass(filterProducts[i], "display");
                 }

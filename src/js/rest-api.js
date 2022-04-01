@@ -1,5 +1,11 @@
 // PRODUCT
 
+// fetch('http://localhost:3000/products')
+//   .then(response => response.json())
+//   .then(data => {
+//     console.log(data)
+//   });
+
 const tag = [
   "mới nhất", // 0
   "phổ biến nhất", // 1
@@ -14,30 +20,15 @@ const material = [
   "vải", // 6
   "da", // 7
 ];
-const category = [
-  "living-room", // 0
-  "working-room", // 1
-  "bedroom", // 2
-  "dining-room", // 3
-  "kitchen", // 4
-  "sofa", // 5
-  "armchair", // 6
-  "table", // 7
-  "chair", // 8
-  "bed", // 9
-  "cabinet", // 10
-  "shelf", // 11
-  "decoration", // 12
-  "kitchen-tool", // 13
-];
 
 const products = [
   {
     id: 1001,
     name: "Sofa 3 chỗ PENNY – vải màu cam",
     brand: "penny",
-    tag: [0, 1],
-    category: [0, 5],
+    tag: "mới nhất",
+    room: "phòng khách",
+    category: "sofa",
     oldPrice: 26900000,
     newPrice: 19900000,
     size: "D2400 - R880 - C850",
@@ -56,8 +47,9 @@ const products = [
     id: 1002,
     name: "Sofa 3 chỗ PENNY – vải màu xanh lá",
     brand: "penny",
-    tag: [0, 1],
-    category: [0, 5],
+    tag: "mới nhất",
+    room: "phòng khách",
+    category: "sofa",
     oldPrice: 26900000,
     newPrice: 19900000,
     size: "D2400 - R880 - C850",
@@ -72,8 +64,9 @@ const products = [
     id: 1003,
     name: "Sofa 3 chỗ PENNY – vải màu tím",
     brand: "penny",
-    tag: [0, 1],
-    category: [0, 5],
+    tag: "mới nhất",
+    room: "phòng khách",
+    category: "sofa",
     oldPrice: 26900000,
     newPrice: 19900000,
     size: "D2400 - R880 - C850",
@@ -90,8 +83,9 @@ const products = [
     id: 1004,
     name: "Sofa 3 chỗ PENNY – vải màu xám D2",
     brand: "penny",
-    tag: [0, 1],
-    category: [0, 5],
+    tag: "mới nhất",
+    room: "phòng khách",
+    category: "sofa",
     oldPrice: 26900000,
     newPrice: 19900000,
     size: "D2400 - R880 - C850",
@@ -108,8 +102,9 @@ const products = [
     id: 1005,
     name: "Sofa 3 chỗ Elegance màu đen, da Brown R5",
     brand: "elegance",
-    tag: [0, 1],
-    category: [0, 5],
+    tag: "mới nhất",
+    room: "phòng khách",
+    category: "sofa",
     oldPrice: 124850000,
     newPrice: 99900000,
     size: "D2400 - R880 - C850",
@@ -118,14 +113,16 @@ const products = [
       "./src/image/product/1005-sofa-elegance-mau-den-da-brown-1-600x400.jpg",
       "./src/image/product/1005-sofa-elegance-mau-den-da-brown-2-600x400.jpg",
     ],
-    description: "Asshhh cái thằng chớt tiệc này, mày đang làm cái quái gì vậy hả?!",
+    description:
+      "Asshhh cái thằng chớt tiệc này, mày đang làm cái quái gì vậy hả?!",
   },
   {
     id: 1006,
     name: "Sofa 3 chỗ Elegance màu tự nhiên, da cognac",
     brand: "elegance",
-    tag: [0, 1],
-    category: [0, 5],
+    tag: "mới nhất",
+    room: "phòng khách",
+    category: "sofa",
     oldPrice: 124850000,
     newPrice: 99900000,
     size: "D2250 - R905 - C790",
@@ -140,8 +137,9 @@ const products = [
     id: 1007,
     name: "Sofa 3 chỗ Elegance màu tự nhiên, da xanh",
     brand: "elegance",
-    tag: [0, 1],
-    category: [0, 5],
+    tag: "mới nhất",
+    room: "phòng khách",
+    category: "sofa",
     oldPrice: 118370000,
     newPrice: 99900000,
     size: "D2250 - R905 - C790",
@@ -156,8 +154,9 @@ const products = [
     id: 1008,
     name: "Sofa 3 chỗ Elegance màu tự nhiên, vải xanh",
     brand: "elegance",
-    tag: [0, 1],
-    category: [0, 5],
+    tag: "mới nhất",
+    room: "phòng khách",
+    category: "sofa",
     oldPrice: 85970000,
     newPrice: 69900000,
     size: "D2250 - R905 - C790",
@@ -172,8 +171,9 @@ const products = [
     id: 1009,
     name: "Sofa Bridge 3 chỗ hiện đại da Beige",
     brand: "bridge",
-    tag: [0, 1],
-    category: [0, 5],
+    tag: "mới nhất",
+    room: "phòng khách",
+    category: "sofa",
     oldPrice: 109890000,
     newPrice: 89900000,
     size: "D2100 - R900 - C750",
@@ -191,8 +191,9 @@ const products = [
     id: 1010,
     name: "Sofa Bridge 3 chỗ hiện đại da cognac",
     brand: "bridge",
-    tag: [0, 1],
-    category: [0, 5],
+    tag: "mới nhất",
+    room: "phòng khách",
+    category: "sofa",
     oldPrice: 109890000,
     newPrice: 89900000,
     size: "D2100 - R900 - C750",
@@ -210,8 +211,9 @@ const products = [
     id: 1011,
     name: "Sofa Jazz 3 chỗ hiện đại da cognac",
     brand: "jazz",
-    tag: [0, 1],
-    category: [0, 5],
+    tag: "mới nhất",
+    room: "phòng khách",
+    category: "sofa",
     oldPrice: 58810000,
     newPrice: 49900000,
     size: "D2300 - R840 - C760",
@@ -234,8 +236,9 @@ const products = [
     id: 1012,
     name: "Sofa Jazz 3 chỗ hiện đại da nâu (sẫm)",
     brand: "jazz",
-    tag: [0, 1],
-    category: [0, 5],
+    tag: "mới nhất",
+    room: "phòng khách",
+    category: "sofa",
     oldPrice: 58810000,
     newPrice: 49900000,
     size: "D2300 - R840 - C760",
@@ -251,8 +254,9 @@ const products = [
     id: 1013,
     name: "Sofa góc trái Rap hiện đại vải vàng",
     brand: "rap",
-    tag: [0, 1],
-    category: [0, 5],
+    tag: "mới nhất",
+    room: "phòng khách",
+    category: "sofa góc",
     oldPrice: 29360000,
     newPrice: 26900000,
     size: "D2530/1760- R850- C700",
@@ -265,70 +269,78 @@ const products = [
   },
 ];
 
-
 // BANNER
 const stylishs = [
   {
-      id: 1,
-      title: "Minimalism",
-      subtitle: "Đơn giản là đẹp",
-      description: "Sự thừa thãi được cho là không cần thiết đối với phong cách này. Minimalism chủ yếu sử dụng những đường nét đơn giản, những đồ dùng nội thất gọn gàng. Màu sắc sử dụng trong phong cách thiết kế nội thất này chủ yếu là màu trung tính, có không quá ba màu trong không gian nội thất theo phong cách này: một màu nền, một màu chủ đạo và một màu nhấn. và thường sử dụng những khối hình học đa dạng như hình vuông, hình chữ nhật, hình tròn…",
-      imageUrl: "./src/image/stylish/minimalism.jpg"
+    id: 1,
+    title: "Minimalism",
+    subtitle: "Đơn giản là đẹp",
+    description:
+      "Sự thừa thãi được cho là không cần thiết đối với phong cách này. Minimalism chủ yếu sử dụng những đường nét đơn giản, những đồ dùng nội thất gọn gàng. Màu sắc sử dụng trong phong cách thiết kế nội thất này chủ yếu là màu trung tính, có không quá ba màu trong không gian nội thất theo phong cách này: một màu nền, một màu chủ đạo và một màu nhấn. và thường sử dụng những khối hình học đa dạng như hình vuông, hình chữ nhật, hình tròn…",
+    imageUrl: "./src/image/stylish/minimalism.jpg",
   },
   {
-      id: 2,
-      title: "Classic",
-      subtitle: "Cổ điển mang lại sự sang trọng",
-      description: "Đây là phong cách đứng thứ hai trong top 10 phong cách thiết kế nội thất phổ biến nhất thế giới. Những kiến trúc cổ điển đặc trưng với những đường cong hoàn hảo. Màu sắc nhã nhặn và cao quý mang hơi hướng hoàng gia cũng giúp phong cách này trở nên sang trọng",
-      imageUrl: "./src/image/stylish/classic.jpg"
+    id: 2,
+    title: "Classic",
+    subtitle: "Cổ điển mang lại sự sang trọng",
+    description:
+      "Đây là phong cách đứng thứ hai trong top 10 phong cách thiết kế nội thất phổ biến nhất thế giới. Những kiến trúc cổ điển đặc trưng với những đường cong hoàn hảo. Màu sắc nhã nhặn và cao quý mang hơi hướng hoàng gia cũng giúp phong cách này trở nên sang trọng",
+    imageUrl: "./src/image/stylish/classic.jpg",
   },
   {
-      id: 3,
-      title: "Rustic",
-      subtitle: "Sống xanh cùng thiên nhiên",
-      description: "Đây là kiểu hình kiến trúc nội thất hòa nhập với thiên nhiên. Những đồ dùng nội thất mộc mạc, thô sơ hay những bức tường bằng gạch thô hoặc đá tự nhiên mang đến nét độc đáo cho thiết kế này, vừa định hình không gian kiến trúc vừa cho thấy sự gắn kết với thiên nhiên trong nhà.",
-      imageUrl: "./src/image/stylish/rustic.jpg"
+    id: 3,
+    title: "Rustic",
+    subtitle: "Sống xanh cùng thiên nhiên",
+    description:
+      "Đây là kiểu hình kiến trúc nội thất hòa nhập với thiên nhiên. Những đồ dùng nội thất mộc mạc, thô sơ hay những bức tường bằng gạch thô hoặc đá tự nhiên mang đến nét độc đáo cho thiết kế này, vừa định hình không gian kiến trúc vừa cho thấy sự gắn kết với thiên nhiên trong nhà.",
+    imageUrl: "./src/image/stylish/rustic.jpg",
   },
   {
-      id: 4,
-      title: "Modern",
-      subtitle: "Dẫn đầu xu thế",
-      description: "Phong cách hiện đại tập trung vào những chi tiết, những hình dáng đường nét đơn giản. Trong phong cách thiết kế nội thất hiện đại, các kiến trúc sư chủ yếu chú trọng vào việc tạo ra công năng sử dụng. Mang đến một không gian thoải mái, tiện nghi và đầy đủ công năng. ",
-      imageUrl: "./src/image/stylish/modern.jpg"
+    id: 4,
+    title: "Modern",
+    subtitle: "Dẫn đầu xu thế",
+    description:
+      "Phong cách hiện đại tập trung vào những chi tiết, những hình dáng đường nét đơn giản. Trong phong cách thiết kế nội thất hiện đại, các kiến trúc sư chủ yếu chú trọng vào việc tạo ra công năng sử dụng. Mang đến một không gian thoải mái, tiện nghi và đầy đủ công năng. ",
+    imageUrl: "./src/image/stylish/modern.jpg",
   },
   {
-      id: 5,
-      title: "Hitech",
-      subtitle: "Nắm bắt xu hướng của tương lai",
-      description: "Những kim loại sáng bóng hay những mặt kính tạo nên nét độc đáo trong phong cách này. Ở đây những vật liệu nhân tạo được chú trọng sử dụng để tạo nên một không gian nội thất mới mẻ trên mặt bằng phẳng, ít chi tiết.",
-      imageUrl: "./src/image/stylish/hitech.jpg"
+    id: 5,
+    title: "Hitech",
+    subtitle: "Nắm bắt xu hướng của tương lai",
+    description:
+      "Những kim loại sáng bóng hay những mặt kính tạo nên nét độc đáo trong phong cách này. Ở đây những vật liệu nhân tạo được chú trọng sử dụng để tạo nên một không gian nội thất mới mẻ trên mặt bằng phẳng, ít chi tiết.",
+    imageUrl: "./src/image/stylish/hitech.jpg",
   },
   {
-      id: 6,
-      title: "Elegant country",
-      subtitle: "Nhẹ nhàng & lãng mạn",
-      description: "Phong cách đồng quê chịu ảnh hưởng rất lớn từ những quốc gia lớn như Mỹ, Anh, Pháp,… Những thiết kế theo phong cách này thường có những họa tiết thanh lịch, lãng mạn như hoa, cỏ… Những màu sắc sử dụng trong phong cách này thường là màu pastel ngọt ngào với bề mặt được sơn hoặc phủ một lớp gỉ nhẹ.",
-      imageUrl: "./src/image/stylish/elegant-country.jpg"
+    id: 6,
+    title: "Elegant country",
+    subtitle: "Nhẹ nhàng & lãng mạn",
+    description:
+      "Phong cách đồng quê chịu ảnh hưởng rất lớn từ những quốc gia lớn như Mỹ, Anh, Pháp,… Những thiết kế theo phong cách này thường có những họa tiết thanh lịch, lãng mạn như hoa, cỏ… Những màu sắc sử dụng trong phong cách này thường là màu pastel ngọt ngào với bề mặt được sơn hoặc phủ một lớp gỉ nhẹ.",
+    imageUrl: "./src/image/stylish/elegant-country.jpg",
   },
   {
-      id: 7,
-      title: "Retro",
-      subtitle: "Hoài niệm những thiết kế sang trọng",
-      description: "Đây là những thiết kế nội thất theo kiểu thập niên 50, 60 của thế kỷ trước. Những màu sắc vui tươi, hài hước và màu sắc nổi bật đã làm nên đặc trưng của phong cách hoàn hảo này. ",
-      imageUrl: "./src/image/stylish/retro.jpg"
+    id: 7,
+    title: "Retro",
+    subtitle: "Hoài niệm những thiết kế sang trọng",
+    description:
+      "Đây là những thiết kế nội thất theo kiểu thập niên 50, 60 của thế kỷ trước. Những màu sắc vui tươi, hài hước và màu sắc nổi bật đã làm nên đặc trưng của phong cách hoàn hảo này. ",
+    imageUrl: "./src/image/stylish/retro.jpg",
   },
   {
-      id: 8,
-      title: "Maverick",
-      subtitle: "Độc mà lạ",
-      description: "Đây là một phong cách thiết kế sáng tạo, độc đáo và trẻ trung. Với phong cách maverick bạn không cần phải tuân theo bất cứ một quy tắc nào. Những thiết kế theo phong cách này thường có cấu trúc chồng chéo nhau, phối màu ngẫu nhiên ngay cả trong cùng một phòng.",
-      imageUrl: "./src/image/stylish/maverick.jpg"
+    id: 8,
+    title: "Maverick",
+    subtitle: "Độc mà lạ",
+    description:
+      "Đây là một phong cách thiết kế sáng tạo, độc đáo và trẻ trung. Với phong cách maverick bạn không cần phải tuân theo bất cứ một quy tắc nào. Những thiết kế theo phong cách này thường có cấu trúc chồng chéo nhau, phối màu ngẫu nhiên ngay cả trong cùng một phòng.",
+    imageUrl: "./src/image/stylish/maverick.jpg",
   },
   {
-      id: 9,
-      title: "Scandinavian",
-      subtitle: "Phong cách kiến trúc Bắc Âu",
-      description: "Đây là phong cách đang phát triển rất mạnh mẽ tại Việt Nam trong những năm gần đây. Phong cách này thể hiện sự sang trọng và tinh tế qua những màu sắc trung tính mà nổi bật nhất chính là màu sắc sáng trắng, màu nâu hay màu kem. Mặc dù đơn giản trong thiết kế, nhưng các đường nét thường được kết hợp với sự sang trọng kín đáo và ấm áp, đã tạo nên một cảm giác rất giản dị, phù hợp với những căn hộ nhỏ cần tạo không gian thoáng đãng.",
-      imageUrl: "./src/image/stylish/scandinavian.jpg"
-  }
-]
+    id: 9,
+    title: "Scandinavian",
+    subtitle: "Phong cách kiến trúc Bắc Âu",
+    description:
+      "Đây là phong cách đang phát triển rất mạnh mẽ tại Việt Nam trong những năm gần đây. Phong cách này thể hiện sự sang trọng và tinh tế qua những màu sắc trung tính mà nổi bật nhất chính là màu sắc sáng trắng, màu nâu hay màu kem. Mặc dù đơn giản trong thiết kế, nhưng các đường nét thường được kết hợp với sự sang trọng kín đáo và ấm áp, đã tạo nên một cảm giác rất giản dị, phù hợp với những căn hộ nhỏ cần tạo không gian thoáng đãng.",
+    imageUrl: "./src/image/stylish/scandinavian.jpg",
+  },
+];

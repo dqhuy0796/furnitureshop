@@ -1,0 +1,24 @@
+{
+  "name": "uannu-furniture",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "json-server --watch rest-api.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dqhuy0796/funitureshop.git"
+  },
+  "author": "dqhuy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dqhuy0796/funitureshop/issues"
+  },
+  "homepage": "https://github.com/dqhuy0796/funitureshop#readme"
+}

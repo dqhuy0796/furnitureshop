@@ -7,8 +7,7 @@ const renderLatestList = () => {
   products.map((product) => renderLatestItem(product));
 };
 
-const renderLatestItem = (product) => {
-  if (product.tag.includes(0)) {
+const renderLatestItem = (product) => { 
     const latestItem = document.createElement("div");
     latestItem.className = "swiper-slide";
     latestItem.innerHTML = `
@@ -30,7 +29,6 @@ const renderLatestItem = (product) => {
     </a>
     `;
     latestList.appendChild(latestItem);     
-  }
 };
 renderLatestList();
 
@@ -41,7 +39,6 @@ const renderFeaturedList = () => {
 };
 
 const renderFeaturedItem = (product) => {
-  if (product.tag.includes(0)) {
     const featuredItem = document.createElement("div");
     featuredItem.className = "swiper-slide";
     featuredItem.innerHTML = `
@@ -63,7 +60,6 @@ const renderFeaturedItem = (product) => {
     </a>
     `;
     featuredList.appendChild(featuredItem);     
-  }
 };
 renderFeaturedList();
 

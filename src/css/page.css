@@ -493,7 +493,8 @@
     font-size: 2.4rem;
     color: var(--text);
 }
-.shortcut__cart-quantity{
+.shortcut__list .cart-quantity{
+    display: block;
     text-align: center;
     font-size: 2rem;
     font-weight: 700;

@@ -2,29 +2,31 @@
 const cartProductList = document.querySelector(".cart__list");
 const cartSubtotal = document.querySelector(".order__subtotal .value");
 const cartTotalPayment = document.querySelector(".order__total .value");
-const shortcutCartQuantity = document.querySelector(".shortcut__cart-quantity");
+const shortcutCartQuantity = document.querySelector(".shortcut__list .cart-quantity");
 const mobileCartQuantity = document.querySelector(".home-cart-btn .cart-quantity");
 
 let globalSubtotal = 0;
-let globalQuantity = 0;
+let userCart = JSON.parse(localStorage.getItem("cart")) ?? [];
 
 const renderCartProductList = () => {
-    products.map((product) => renderCartProductItem(product));
-    mobileCartQuantity.innerText = `${globalQuantity}`;
-    shortcutCartQuantity.innerText = `${globalQuantity}`;
+    products.map((product) => {
+        userCart.forEach(item => {
+            if(product.id == item.id){
+                renderCartProductItem(product, item.qty);
+            }
+        });
+    });
     cartSubtotal.innerText = `${globalSubtotal.toLocaleString('vn-VI', { style: 'currency', currency: 'VND' })}`;
     cartTotalPayment.innerText = `${globalSubtotal.toLocaleString('vn-VI', { style: 'currency', currency: 'VND' })}`;
 };
 
-const renderCartProductItem = (product) => {
-    if (product.brand == 'penny') {
-        // update subtotal
-        globalQuantity++;
-        globalSubtotal += product.newPrice;
-        // render product as a HTML element
-        const cartProductItem = document.createElement("li");
-        cartProductItem.className = "cart__item";
-        cartProductItem.innerHTML = `
+const renderCartProductItem = (product, qty) => {
+    // Update subtotal
+    globalSubtotal += product.newPrice;
+    // Render product as a HTML element
+    const cartProductItem = document.createElement("li");
+    cartProductItem.className = "cart__item";
+    cartProductItem.innerHTML = `
         <a href="./product-detail.html" id="${product.id}" class="product cart-product col-cart-product">
             <div class="product__img">
                 <img src="${product.imageUrl[0]}" alt="${product.name}"/>
@@ -37,15 +39,15 @@ const renderCartProductItem = (product) => {
                     <span class="old">${product.oldPrice.toLocaleString('vn-VI', { style: 'currency', currency: 'VND' })}</span>
                     <span class="new">${product.newPrice.toLocaleString('vn-VI', { style: 'currency', currency: 'VND' })}</span>
                 </div>
-                <button class="product__remove"> Xoá </button>
+                <button class="product__remove" onclick="removeCartItem(${product.id});"> Xoá </button>
             </div>
         </a>
         <div class="cart-calculator col-cart-calculator">
-            <div class="cart-quantity product__quantity">
+            <div class="product__quantity">
                 <button class="quantity-btn decrease">
                     <i class="fas fa-minus"></i>
                 </button>
-                <input type="number" class="quantity-value" name="" id="" min="1" max="99" value="1" readonly>
+                <input type="number" class="quantity-value" name="" id="" min="1" max="99" value="${qty}" readonly>
                 <button class="quantity-btn increase">
                     <i class="fas fa-plus"></i>
                 </button>
@@ -55,8 +57,7 @@ const renderCartProductItem = (product) => {
             </div>
         </div>
         `;
-        cartProductList.appendChild(cartProductItem);     
-    }
+    cartProductList.appendChild(cartProductItem);     
 };
 
 renderCartProductList();
@@ -118,7 +119,6 @@ const renderSuggestionList = () => {
 };
 
 const renderSuggestionItem = (product) => {
-  if (product.tag.includes(0)) {
     const suggestionItem = document.createElement("div");
     suggestionItem.className = "swiper-slide";
     suggestionItem.innerHTML = `
@@ -140,7 +140,6 @@ const renderSuggestionItem = (product) => {
     </a>
     `;
     suggestionList.appendChild(suggestionItem);     
-  }
 };
 
 renderSuggestionList();

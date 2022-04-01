@@ -1,0 +1,372 @@
+{
+  "tags": [
+    "mới nhất",
+    "phổ biến nhất"
+  ],
+  "materials": [
+    "gỗ tự nhiên",
+    "gỗ ép",
+    "kim loại",
+    "kính cường lực",
+    "gốm sứ",
+    "nhựa",
+    "vải",
+    "da"
+  ],
+  "rooms": [
+    "living-room",
+    "working-room",
+    "bedroom",
+    "dining-room",
+    "kitchen"
+  ],
+  "categorys": [
+    "sofa",
+    "armchair",
+    "table",
+    "chair",
+    "bed",
+    "cabinet",
+    "shelf",
+    "decoration",
+    "kitchen-tool"
+  ],
+  "products": [
+    {
+      "id": 1001,
+      "name": "Sofa 3 chỗ PENNY – vải màu cam",
+      "brand": "penny",
+      "tag": [
+        0,
+        1
+      ],
+      "category": [
+        0,
+        5
+      ],
+      "oldPrice": 26900000,
+      "newPrice": 19900000,
+      "size": "D2400 - R880 - C850",
+      "material": [
+        2,
+        5
+      ],
+      "imageUrl": [
+        "./src/image/product/1001-sofa-penny-3-cho-vai-cam-1-600x400.jpg",
+        "./src/image/product/1001-sofa-penny-3-cho-vai-cam-2-600x400.jpg",
+        "./src/image/product/1001-sofa-penny-3-cho-vai-cam-3-600x400.jpg",
+        "./src/image/product/1001-sofa-penny-3-cho-vai-cam-4-600x400.jpg",
+        "./src/image/product/1001-sofa-penny-3-cho-vai-cam-5-600x400.jpg"
+      ],
+      "description": "Sự đơn giản, tinh tế, sang trọng và không kém phần nổi bật của chiếc Sofa mang dòng máu bất diệt Scandivian này với lần lượt các phiên bản màu từ tối tới sáng bật Pastel sẽ mang lại các sắc màu không thể lẫn vào đâu và đa dạng cho từng không gian sống nhà bạn. Thiết kế vuông vức, thanh mảnh nhẹ nhàng là sự pha trộn giữa vững chãi và nhẹ nhàng là tất cả những yếu tố thiết yếu hội tụ ở chiếc sofa này."
+    },
+    {
+      "id": 1002,
+      "name": "Sofa 3 chỗ PENNY – vải màu xanh lá",
+      "brand": "penny",
+      "tag": [
+        0,
+        1
+      ],
+      "category": [
+        0,
+        5
+      ],
+      "oldPrice": 26900000,
+      "newPrice": 19900000,
+      "size": "D2400 - R880 - C850",
+      "material": [
+        2,
+        5
+      ],
+      "imageUrl": [
+        "./src/image/product/1002-sofa-penny-3-cho-vai-xanh-1-600x400.jpg"
+      ],
+      "description": "Sự đơn giản, tinh tế, sang trọng và không kém phần nổi bật của chiếc Sofa mang dòng máu bất diệt Scandivian này với lần lượt các phiên bản màu từ tối tới sáng bật Pastel sẽ mang lại các sắc màu không thể lẫn vào đâu và đa dạng cho từng không gian sống nhà bạn. Thiết kế vuông vức, thanh mảnh nhẹ nhàng là sự pha trộn giữa vững chãi và nhẹ nhàng là tất cả những yếu tố thiết yếu hội tụ ở chiếc sofa này."
+    },
+    {
+      "id": 1003,
+      "name": "Sofa 3 chỗ PENNY – vải màu tím",
+      "brand": "penny",
+      "tag": [
+        0,
+        1
+      ],
+      "category": [
+        0,
+        5
+      ],
+      "oldPrice": 26900000,
+      "newPrice": 19900000,
+      "size": "D2400 - R880 - C850",
+      "material": [
+        2,
+        5
+      ],
+      "imageUrl": [
+        "./src/image/product/1003-sofa-penny-3-cho-vai-tim-1-600x400.jpg",
+        "./src/image/product/1003-sofa-penny-3-cho-vai-tim-2-600x400.jpg",
+        "./src/image/product/1003-sofa-penny-3-cho-vai-tim-3-600x400.jpg"
+      ],
+      "description": "Sự đơn giản, tinh tế, sang trọng và không kém phần nổi bật của chiếc Sofa mang dòng máu bất diệt Scandivian này với lần lượt các phiên bản màu từ tối tới sáng bật Pastel sẽ mang lại các sắc màu không thể lẫn vào đâu và đa dạng cho từng không gian sống nhà bạn. Thiết kế vuông vức, thanh mảnh nhẹ nhàng là sự pha trộn giữa vững chãi và nhẹ nhàng là tất cả những yếu tố thiết yếu hội tụ ở chiếc sofa này."
+    },
+    {
+      "id": 1004,
+      "name": "Sofa 3 chỗ PENNY – vải màu xám D2",
+      "brand": "penny",
+      "tag": [
+        0,
+        1
+      ],
+      "category": [
+        0,
+        5
+      ],
+      "oldPrice": 26900000,
+      "newPrice": 19900000,
+      "size": "D2400 - R880 - C850",
+      "material": [
+        2,
+        5
+      ],
+      "imageUrl": [
+        "./src/image/product/1004-sofa-penny-3-cho-vai-xam-hien-dai-1-600x400.jpg",
+        "./src/image/product/1004-sofa-penny-3-cho-vai-xam-hien-dai-2-600x400.jpg",
+        "./src/image/product/1004-sofa-penny-3-cho-vai-xam-hien-dai-3-600x400.jpg"
+      ],
+      "description": "Sự đơn giản, tinh tế, sang trọng và không kém phần nổi bật của chiếc Sofa mang dòng máu bất diệt Scandivian này với lần lượt các phiên bản màu từ tối tới sáng bật Pastel sẽ mang lại các sắc màu không thể lẫn vào đâu và đa dạng cho từng không gian sống nhà bạn. Thiết kế vuông vức, thanh mảnh nhẹ nhàng là sự pha trộn giữa vững chãi và nhẹ nhàng là tất cả những yếu tố thiết yếu hội tụ ở chiếc sofa này."
+    },
+    {
+      "id": 1005,
+      "name": "Sofa 3 chỗ Elegance màu đen, da Brown R5",
+      "brand": "elegance",
+      "tag": [
+        0,
+        1
+      ],
+      "category": [
+        0,
+        5
+      ],
+      "oldPrice": 124850000,
+      "newPrice": 99900000,
+      "size": "D2400 - R880 - C850",
+      "material": [
+        7,
+        0
+      ],
+      "imageUrl": [
+        "./src/image/product/1005-sofa-elegance-mau-den-da-brown-1-600x400.jpg",
+        "./src/image/product/1005-sofa-elegance-mau-den-da-brown-2-600x400.jpg"
+      ],
+      "description": "Asshhh cái thằng chớt tiệc này, mày đang làm cái quái gì vậy hả?!"
+    },
+    {
+      "id": 1006,
+      "name": "Sofa 3 chỗ Elegance màu tự nhiên, da cognac",
+      "brand": "elegance",
+      "tag": [
+        0,
+        1
+      ],
+      "category": [
+        0,
+        5
+      ],
+      "oldPrice": 124850000,
+      "newPrice": 99900000,
+      "size": "D2250 - R905 - C790",
+      "material": [
+        7,
+        0
+      ],
+      "imageUrl": [
+        "./src/image/product/1006-sofa-elegance-mau-tu-nhien-da-cognac-600x400.jpg"
+      ],
+      "description": "Được chế tác từ Gỗ Ash (tần bì) đặc tự nhiên nhập khẩu từ Mỹ và da bò Patrol R1 nhập khẩu Italy"
+    },
+    {
+      "id": 1007,
+      "name": "Sofa 3 chỗ Elegance màu tự nhiên, da xanh",
+      "brand": "elegance",
+      "tag": [
+        0,
+        1
+      ],
+      "category": [
+        0,
+        5
+      ],
+      "oldPrice": 118370000,
+      "newPrice": 99900000,
+      "size": "D2250 - R905 - C790",
+      "material": [
+        7,
+        0
+      ],
+      "imageUrl": [
+        "./src/image/product/1007-sofa-elegance-3-cho-mau-tu-nhien-da-xanh-600x400.jpg"
+      ],
+      "description": "Được chế tác từ gỗ Ash (tần bì) đặc tự nhiên nhập khẩu từ Mỹ và da bò S4 nhập khẩu Italy"
+    },
+    {
+      "id": 1008,
+      "name": "Sofa 3 chỗ Elegance màu tự nhiên, vải xanh",
+      "brand": "elegance",
+      "tag": [
+        0,
+        1
+      ],
+      "category": [
+        0,
+        5
+      ],
+      "oldPrice": 85970000,
+      "newPrice": 69900000,
+      "size": "D2250 - R905 - C790",
+      "material": [
+        7,
+        0
+      ],
+      "imageUrl": [
+        "./src/image/product/1008-sofa-elegance-3-cho-mau-tu-nhien-vai-xanh-600x400.jpg"
+      ],
+      "description": "Được chế tác từ gỗ Ash (tần bì) đặc tự nhiên nhập khẩu từ Mỹ và vải cao cấp"
+    },
+    {
+      "id": 1009,
+      "name": "Sofa Bridge 3 chỗ hiện đại da Beige",
+      "brand": "bridge",
+      "tag": [
+        0,
+        1
+      ],
+      "category": [
+        0,
+        5
+      ],
+      "oldPrice": 109890000,
+      "newPrice": 89900000,
+      "size": "D2100 - R900 - C750",
+      "material": [
+        7,
+        0
+      ],
+      "imageUrl": [
+        "./src/image/product/1009-sofa-bridge-khung-go-soi-boc-da-bo-cao-cap-sang-trong-mau-kem-1-600x400.jpg",
+        "./src/image/product/1009-sofa-bridge-khung-go-soi-boc-da-bo-cao-cap-sang-trong-mau-kem-2-600x400.jpg",
+        "./src/image/product/1009-sofa-bridge-khung-go-soi-boc-da-bo-cao-cap-sang-trong-mau-kem-3-600x400.jpg",
+        "./src/image/product/1009-sofa-bridge-khung-go-soi-boc-da-bo-cao-cap-sang-trong-mau-kem-4-600x400.jpg"
+      ],
+      "description": "Sofa Bridge 3 chỗ với thiết kế vượt thời gian, sử dụng chất liệu gỗ sồi đặc và da bò tự nhiên, sofa Bridge là điểm nhấn đẳng cấp trong phòng khách của bạn. Đặc biệt, phần tay vịn được hoàn thiện vô cùng tinh xảo kết hợp với kết cấu vô cùng chắn chắn giúp cho sofa Bridge tạo cảm xúc gần gũi, tự nhiên và thoái mái khi sử dụng. Sản phẩm có các màu sắc hoàn thiện gỗ sồi sáng và trầm và nhiều màu da khác nhau để lựa chọn. Sofa Bridge 3 chỗ là 1 lựa chọn sáng gia cho phong cách nội thất Bắc Âu."
+    },
+    {
+      "id": 1010,
+      "name": "Sofa Bridge 3 chỗ hiện đại da cognac",
+      "brand": "bridge",
+      "tag": [
+        0,
+        1
+      ],
+      "category": [
+        0,
+        5
+      ],
+      "oldPrice": 109890000,
+      "newPrice": 89900000,
+      "size": "D2100 - R900 - C750",
+      "material": [
+        7,
+        0
+      ],
+      "imageUrl": [
+        "./src/image/product/1010-sofa-bridge-khung-go-soi-boc-da-bo-cao-cap-sang-trong-mau-nau-1-600x400.jpg",
+        "./src/image/product/1010-sofa-bridge-khung-go-soi-boc-da-bo-cao-cap-sang-trong-mau-nau-2-600x400.jpg",
+        "./src/image/product/1010-sofa-bridge-khung-go-soi-boc-da-bo-cao-cap-sang-trong-mau-nau-3-600x400.jpg",
+        "./src/image/product/1010-sofa-bridge-khung-go-soi-boc-da-bo-cao-cap-sang-trong-mau-nau-4-600x400.jpg"
+      ],
+      "description": "Sofa Bridge 3 chỗ với thiết kế vượt thời gian, sử dụng chất liệu gỗ sồi đặc và da bò tự nhiên, sofa Bridge là điểm nhấn đẳng cấp trong phòng khách của bạn. Đặc biệt, phần tay vịn được hoàn thiện vô cùng tinh xảo kết hợp với kết cấu vô cùng chắn chắn giúp cho sofa Bridge tạo cảm xúc gần gũi, tự nhiên và thoái mái khi sử dụng. Sản phẩm có các màu sắc hoàn thiện gỗ sồi sáng và trầm và nhiều màu da khác nhau để lựa chọn. Sofa Bridge 3 chỗ là 1 lựa chọn sáng gia cho phong cách nội thất Bắc Âu."
+    },
+    {
+      "id": 1011,
+      "name": "Sofa Jazz 3 chỗ hiện đại da cognac",
+      "brand": "jazz",
+      "tag": [
+        0,
+        1
+      ],
+      "category": [
+        0,
+        5
+      ],
+      "oldPrice": 58810000,
+      "newPrice": 49900000,
+      "size": "D2300 - R840 - C760",
+      "material": [
+        7,
+        0
+      ],
+      "imageUrl": [
+        "./src/image/product/1011-sofa-jazz-3-cho-hien-dai-da-that-chan-kim-loai-mau-nau-1-600x400.jpg",
+        "./src/image/product/1011-sofa-jazz-3-cho-hien-dai-da-that-chan-kim-loai-mau-nau-2-600x400.jpg",
+        "./src/image/product/1011-sofa-jazz-3-cho-hien-dai-da-that-chan-kim-loai-mau-nau-3-600x400.jpg",
+        "./src/image/product/1011-sofa-jazz-3-cho-hien-dai-da-that-chan-kim-loai-mau-nau-4-600x400.jpg",
+        "./src/image/product/1011-sofa-jazz-3-cho-hien-dai-da-that-chan-kim-loai-mau-nau-5-600x400.jpg",
+        "./src/image/product/1011-sofa-jazz-3-cho-hien-dai-da-that-chan-kim-loai-mau-nau-6-600x400.jpg",
+        "./src/image/product/1011-sofa-jazz-3-cho-hien-dai-da-that-chan-kim-loai-mau-nau-7-600x400.jpg",
+        "./src/image/product/1011-sofa-jazz-3-cho-hien-dai-da-that-chan-kim-loai-mau-nau-8-600x400.jpg",
+        "./src/image/product/1011-sofa-jazz-3-cho-hien-dai-da-that-chan-kim-loai-mau-nau-9-600x400.jpg"
+      ],
+      "description": "Sofa Jazz 3 chổ được bao bọc bởi lớp da bò cao cấp đem lại cảm giác mềm mại, êm ái, thư giãn tuyệt vời. Thiết kế hiện đại mang nét đẹp độc đáo từ hình khối thanh lịch, đường nét tinh tế là điểm cộng lớn nhất của sofa Jazz."
+    },
+    {
+      "id": 1012,
+      "name": "Sofa Jazz 3 chỗ hiện đại da nâu (sẫm)",
+      "brand": "jazz",
+      "tag": [
+        0,
+        1
+      ],
+      "category": [
+        0,
+        5
+      ],
+      "oldPrice": 58810000,
+      "newPrice": 49900000,
+      "size": "D2300 - R840 - C760",
+      "material": [
+        7,
+        0
+      ],
+      "imageUrl": [
+        "./src/image/product/1012-sofa-jazz-3-cho-hien-dai-da-that-chan-kim-loai-mau-den-1-600x400.jpg",
+        "./src/image/product/1012-sofa-jazz-3-cho-hien-dai-da-that-chan-kim-loai-mau-den-2-600x400.jpg"
+      ],
+      "description": "Sofa Jazz 3 chổ được bao bọc bởi lớp da bò cao cấp đem lại cảm giác mềm mại, êm ái, thư giãn tuyệt vời. Thiết kế hiện đại mang nét đẹp độc đáo từ hình khối thanh lịch, đường nét tinh tế là điểm cộng lớn nhất của sofa Jazz."
+    },
+    {
+      "id": 1013,
+      "name": "Sofa góc trái Rap hiện đại vải vàng",
+      "brand": "rap",
+      "tag": [
+        0,
+        1
+      ],
+      "category": [
+        0,
+        5
+      ],
+      "oldPrice": 29360000,
+      "newPrice": 26900000,
+      "size": "D2530/1760- R850- C700",
+      "material": [
+        7,
+        0
+      ],
+      "imageUrl": [
+        "./src/image/product/1101-sofa-goc-rap-boc-vai-vang-600x400.jpg"
+      ],
+      "description": "Sofa góc phải Rap với phần nệm ngồi êm ái, chân sofa sử dụng kim loại bóng sáng không rỉ tạo sự sang trọng. Sofa góc Rap là 1 lựa chọn tối ưu cho không gian phòng khách hiện đại, tiện nghi cho cả gia đình."
+    }
+  ]
+}
