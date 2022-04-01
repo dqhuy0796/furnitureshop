@@ -1,55 +1,56 @@
-// external js: isotope.pkgd.js
+filterSelection([]);
 
-// init Isotope
-var iso = new Isotope(".product-grid", {
-  itemSelector: ".product",
-  layoutMode: "fitRows",
-  masonry: {
-    columnWidth: 200
-  }
-});
-
-// filter functions
-var filterFuntions = {
-  // show if number is greater than 50
-  numberGreaterThan50: function (itemElem) {
-    var number = itemElem.querySelector(".number").textContent;
-    return parseInt(number, 10) > 50;
-  },
-  // show if name ends with -ium
-  ium: function (itemElem) {
-    var name = itemElem.querySelector(".name").textContent;
-    return name.match(/ium$/);
-  },
-};
-
-// bind filter button click
-var filtersElem = document.querySelector(".filters-button-group");
-filtersElem.addEventListener("click", function (event) {
-  // only work with buttons
-  if (!matchesSelector(event.target, "button")) {
-    return;
-  }
-  var filterValue = event.target.getAttribute("data-filter");
-  // use matching filter function
-  filterValue = filterFuntions[filterValue] || filterValue;
-  iso.arrange({ filter: filterValue });
-});
-
-// change is-checked class on buttons
-var buttonGroups = document.querySelectorAll(".button-group");
-for (var i = 0, len = buttonGroups.length; i < len; i++) {
-  var buttonGroup = buttonGroups[i];
-  radioButtonGroup(buttonGroup);
-}
-
-function radioButtonGroup(buttonGroup) {
-  buttonGroup.addEventListener("click", function (event) {
-    // only work with buttons
-    if (!matchesSelector(event.target, "button")) {
-      return;
+function filterSelection(filterArray) {
+    let filterProducts = document.getElementsByClassName("filter-product");
+    if (filterArray.length <= 0){
+        for (let i = 0; i < filterProducts.length; i++)
+            filterProducts[i].classList.add("display");   
     }
-    buttonGroup.querySelector(".is-checked").classList.remove("is-checked");
-    event.target.classList.add("is-checked");
-  });
+    else{
+        for (let i = 0; i < filterProducts.length; i++) {
+            removeFilterClass(filterProducts[i], "display");
+            console.log(filterProducts[i]);
+            for (let j = 0; j < filterArray.length; j++) {          
+                console.log(filterArray[j]);
+                if (filterProducts[i].getAttribute("data-category").indexOf(filterArray[j]) > -1){
+                    addFilterClass(filterProducts[i], "display");
+                }
+            }
+        }
+    }
 }
+
+// Display
+function addFilterClass(element, name) {
+    let arr1 = element.className.split(" ");
+    let arr2 = name.split(" ");
+    for (let i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+            element.classList.add(arr2[i]);
+        }
+    }
+}
+
+// Hidden
+function removeFilterClass(element, name) {
+    let arr1 = element.className.split(" ");
+    let arr2 = name.split(" ");
+    for (let i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+    }
+    element.className = arr1.join(" ");
+}
+
+const filterBtns = document.querySelectorAll(".brand-filter .filter__item input");
+filterBtns.forEach(filterBtn => {
+    filterBtn.addEventListener('change', function() {
+        let filterSetting = Array.from(filterBtns) // Convert checkboxes to an array to use filter and map.
+                        .filter(item => item.checked) // Use Array.filter to remove unchecked checkboxes.
+                        .map(item => item.getAttribute("data-filter")) // Use Array.map to extract only the checkbox values from the array of objects.          
+        console.log(filterSetting)
+        filterSelection(filterSetting);
+    })
+})
+

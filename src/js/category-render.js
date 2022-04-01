@@ -10,6 +10,10 @@ const renderLatestList = () => {
 const renderproductItem = (product) => {
     const productItem = document.createElement("a");
     productItem.className = "product";
+    productItem.classList.add("filter-product");
+
+    productItem.setAttribute("data-category", product.brand);
+
     productItem.setAttribute("href", "./product-detail.html");
     productItem.setAttribute("id", product.id);
     productItem.innerHTML = `

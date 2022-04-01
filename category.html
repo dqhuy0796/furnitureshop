@@ -495,17 +495,16 @@
     <!-- CONTAINER -->
     
     <div class="container">
-        <div class="wrapper">
 
             <!-- Breadcrumbs -->
             
-            <div class="breadcrumbs">
-                <a href="./index.html" class="title__link">Trang chủ</a>
-                <span> > </span>
-                <a href="#" class="title__link">Phòng khách</a>
-                <span> > </span>
-                <a href="#" class="title__link">Sofa & Armchair</a>
-            </div>
+            <section class="home-section breadcrumbs">
+                <div class="wrapper">
+                    <a href="./index.html" class="title__link">Trang chủ</a>
+                    <span> > </span>
+                    <a href="#" class="title__link">Tất cả sản phẩm</a>
+                </div>
+            </section>
 
             <!-- Main container -->
 
@@ -564,23 +563,23 @@
                                 <p class="sidebar__title">Thương hiệu</p>
                                 <ul class="filter__list">
                                     <li class="filter__item">
-                                        <input type="checkbox" name="brand-filter" id="penny-filter" data-filter=".penny">
+                                        <input type="checkbox" name="brand-filter" id="penny-filter" data-filter="penny">
                                         <label for="penny-filter">Penny</label>
                                     </li>
                                     <li class="filter__item">
-                                        <input type="checkbox" name="brand-filter" id="bride-filter" data-filter=".bride">
+                                        <input type="checkbox" name="brand-filter" id="bride-filter" data-filter="bride">
                                         <label for="bride-filter">Bride</label>
                                     </li>
                                     <li class="filter__item">
-                                        <input type="checkbox" name="brand-filter" id="jazz-filter" data-filter=".jazz">
+                                        <input type="checkbox" name="brand-filter" id="jazz-filter" data-filter="jazz">
                                         <label for="jazz-filter">Jazz</label>
                                     </li>
                                     <li class="filter__item">
-                                        <input type="checkbox" name="brand-filter" id="elegance-filter" data-filter=".elegance">
+                                        <input type="checkbox" name="brand-filter" id="elegance-filter" data-filter="elegance">
                                         <label for="elegance-filter">Elegance</label>
                                     </li>
                                     <li class="filter__item">
-                                        <input type="checkbox" name="brand-filter" id="rap-filter" data-filter=".rap">
+                                        <input type="checkbox" name="brand-filter" id="rap-filter" data-filter="rap">
                                         <label for="rap-filter">Rap</label>
                                     </li>
                                 </ul>
@@ -660,7 +659,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+
     </div>
 
     <!-- SHORTCUT -->
@@ -799,6 +798,7 @@
     <script src="./src/js/rest-api.js"></script>
     <script src="./src/js/category-render.js"></script>
     <script src="./src/js/async-data.js"></script>
+    <script src="./src/js/filter.js"></script>
 
     <!-- Custom select option -->
     <script>
