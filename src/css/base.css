@@ -276,3 +276,29 @@ input[type=number] {
 .select-items div:hover, .same-as-selected {
     background-color: var(--light-border)
 }
+
+/* Transition under */
+.trans-underline{
+    position: relative;
+}
+.trans-underline::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--primary);
+        
+    -webkit-transition: ease-in-out 0.3s;
+    -moz-transition: ease-in-out 0.3s;
+    -ms-transition: ease-in-out 0.3s;
+    -o-transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.3s;
+}
+.trans-underline.hoverable:hover::after{
+    width: 100%;
+}
+.trans-underline.active::after{
+    width: 100%;
+}

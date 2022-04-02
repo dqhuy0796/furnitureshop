@@ -448,6 +448,85 @@
     text-align: center;
 }
 
+/* 1:9:: Home testimonial */
+.testimonial{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 8px;
+    height: 300px;   
+    border-radius: 4px;
+    box-shadow: 0 0 4px 1px var(--border);
+}
+.testimonial__item{
+    margin-bottom: 8px;
+}
+.testimonial__avatar{
+    position: relative;
+    padding-top: calc(100% / 3);
+    width: 100%;
+}
+.testimonial__avatar img{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: calc(100% / 3);
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary);
+}
+.testimonial__name{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--text);
+}
+.testimonial__email{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--gray);
+}
+.testimonial__rate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.testimonial__rate i{
+    font-size: 1rem;
+    color: var(--gold);
+}
+.testimonial__content{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    text-align: justify;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--text);
+}
 /* 2:: SUBPAGE */
 
 .page-container .wrapper{
@@ -835,10 +914,6 @@
     margin-top: 24px;
     gap: 16px;
 }
-.detail__item:last-child{
-    margin-top: auto;
-    margin-bottom: 0;
-}
 .detail__item .product__info{
     text-align: left;
     padding-left: 0;
@@ -885,7 +960,77 @@
 .checkout-now-btn::before{
     background: linear-gradient(to bottom, #ffe77b, var(--primary));
 }
-
+.detail__item:last-child{
+    margin-top: 64px;
+}
+.detail__item ul{
+    list-style: none;
+}
+.detail__item .panel__menu{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--light-border);
+}
+.detail__item .panel__menu label{
+    display: block;
+    padding: 8px 16px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    user-select: none;
+    cursor: pointer;
+}
+.detail__item .panel__radio:checked + .panel__item{
+    display: block;
+}
+.detail__item .panel__content .panel__item{
+    display: none;
+}
+.detail__item .panel__content .panel__feedback p{
+    padding: 16px;
+    text-align: center;    
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--text);
+}
+.detail__item .panel__content .panel__feedback p:last-child{
+    border-radius: 4px;
+    border: 1px solid var(--light-border);    
+}
+.detail__item .panel__content .panel__feedback p:last-child span{
+    display: block;      
+}
+.detail__item .panel__content .panel__feedback p:last-child span:last-child{
+    margin-top: 8px;
+    font-weight: 600;
+    color: var(--gray);
+}
+.detail__item .panel__content .panel__guarantee li,
+.detail__item .panel__content .panel__delivery li{
+    display: flex;
+    margin-bottom: 12px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: justify;
+    color: var(--gray-dark);
+}
+.detail__item .panel__content .panel__guarantee li i,
+.detail__item .panel__content .panel__delivery li i{
+    position: relative;
+    top: 1px;
+    margin-right: 4px;
+    color: green;
+}
+.detail__item .panel__content .panel__guarantee p,
+.detail__item .panel__content .panel__delivery p{
+    font-size: 2rem;
+    padding: 12px 0;
+    font-weight: 700;
+    color: var(--text);
+    text-transform: uppercase;
+}
 /* 6:: CATEGORY.HTML */
 
 /* 6:1:: Sidebar */

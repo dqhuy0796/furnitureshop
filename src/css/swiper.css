@@ -77,3 +77,8 @@
 .swiper.suggestion-swiper {
     padding: 8px 4px;
 }
+
+/* Testimonial */
+.swiper.testimonial-swiper{
+    padding: 8px 4px 16px;
+}

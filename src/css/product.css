@@ -184,13 +184,6 @@
     font-weight: 500;
     color: var(--text);
 }
-.product__description::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 100%;
-    border-top: 1px solid var(--light-border);
-}
 
 /* CART PRODUCT */
 

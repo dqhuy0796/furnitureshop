@@ -5,7 +5,6 @@
 
 // swiper in banner
 const bannerSwiper = new Swiper(".banner-swiper", {
-  // effect: "cube",
   loop: true,
   spaceBetween: 0,
   centeredSlides: true,
@@ -41,13 +40,13 @@ const latestSwiper = new Swiper(".latest-swiper", {
   },
   breakpoints: {
     700: {
-      slidesPerView: 2,
-    },
-    950: {
       slidesPerView: 3,
     },
-    1200: {
+    950: {
       slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 5,
     },
   },
   navigation: {
@@ -67,13 +66,13 @@ const featuredSwiper = new Swiper(".featured-swiper", {
   },
   breakpoints: {
     700: {
-      slidesPerView: 2,
-    },
-    950: {
       slidesPerView: 3,
     },
-    1200: {
+    950: {
       slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 5,
     },
   },
   navigation: {
@@ -94,6 +93,7 @@ const swiper = new Swiper(".thumb-swiper", {
 //  swiper in product thumb
 const swiper2 = new Swiper(".image-swiper", {
   loop: true,
+  centeredSlides: true,
   spaceBetween: 1,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -119,17 +119,42 @@ const suggestionSwiper = new Swiper(".suggestion-swiper", {
   },
   breakpoints: {
     700: {
-      slidesPerView: 2,
-    },
-    950: {
       slidesPerView: 3,
     },
-    1200: {
+    950: {
       slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 5,
     },
   },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+});
+
+const testimonialSwiper = new Swiper(".testimonial-swiper", {
+  rewind: true,
+  spaceBetween: 10,
+  slidesPerView: 2,
+  // autoplay: {
+  //   delay: 2000,
+  //   disableOnInteraction: false,
+  // },
+  breakpoints: {
+    700: {
+      slidesPerView: 3,
+    },
+    950: {
+      slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 5,
+    },
+  },
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    hide: true,
   },
 });

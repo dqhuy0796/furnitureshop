@@ -614,12 +614,114 @@
                             </button>
                         </li>
                     
-                        <!-- Description -->
+                        <!-- Panel -->
                     
                         <li class="detail__item">
-                            <p class="detail__description product__description">
-                                <!-- JS render -->
-                            </p>
+
+                            <!-- Panel Menu -->
+                            <ul class="panel__menu">
+                                <li>
+                                    <label for="description-radio" class="trans-underline active">Mô tả</label>
+                                </li>
+                                <li>
+                                    <label for="feedback-radio" class="trans-underline">Đánh giá</label>
+                                </li>
+                                <li>
+                                    <label for="guarantee-radio" class="trans-underline">Bảo hành</label>
+                                </li>
+                                <li>
+                                    <label for="delivery-radio" class="trans-underline">Vận chuyển</label>
+                                </li>
+                            </ul>
+
+                            <!-- Panel Content -->
+                            <ul class="panel__content">
+
+                                <!-- Panel Description -->
+                                <input type="radio" name="panel-radio" id="description-radio" class="panel__radio" checked hidden>
+                                <li class="panel__item panel__description">
+                                    <p class="product__description">
+                                        <!-- JS render -->
+                                    </p>
+                                </li>
+
+                                <!-- Panel Feedback -->
+                                <input type="radio" name="panel-radio" id="feedback-radio" class="panel__radio" hidden>
+                                <li class="panel__item panel__feedback">
+                                    <p>Chưa có bài đánh giá</p>
+                                    <p>
+                                        <span>Trở thành người đầu tiên đánh giá cho sản phẩm</span>
+                                        <span>Bạn cần mua hàng trước khi đánh giá nhé, hihi~ </span>
+                                    </p>
+                                </li>
+
+                                <!-- Panel guarantee -->
+                                <input type="radio" name="panel-radio" id="guarantee-radio" class="panel__radio" hidden>
+                                <li class="panel__item panel__guarantee">
+                                    <p>Chính sách bảo hành</p>
+                                    <ul>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            Các sản phẩm nội thất tại Nội thất Công Uẩn đều được sản xuất và nhập khẩu từ nhà máy tiên tiến và hiện đại. Chúng tôi đã kiểm tra kỹ lưỡng từ nguồn nguyên liệu cho đến sản phẩm hoàn thiện cuối cùng.
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            Nội thất Công Uẩn bảo hành một năm cho các trường hợp có lỗi về kỹ thuật trong quá trình sản xuất hay lắp đặt.
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            Quý khách không nên tự sửa chữa mà hãy báo ngay cho chúng tôi qua hotline: 0989.999.999
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            Sau thời gian hết hạn bảo hành, nếu quý khách có bất kỳ yêu cầu hay thắc mắc thì vui lòng liên hệ với Nội thất Công Uẩn để được hướng dẫn và giải quyết.
+                                        </li>
+                                    </ul>
+                                    <p>Không áp dụng bảo hành đối với:</p>
+                                    <ul>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            Khách hàng tự ý sửa chữa khi sản phẩm bị trục trặc mà không báo cho Nội thất Công Uẩn.
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            Sản phẩm được sử dụng không đúng quy cách của sổ bảo hành (được trao gửi khi quý khách mua sản phẩm) gây nên trầy xước, móp, dơ bẩn hay mất màu.
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            Sản phẩm bị biến dạng do môi trường bên ngoài bất bình thường (quá ẩm, quá khô, mối hay do tác động từ các thiết bị điện nước, các hóa chất hay dung môi khách hàng sử dụng không phù hợp).
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            Sản phẩm hết hạn bảo hành.
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            Sản phẩm không có phiếu bảo hành của Nội thất Công Uẩn.
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- Panel delivery -->
+                                <input type="radio" name="panel-radio" id="delivery-radio" class="panel__radio" hidden>
+                                <li class="panel__item panel__delivery">
+                                    <p>Giao hàng tận nơi</p>
+                                    <ul>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            Nội thất Công Uẩn phối hợp với các đơn vị vận chuyển cung cấp dịch vụ giao hàng tận nơi, hướng dẫn và lắp đặt cho quý khách.
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            Miễn phí giao hàng các tỉnh Nam Định, Thanh Hoá, Ninh Bình, Thái Nguyên và Thủ đô Hà Nội áp dụng cho các đơn hàng trên 10 triệu.
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            Hỗ trợ 50% chi phí vận chuyển đối với các tỉnh và khu vực lân cận.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -811,6 +913,16 @@
             quantity = quantity - 1;
             qty.value = quantity;
         });
+    </script>
+
+    <script>
+        const panelMenu = document.querySelectorAll(".panel__menu label");
+        panelMenu.forEach(item => {
+            item.addEventListener('click', event => {
+                panelMenu.forEach(other => {other.classList.remove("active")});
+                event.target.classList.add("active");
+            })
+        })
     </script>
 </body>
 </html>

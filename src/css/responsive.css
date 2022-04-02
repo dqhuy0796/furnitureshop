@@ -254,6 +254,11 @@
         width: 100%;
         margin: 0;
     }
+
+    /* PRODUCT DETAIL */
+    .detail__item .panel__menu li{
+        width: 25%;
+    }    
 }
 @media (min-width: 1024px) and (max-width: 1239px){
     
@@ -293,6 +298,11 @@
         padding-top: calc(100% / 3);
         width: calc(100% / 3);
     }
+
+    /* PRODUCT DETAIL */
+    .detail__item .panel__menu li{
+        width: 25%;
+    }
 }
 @media (min-width: 1240px){
 
@@ -325,6 +335,12 @@
     .image-section,
     .detail-section{
         width: 50%;
+    }
+    .image-section{
+        height: 720px;
+    }
+    .detail__item .panel__menu li{
+        width: 25%;
     }
 
 }
