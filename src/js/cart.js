@@ -1,3 +1,5 @@
+console.log("cart.js has call");
+
 const CongUanApi = 'src/json/api.json';
 
 // start here
@@ -26,8 +28,7 @@ function renderApiProducts(items) {
                     }
                 });
             });
-            cartSubtotal.innerText = `${globalSubtotal.toLocaleString('vn-VI', { style: 'currency', currency: 'VND' })}`;
-            cartTotalPayment.innerText = `${globalSubtotal.toLocaleString('vn-VI', { style: 'currency', currency: 'VND' })}`;
+            updateCartQuantity();
         }
     }
 
@@ -112,9 +113,6 @@ let globalSubtotal = 0;
 let userCart = JSON.parse(localStorage.getItem("cart")) ?? [];
 
 const renderCartProduct = (product, qty) => {
-    // Update subtotal
-    globalSubtotal += product.newPrice;
-    // Render product as a HTML element
     const cartProductItem = document.createElement("li");
     cartProductItem.className = "cart__item";
     cartProductItem.innerHTML = `
@@ -144,7 +142,7 @@ const renderCartProduct = (product, qty) => {
                 </button>
             </div>
             <div class="cart-subtotal">
-                <p class="subtotal">${product.newPrice.toLocaleString('vn-VI', { style: 'currency', currency: 'VND' })}</p>
+                <p class="subtotal">${(product.newPrice * qty).toLocaleString('vn-VI', { style: 'currency', currency: 'VND' })}</p>
             </div>
         </div>
         `;

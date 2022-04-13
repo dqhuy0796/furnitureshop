@@ -1,4 +1,4 @@
-filterSelection([]);
+console.log("filter.js has call");
 
 function filterSelection(filterArray) {
     let filterProducts = document.getElementsByClassName("filter-product");
@@ -39,26 +39,6 @@ function removeFilterClass(element, name) {
     }
     element.className = arr1.join(" ");
 }
-
-// Filter by brand
-const brandFilterCheckboxs = document.querySelectorAll(".sidebar__item.brand-filter .filter__item input");
-
-brandFilterCheckboxs.forEach(brandFilterCheckbox => {
-    brandFilterCheckbox.addEventListener('change', function() {
-        let filterSetting = Array.from(brandFilterCheckboxs)                    // Convert checkboxes to an array to use filter and map.
-                                .filter(item => item.checked)                   // Use Array.filter to remove unchecked checkboxes.
-                                .map(item => item.getAttribute("data-filter"))  // Use Array.map to extract only the checkbox values from the array of objects.          
-        filterSelection(filterSetting);
-        console.log(filterSetting);
-    }, false);
-});
-
-const resetBrandFilterBtn = document.querySelector(".sidebar__item.brand-filter .filter__btn");
-
-resetBrandFilterBtn.addEventListener('click', () => {
-    brandFilterCheckboxs.forEach(item => item.checked = false);
-    filterSelection([]);
-}, false);
 
 // Filter by room
 

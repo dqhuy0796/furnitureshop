@@ -1387,7 +1387,194 @@
                 ]
             }
         ],
-        "desk": [],
+        "desk": [
+            {
+                "id": 4001,
+                "name": "Bàn làm việc Maxine",
+                "brand": "Maxine",
+                "tag": "mới nhất",
+                "oldPrice": 56900000,
+                "newPrice": 51900000,
+                "size": "D1800 - R750/1180 - C750",
+                "material": [
+                    {
+                        "name": "gỗ"
+                    },
+                    {
+                        "name": "MDF"
+                    }
+                ],
+                "description": "Một thiết kế bàn làm việc đẳng cấp cho không gian làm việc của bạn, Maxine sử dụng chất liệu da trên bề mặt, khung gỗ hoàn thiện mdf veneer nâu trầm sang trọng tạo cảm giác thư thái, nhẹ nhàng. Công năng của chiếc bàn được sắp tối ưu với các hộc kéo rộng. Maxine – Nét nâu trầm sang trọng Maxine, mang thiết kế vượt thời gian, gửi gắm và gói gọn lại những nét đẹp của thiên nhiên và con người nhưng vẫn đầy tính ứng dụng cao trong suốt hành trình phiêu lưu của nhà thiết kế người Pháp Dominique Moal. Bộ sưu tập nổi bật với màu sắc nâu trầm sang trọng, là sự kết hợp giữa gỗ, da bò và kim loại vàng bóng. Đặc biệt trên mỗi sản phẩm, những nét bo viên, chi tiết kết nối được sử dụng kéo léo tạo ra điểm nhất rất riêng cho bộ sưu tập. Maxine thể hiện nét trầm tư, thư giãn để tận hưởng không gian sống trong nhịp sống hiện đại. Sản phẩm thuộc BST Maxine được sản xuất tại Việt Nam.",
+                "imageUrl": [
+                    {
+                        "url": "https://res.cloudinary.com/dqhuy/image/upload/v1649826181/CongUanFuniture/product/desk/4001-ban-lam-viec-Maxine-1_jdcabq.jpg"
+                    },
+                    {
+                        "url": "https://res.cloudinary.com/dqhuy/image/upload/v1649826181/CongUanFuniture/product/desk/4001-ban-lam-viec-Maxine-2_h4oxjk.jpg"
+                    },
+                    {
+                        "url": "https://res.cloudinary.com/dqhuy/image/upload/v1649826180/CongUanFuniture/product/desk/4001-ban-lam-viec-Maxine-3_gi9223.jpg"
+                    },
+                    {
+                        "url": "https://res.cloudinary.com/dqhuy/image/upload/v1649826180/CongUanFuniture/product/desk/4001-ban-lam-viec-Maxine-4_muenv5.jpg"
+                    },
+                    {
+                        "url": "https://res.cloudinary.com/dqhuy/image/upload/v1649826181/CongUanFuniture/product/desk/4001-ban-lam-viec-Maxine-5_toi4ds.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 4002,
+                "name": "Bàn làm việc Osaka",
+                "brand": "Osaka",
+                "tag": "mới nhất",
+                "oldPrice": 25900000,
+                "newPrice": 22900000,
+                "size": "D1380 - R600 - C760",
+                "material": [
+                    {
+                        "name": "gỗ"
+                    },
+                    {
+                        "name": "MDF"
+                    },
+                    {
+                        "name": "inox"
+                    }
+                ],
+                "description": "",
+                "imageUrl": [
+                    {
+                        "url": "https://res.cloudinary.com/dqhuy/image/upload/v1649826335/CongUanFuniture/product/desk/4002-ban-lam-viec-Osaka-1_kysrb4.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 4003,
+                "name": "Bàn làm việc Osaka KA",
+                "brand": "Osaka",
+                "tag": "mới nhất",
+                "oldPrice": 51900000,
+                "newPrice": 48900000,
+                "size": "D1380 - R600 - C810",
+                "material": [
+                    {
+                        "name": "kim loại"
+                    },
+                    {
+                        "name": "gỗ"
+                    }
+                ],
+                "description": "",
+                "imageUrl": [
+                    {
+                        "url": "https://res.cloudinary.com/dqhuy/image/upload/v1649826495/CongUanFuniture/product/desk/4003-ban-lam-viec-Osaka-KA-1_gjm2mj.jpg"
+                    },
+                    {
+                        "url": "https://res.cloudinary.com/dqhuy/image/upload/v1649826495/CongUanFuniture/product/desk/4003-ban-lam-viec-Osaka-KA-2_uvkjkp.jpg"
+                    },
+                    {
+                        "url": "https://res.cloudinary.com/dqhuy/image/upload/v1649826495/CongUanFuniture/product/desk/4003-ban-lam-viec-Osaka-KA-3_b8ruhn.jpg"
+                    },
+                    {
+                        "url": "https://res.cloudinary.com/dqhuy/image/upload/v1649826494/CongUanFuniture/product/desk/4003-ban-lam-viec-Osaka-KA-4_vrykub.jpg"
+                    },
+                    {
+                        "url": "https://res.cloudinary.com/dqhuy/image/upload/v1649826495/CongUanFuniture/product/desk/4003-ban-lam-viec-Osaka-KA-5_ivovlx.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 4004,
+                "name": "Bàn làm việc Pio",
+                "brand": "Pio",
+                "tag": "mới nhất",
+                "oldPrice": 15900000,
+                "newPrice": 13900000,
+                "size": "D1500 - R500 - C750",
+                "material": [
+                    {
+                        "name": "gỗ"
+                    },
+                    {
+                        "name": "MDF"
+                    }
+                ],
+                "description": "Không gian phòng làm việc sẽ trở nên ấm cúng và mới mẻ với bàn làm việc Pio. Phần hộc kéo rộng giúp cất giữ đồ đạc tối ưu, phần chân thon gọn tạo không gian thoáng đãng và thanh lịch. Bàn làm việc Pio là lựa chọn phù hợp cho doanh nhân trẻ. PIO – Vẻ đẹp yên bình giữa lối sống đô thị Pha trộn giữa phong cách scandinavian và sự mới lạ trong chọn lựa màu sắc, bộ sưu tập PIO toát lên vẻ đẹp nhẹ nhàng, thanh lịch và gần gũi với thiên nhiên. PIO thể hiện lối sống của những người trẻ, biết chiêm nghiệm và thưởng ngoạn sự trở về bình yên giữa nhịp sống hiện đại.Thiết kế bởi những đường cong, điểm xuyến các chi tiết nhấn nhá bên cạnh sử dụng các vật liệu như gỗ beech, melamine marble.. giúp PIO trở nên cá tính và thu hút trong không gian hiện đại. Sản phẩm được thiết kế bởi đội ngũ Nhà Xinh và sản xuất tại Việt Nam.",
+                "imageUrl": [
+                    {
+                        "url": "https://res.cloudinary.com/dqhuy/image/upload/v1649826674/CongUanFuniture/product/desk/4004-ban-lam-viec-Pio-1_jnlqdk.jpg"
+                    },
+                    {
+                        "url": "https://res.cloudinary.com/dqhuy/image/upload/v1649826674/CongUanFuniture/product/desk/4004-ban-lam-viec-Pio-2_cjecuk.jpg"
+                    },
+                    {
+                        "url": "https://res.cloudinary.com/dqhuy/image/upload/v1649826674/CongUanFuniture/product/desk/4004-ban-lam-viec-Pio-3_tiiisl.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 4005,
+                "name": "Bàn làm việc Skagen",
+                "brand": "Skagen",
+                "tag": "mới nhất",
+                "oldPrice": 16900000,
+                "newPrice": 12900000,
+                "size": "D1200 - R600 - C750",
+                "material": [
+                    {
+                        "name": "MDF"
+                    },
+                    {
+                        "name": "veneer"
+                    },
+                    {
+                        "name": "gỗ"
+                    }
+                ],
+                "description": "Bàn làm việc Skagen được làm bằng khung gỗ Walnut đặc, cánh tủ đóng mở nhẹ nhàng, chân tủ dễ dàng tháo lắp khi cần di chuyển. Với đường nét gia công tỉ mỉ, Bàn làm việc Skagen sẽ là điểm nổi bật cho vị trí làm việc trong ngôi nhà của bạn.",
+                "imageUrl": [
+                    {
+                        "url": "https://res.cloudinary.com/dqhuy/image/upload/v1649826837/CongUanFuniture/product/desk/4005-ban-lam-viec-Skagen-1_pzhzha.jpg"
+                    },
+                    {
+                        "url": "https://res.cloudinary.com/dqhuy/image/upload/v1649826837/CongUanFuniture/product/desk/4005-ban-lam-viec-Skagen-2_fvuk2g.jpg"
+                    },
+                    {
+                        "url": "https://res.cloudinary.com/dqhuy/image/upload/v1649826837/CongUanFuniture/product/desk/4005-ban-lam-viec-Skagen-3_m0g2il.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 4006,
+                "name": "Bàn làm việc Touka",
+                "brand": "Touka",
+                "tag": "mới nhất",
+                "oldPrice": 16900000,
+                "newPrice": 13900000,
+                "size": "D1300 - R500 - C750",
+                "material": [
+                    {
+                        "name": "gỗ"
+                    },
+                    {
+                        "name": "gỗ xà cừ"
+                    }
+                ],
+                "description": "Đơn giản, đẹp và cá tính theo phong cách nội thất thập niên 60. Bàn làm việc Touka được chăm chút tỉ mỉ từ kiểu dáng bên ngoài đến chất lượng bên trong.",
+                "imageUrl": [
+                    {
+                        "url": "https://res.cloudinary.com/dqhuy/image/upload/v1649826988/CongUanFuniture/product/desk/4006-ban-lam-viec-Touka-1_bcngi7.jpg"
+                    },
+                    {
+                        "url": "https://res.cloudinary.com/dqhuy/image/upload/v1649826988/CongUanFuniture/product/desk/4006-ban-lam-viec-Touka-2_uo3ads.jpg"
+                    },
+                    {
+                        "url": "https://res.cloudinary.com/dqhuy/image/upload/v1649826988/CongUanFuniture/product/desk/4006-ban-lam-viec-Touka-3_j7cegg.jpg"
+                    }
+                ]
+            }
+        ],
         "shelf": [
             {
                 "id": 5001,
@@ -4793,73 +4980,73 @@
     "testimonials": [
         {
             "id": 1,
-            "name": "id labore ex et quam laborum",
-            "avatar": "",
-            "email": "Eliseo@gardner.biz",
-            "comment": "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium"
+            "name": "Trần Văn Hiếu",
+            "avatar": "https://res.cloudinary.com/dqhuy/image/upload/v1649823633/CongUanFuniture/testimonial/test-1_d99ifs.jpg",
+            "email": "mhieutran0812@gmail.com",
+            "comment": "Sản phẩm đúng loại và màu sắc mình đặt, giao hàng tương đối nhanh trong mùa dịch. Shop trả lời câu hỏi qua tin nhắn hơi lâu nhưng đi vào vấn đề. Sử dụng ok, đúng dung lượng, giá tương đối thơm vì lúc mua có mã giảm giá."
         },
         {
             "id": 2,
-            "name": "quo vero reiciendis velit similique earum",
-            "avatar": "",
-            "email": "Jayne_Kuhic@sydney.com",
-            "comment": "est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et"
+            "name": "Nguyễn Khánh Linh",
+            "avatar": "https://res.cloudinary.com/dqhuy/image/upload/v1649823904/CongUanFuniture/testimonial/test-2_bb8cmh.jpg",
+            "email": "qmeovshaiau@gmail.com",
+            "comment": "Giao hàng nhanh đóng gói cẩn thận giống hình giá cả hợp lí"
         },
         {
             "id": 3,
-            "name": "odio adipisci rerum aut animi",
-            "avatar": "",
-            "email": "Nikita@garfield.biz",
-            "comment": "quia molestiae reprehenderit quasi aspernatur\naut expedita occaecati aliquam eveniet laudantium\nomnis quibusdam delectus saepe quia accusamus maiores nam est\ncum et ducimus et vero voluptates excepturi deleniti ratione"
+            "name": "Đỗ Văn Dũng",
+            "avatar": "https://res.cloudinary.com/dqhuy/image/upload/v1649823904/CongUanFuniture/testimonial/test-3_b50ngm.jpg",
+            "email": "d21dgnwtoa@gmail.com",
+            "comment": "Shop chuẩn bị hàng nhanh đóng gói hàng rất chắc chắn nha. Sẽ ủng hộ shop trong thời gian tới"
         },
         {
             "id": 4,
-            "name": "alias odio sit",
-            "avatar": "",
-            "email": "Lew@alysha.tv",
-            "comment": "non et atque\noccaecati deserunt quas accusantium unde odit nobis qui voluptatem\nquia voluptas consequuntur itaque dolor\net qui rerum deleniti ut occaecati"
+            "name": "Nguyễn Như Quỳnh",
+            "avatar": "https://res.cloudinary.com/dqhuy/image/upload/v1649823905/CongUanFuniture/testimonial/test-4_gr8rjr.jpg",
+            "email": "4fuim4re9v@gmail.com",
+            "comment": "Chất lượng sản phẩm tuyệt vời, rất đáng tiền"
         },
         {
             "id": 5,
-            "name": "vero eaque aliquid doloribus et culpa",
-            "avatar": "",
-            "email": "Hayden@althea.biz",
-            "comment": "harum non quasi et ratione\ntempore iure ex voluptates in ratione\nharum architecto fugit inventore cupiditate\nvoluptates magni quo et"
+            "name": "Đỗ Thị Lan Anh",
+            "avatar": "https://res.cloudinary.com/dqhuy/image/upload/v1649823905/CongUanFuniture/testimonial/test-5_ukvezl.jpg",
+            "email": "lan15cute12@gmail.com",
+            "comment": "Sản phẩm rất đẹp nha , chắc chắn lắm lun , thanks shop nhìu"
         },
         {
             "id": 6,
-            "name": "et fugit eligendi deleniti quidem qui sint nihil autem",
-            "avatar": "",
-            "email": "Presley.Mueller@myrl.com",
-            "comment": "doloribus at sed quis culpa deserunt consectetur qui praesentium\naccusamus fugiat dicta\nvoluptatem rerum ut voluptate autem\nvoluptatem repellendus aspernatur dolorem in"
+            "name": "Hoàng Mai Lan",
+            "avatar": "https://res.cloudinary.com/dqhuy/image/upload/v1649823903/CongUanFuniture/testimonial/test-6_t45bky.jpg",
+            "email": "lanbanhbeo123@gmail.com",
+            "comment": "Hàng về hơi lâu một chút 2 bên cạnh thì có vài vết bị tróc nhưng sản phẩm vẫn đẹp nha"
         },
         {
             "id": 7,
-            "name": "repellat consequatur praesentium vel minus molestias voluptatum",
-            "avatar": "",
-            "email": "Dallas@ole.me",
-            "comment": "maiores sed dolores similique labore et inventore et\nquasi temporibus esse sunt id et\neos voluptatem aliquam\naliquid ratione corporis molestiae mollitia quia et magnam dolor"
+            "name": "Nguyễn Thị Hồng Ngọc",
+            "avatar": "https://res.cloudinary.com/dqhuy/image/upload/v1649823904/CongUanFuniture/testimonial/test-7_e4mxej.jpg",
+            "email": "hongngoc0172@gmail.com",
+            "comment": "Chất lượng sản phẩm tuyệt vời, rất đáng tiền, đóng gói chắc chắn"
         },
         {
             "id": 8,
-            "name": "et omnis dolorem",
-            "avatar": "",
-            "email": "Mallory_Kunze@marie.org",
-            "comment": "ut voluptatem corrupti velit\nad voluptatem maiores\net nisi velit vero accusamus maiores\nvoluptates quia aliquid ullam eaque"
+            "name": "Huỳnh Thị Kiều",
+            "avatar": "https://res.cloudinary.com/dqhuy/image/upload/v1649823904/CongUanFuniture/testimonial/test-8_ikaich.jpg",
+            "email": "huynhkieu_78@gmail.com",
+            "comment": "Sản phẩm chất lượng , giá cả hợp lý . Đóng gói sản phẩm đẹp . Rất ok"
         },
         {
             "id": 9,
-            "name": "provident id voluptas",
-            "avatar": "",
-            "email": "Meghan_Littel@rene.us",
-            "comment": "sapiente assumenda molestiae atque\nadipisci laborum distinctio aperiam et ab ut omnis\net occaecati aspernatur odit sit rem expedita\nquas enim ipsam minus"
+            "name": "Phạm Thị Tuyết",
+            "avatar": "https://res.cloudinary.com/dqhuy/image/upload/v1649823904/CongUanFuniture/testimonial/test-9_qxvd4y.jpg",
+            "email": "snowflowers88@gmail.com",
+            "comment": "Giao hàng khá nhanh, sản phẩm nhìn đẹp chắc, thank shop nhiều nhé"
         },
         {
             "id": 10,
-            "name": "eaque et deleniti atque tenetur ut quo ut",
-            "avatar": "",
-            "email": "Carmen_Keeling@caroline.name",
-            "comment": "voluptate iusto quis nobis reprehenderit ipsum amet nulla\nquia quas dolores velit et non\naut quia necessitatibus\nnostrum quaerat nulla et accusamus nisi facilis"
+            "name": "Hoàng Thị Lương",
+            "avatar": "https://res.cloudinary.com/dqhuy/image/upload/v1649823904/CongUanFuniture/testimonial/test-10_eo1dnq.jpg",
+            "email": "luowg_day@gmail.com",
+            "comment": "Giao hàng hơi lâu giá để trang trí cũng đẹp phù hợp với giá tiền"
         }
     ]
 }

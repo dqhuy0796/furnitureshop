@@ -1,3 +1,5 @@
+console.log("render.js has call");
+
 // 1:: Render grid items
 
 const renderGridProduct = (parent, product) => {

@@ -1,4 +1,4 @@
-
+console.log("async.js has call");
 
 // Get Current Product
 window.onload = () => {    
@@ -41,7 +41,6 @@ function addCartItem(){
 function removeCartItem(removeId){
     let userCart = JSON.parse(localStorage.getItem("cart")) ?? [];
     userCart = userCart.filter(item => item.id != removeId);
-    console.log(userCart); 
     localStorage.setItem("cart", JSON.stringify(userCart));
     updateCartItemQuantity();
 }

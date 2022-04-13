@@ -44,10 +44,11 @@
     display: initial !important;
 }
 
-/* Latest & featured */
 .swiper.latest-swiper,
-.swiper.featured-swiper{
-    padding: 8px 4px;
+.swiper.featured-swiper,
+.swiper.suggestion-swiper,
+.swiper.testimonial-swiper{
+    padding: 8px 4px 16px;
 }
 
 /* Image & thumb swiper */
@@ -71,14 +72,4 @@
 .swiper.thumb-swiper .swiper-slide-thumb-active {
     opacity: 1;
     border-color: var(--light-border);
-}
-
-/* Suggestion */
-.swiper.suggestion-swiper {
-    padding: 8px 4px;
-}
-
-/* Testimonial */
-.swiper.testimonial-swiper{
-    padding: 8px 4px 16px;
 }

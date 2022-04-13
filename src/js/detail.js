@@ -1,3 +1,5 @@
+console.log("detail.js has call");
+
 const CongUanApi = 'src/json/api.json';
 
 // start here
@@ -10,8 +12,7 @@ processApi();
 function getApiProduct(callback) {
     fetch(CongUanApi).then(response => response.json()).then(callback);
 }
-  
-// Render clicked product
+
 let currentItemId = localStorage.getItem("currentItemId");
 
 function renderApiProducts(items) {
@@ -29,6 +30,29 @@ function renderApiProducts(items) {
         }
     }
     renderProductDetail(currentCategory, currentProduct);
+
+    // swiper in product image
+    const thumbSwiper = new Swiper(".thumb-swiper", {
+        loop: true,
+        spaceBetween: 8,
+        slidesPerView: 5,
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
+    
+    //  swiper in product thumb
+    const imageSwiper = new Swiper(".image-swiper", {
+        loop: true,
+        centeredSlides: true,
+        spaceBetween: 1,
+        thumbs: {
+            swiper: thumbSwiper,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        }
+    });
 };
 
 const imageList = document.querySelector(".image-swiper-wrapper");
@@ -48,6 +72,7 @@ const productInfo = productDetail.querySelector(".product__info");
 const productDescription = productDetail.querySelector(".product__description");
 
 const renderProductDetail = (category, product) => {
+    document.title.innerText = `${product.name}`;
     renderProductInfo(category, product);
     product.imageUrl.map((image) => renderImageItem(image));
     product.imageUrl.map((thumb) => renderThumbItem(thumb));

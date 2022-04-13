@@ -1,3 +1,5 @@
+console.log("active.js has call");
+
 // 1:0:: Collapse Mobile Menu
 
 const collapseBtn = document.querySelector(".collapse-menu-btn");

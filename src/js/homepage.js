@@ -1,3 +1,5 @@
+console.log("homepage.js has call");
+
 const CongUanApi = 'src/json/api.json';
 
 // start here
