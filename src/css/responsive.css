@@ -1,3 +1,9 @@
+@media (max-width: 400px) {
+    .section-title span{
+        display: block;
+    }
+}
+
 @media (max-width: 767px) {
     
     /* INDEX */
@@ -14,7 +20,7 @@
     ::-webkit-input-placeholder{
         font-size: 2rem;
     }
-    
+
     /* Home policy */
     .policy__item{
         width: 100%;
@@ -273,6 +279,7 @@
     .policy__item{
         width: 50%;
     }
+    
     /* Shortcut */
     .shortcut{
         display: none;

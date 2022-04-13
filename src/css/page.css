@@ -4,8 +4,7 @@
 /* 1:: Desktop menu */
 .header{
     z-index: 99;
-    position: sticky;
-    position: -webkit-sticky;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -532,7 +531,8 @@
     height: 40px;
     font-size: 2rem;
     color: var(--light-border);
-    background-color: var(--gray-dark);
+    background-color: var(--gray);
+    border-radius: 2px;
     pointer-events: none; 
     opacity: 0;
 }
@@ -541,9 +541,10 @@
     opacity: 1;
 }
 .back-to-top:hover{
-    color: var(--text);
-    background-color: var(--primary);
+    color: var(--white);
+    background-color: var(--gray-dark);
 }
+
 /* FOOTER */
 
 /* 1:: Footer container */

@@ -4918,63 +4918,63 @@
             "title": "Minimalism",
             "subtitle": "Đơn giản là đẹp",
             "description": "Sự thừa thãi được cho là không cần thiết đối với phong cách này. Minimalism chủ yếu sử dụng những đường nét đơn giản, những đồ dùng nội thất gọn gàng. Màu sắc sử dụng trong phong cách thiết kế nội thất này chủ yếu là màu trung tính, có không quá ba màu trong không gian nội thất theo phong cách này: một màu nền, một màu chủ đạo và một màu nhấn. và thường sử dụng những khối hình học đa dạng như hình vuông, hình chữ nhật, hình tròn…",
-            "imageUrl": "./src/image/stylish/minimalism.jpg"
+            "imageUrl": "https://res.cloudinary.com/dqhuy/image/upload/v1648907107/CongUanFuniture/stylish/minimalism_smuong.jpg"
         },
         {
             "id": 2,
             "title": "Classic",
             "subtitle": "Cổ điển mang lại sự sang trọng",
             "description": "Đây là phong cách đứng thứ hai trong top 10 phong cách thiết kế nội thất phổ biến nhất thế giới. Những kiến trúc cổ điển đặc trưng với những đường cong hoàn hảo. Màu sắc nhã nhặn và cao quý mang hơi hướng hoàng gia cũng giúp phong cách này trở nên sang trọng",
-            "imageUrl": "./src/image/stylish/classic.jpg"
+            "imageUrl": "https://res.cloudinary.com/dqhuy/image/upload/v1648907107/CongUanFuniture/stylish/classic_uxeujw.jpg"
         },
         {
             "id": 3,
             "title": "Rustic",
             "subtitle": "Sống xanh cùng thiên nhiên",
             "description": "Đây là kiểu hình kiến trúc nội thất hòa nhập với thiên nhiên. Những đồ dùng nội thất mộc mạc, thô sơ hay những bức tường bằng gạch thô hoặc đá tự nhiên mang đến nét độc đáo cho thiết kế này, vừa định hình không gian kiến trúc vừa cho thấy sự gắn kết với thiên nhiên trong nhà.",
-            "imageUrl": "./src/image/stylish/rustic.jpg"
+            "imageUrl": "https://res.cloudinary.com/dqhuy/image/upload/v1648907107/CongUanFuniture/stylish/rustic_jshh5t.jpg"
         },
         {
             "id": 4,
             "title": "Modern",
             "subtitle": "Dẫn đầu xu thế",
             "description": "Phong cách hiện đại tập trung vào những chi tiết, những hình dáng đường nét đơn giản. Trong phong cách thiết kế nội thất hiện đại, các kiến trúc sư chủ yếu chú trọng vào việc tạo ra công năng sử dụng. Mang đến một không gian thoải mái, tiện nghi và đầy đủ công năng. ",
-            "imageUrl": "./src/image/stylish/modern.jpg"
+            "imageUrl": "https://res.cloudinary.com/dqhuy/image/upload/v1648907107/CongUanFuniture/stylish/modern_os4gqr.jpg"
         },
         {
             "id": 5,
             "title": "Hitech",
             "subtitle": "Nắm bắt xu hướng của tương lai",
             "description": "Những kim loại sáng bóng hay những mặt kính tạo nên nét độc đáo trong phong cách này. Ở đây những vật liệu nhân tạo được chú trọng sử dụng để tạo nên một không gian nội thất mới mẻ trên mặt bằng phẳng, ít chi tiết.",
-            "imageUrl": "./src/image/stylish/hitech.jpg"
+            "imageUrl": "https://res.cloudinary.com/dqhuy/image/upload/v1648907107/CongUanFuniture/stylish/hitech_lr82fq.webp"
         },
         {
             "id": 6,
             "title": "Elegant country",
             "subtitle": "Nhẹ nhàng & lãng mạn",
             "description": "Phong cách đồng quê chịu ảnh hưởng rất lớn từ những quốc gia lớn như Mỹ, Anh, Pháp,… Những thiết kế theo phong cách này thường có những họa tiết thanh lịch, lãng mạn như hoa, cỏ… Những màu sắc sử dụng trong phong cách này thường là màu pastel ngọt ngào với bề mặt được sơn hoặc phủ một lớp gỉ nhẹ.",
-            "imageUrl": "./src/image/stylish/elegant-country.jpg"
+            "imageUrl": "https://res.cloudinary.com/dqhuy/image/upload/v1648907107/CongUanFuniture/stylish/elegant-country_vkk8bo.jpg"
         },
         {
             "id": 7,
             "title": "Retro",
             "subtitle": "Hoài niệm những thiết kế sang trọng",
             "description": "Đây là những thiết kế nội thất theo kiểu thập niên 50, 60 của thế kỷ trước. Những màu sắc vui tươi, hài hước và màu sắc nổi bật đã làm nên đặc trưng của phong cách hoàn hảo này. ",
-            "imageUrl": "./src/image/stylish/retro.jpg"
+            "imageUrl": "https://res.cloudinary.com/dqhuy/image/upload/v1648907107/CongUanFuniture/stylish/retro_xfar0m.jpg"
         },
         {
             "id": 8,
             "title": "Maverick",
             "subtitle": "Độc mà lạ",
             "description": "Đây là một phong cách thiết kế sáng tạo, độc đáo và trẻ trung. Với phong cách maverick bạn không cần phải tuân theo bất cứ một quy tắc nào. Những thiết kế theo phong cách này thường có cấu trúc chồng chéo nhau, phối màu ngẫu nhiên ngay cả trong cùng một phòng.",
-            "imageUrl": "./src/image/stylish/maverick.jpg"
+            "imageUrl": "https://res.cloudinary.com/dqhuy/image/upload/v1648907107/CongUanFuniture/stylish/maverick_tmlkg9.webp"
         },
         {
             "id": 9,
             "title": "Scandinavian",
             "subtitle": "Phong cách kiến trúc Bắc Âu",
             "description": "Đây là phong cách đang phát triển rất mạnh mẽ tại Việt Nam trong những năm gần đây. Phong cách này thể hiện sự sang trọng và tinh tế qua những màu sắc trung tính mà nổi bật nhất chính là màu sắc sáng trắng, màu nâu hay màu kem. Mặc dù đơn giản trong thiết kế, nhưng các đường nét thường được kết hợp với sự sang trọng kín đáo và ấm áp, đã tạo nên một cảm giác rất giản dị, phù hợp với những căn hộ nhỏ cần tạo không gian thoáng đãng.",
-            "imageUrl": "./src/image/stylish/scandinavian.jpg"
+            "imageUrl": "https://res.cloudinary.com/dqhuy/image/upload/v1648907107/CongUanFuniture/stylish/scandinavian_abknjy.webp"
         }
     ],
     "testimonials": [
