@@ -10,6 +10,7 @@ html {
     font-size: 62.5%;
     font-weight: 400;
     font-family: 'Dosis', sans-serif;
+    scroll-behavior: smooth;
 }
 body{
     height: 100%;
@@ -277,7 +278,7 @@ input[type=number] {
     background-color: var(--light-border)
 }
 
-/* Transition under */
+/* Transition underline */
 .trans-underline{
     position: relative;
 }

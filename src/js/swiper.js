@@ -82,8 +82,8 @@ const featuredSwiper = new Swiper(".featured-swiper", {
 });
 
 // swiper in product image
-const swiper = new Swiper(".thumb-swiper", {
-  loop: true,
+const thumbSwiper = new Swiper(".thumb-swiper", {
+  rewind: true,
   spaceBetween: 8,
   slidesPerView: 5,
   freeMode: true,
@@ -91,16 +91,12 @@ const swiper = new Swiper(".thumb-swiper", {
 });
 
 //  swiper in product thumb
-const swiper2 = new Swiper(".image-swiper", {
-  loop: true,
+const imageSwiper = new Swiper(".image-swiper", {
+  rewind: true,
   centeredSlides: true,
   spaceBetween: 1,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
   thumbs: {
-    swiper: swiper,
+    swiper: thumbSwiper,
   },
   pagination: {
     el: ".swiper-pagination",

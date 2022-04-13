@@ -1,22 +1,37 @@
 // 1:0:: Collapse Mobile Menu
+
 const collapseBtn = document.querySelector(".collapse-menu-btn");
 const collapseMenu = document.querySelector(".mobile-menu");
 collapseBtn.addEventListener('click', () => {
     collapseBtn.classList.toggle("open");
     collapseMenu.classList.toggle("open");
-});
+}, false);
 
  // 2:0:: PreventDefault a Click
+
 const emptylinks = document.querySelectorAll("a[href='#']");
 for (let index = 0; index < emptylinks.length; index++) {
-    emptylinks[index].addEventListener('click', (event) => {event.preventDefault();});   
+    emptylinks[index].addEventListener('click', event => event.preventDefault(), false);   
 }
 
-// 3:0:: Dropdown Mobile Subnav
-const dropdownBtns = document.querySelectorAll(".subnav-checkbox");
+// 3:0:: Back to top
 
+const backToTop = document.querySelector(".back-to-top");
+
+window.addEventListener('scroll' , ()=> {
+    if(window.pageYOffset > 200) {
+        backToTop.classList.add("active");
+    } else {
+        backToTop.classList.remove("active");
+    }
+}, false);
+
+backToTop.addEventListener('click', ()=> { window.scrollTo(0, 0) }, false);
+
+// const dropdownBtns = document.querySelectorAll(".subnav-checkbox");
 
 // 4:0:: Scrolling Animate
+
 const scrollElements = document.querySelectorAll(".js-scroll");
 
 var throttleTimer;
@@ -63,4 +78,4 @@ window.addEventListener("scroll", () => {
     throttle(() => {
         handleScrollAnimation();
     }, 250);
-});
+}, false);

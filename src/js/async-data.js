@@ -1,37 +1,24 @@
-// Update Quantity and TotalPayment
-function updateCartNumber() {
-    let currentCartListItem = document.querySelectorAll(".cart__item");
-    
-    // Update Quantity
-    let totalQty = 0;
 
-    currentCartListItem.forEach(product => {
-        totalQty += Number(product.querySelector(".product__quantity .quantity-value").value);
-    });
-    mobileCartQuantity.innerText = `${totalQty}`;
-    shortcutCartQuantity.innerText = `${totalQty}`;
-    
-    // Update TotalPayment
-    let subTotal = 0;
-    currentCartListItem.forEach(product => {
-        subTotal += Number(product.querySelector(".cart-subtotal .subtotal").textContent.replace(/[^\d.-]/g, ''))
-    });
-    cartSubtotal.innerText = `${subTotal.toLocaleString('vn-VI', { style: 'currency', currency: 'VND' })}`;
-    cartTotalPayment.innerText = `${subTotal.toLocaleString('vn-VI', { style: 'currency', currency: 'VND' })}`;
-};
 
 // Get Current Product
 window.onload = () => {    
     const items = document.querySelectorAll(".product");
     items.forEach(item => {
+        // left click
         item.addEventListener('click', () => {
             localStorage.setItem('currentItemId', item.id);
-        });
+        }, false);
+        // right click
+        item.addEventListener('contextmenu', (event) => {
+            // event.preventDefault();
+            localStorage.setItem('currentItemId', item.id);
+            return false;
+        }, false)
     });
     updateCartItemQuantity();
 }
 
-// add item to user cart
+// Add item to user cart
 function addCartItem(){
     let userCart = JSON.parse(localStorage.getItem("cart")) ?? [];
 
@@ -50,7 +37,7 @@ function addCartItem(){
     updateCartItemQuantity();
 }
 
-// remove item from user cart
+// Remove item from user cart
 function removeCartItem(removeId){
     let userCart = JSON.parse(localStorage.getItem("cart")) ?? [];
     userCart = userCart.filter(item => item.id != removeId);
@@ -59,7 +46,7 @@ function removeCartItem(removeId){
     updateCartItemQuantity();
 }
 
-// Cập nhật hiển thị số lượng giỏ hàng
+// Update and display cart quantity
 function updateCartItemQuantity(){
     let userCart = JSON.parse(localStorage.getItem("cart")) ?? [];
     const cartQuantity = document.querySelectorAll("span.cart-quantity");
@@ -69,6 +56,11 @@ function updateCartItemQuantity(){
     });
 }
 
-// // cách 2
+// // method 2
 // localStorage.cart2 = JSON.stringify(emptyCart);
 // var userCart2 = JSON.parse(localStorage.cart2);
+
+// var cl = new cloudinary.Cloudinary({cloud_name: "dqhuy", secure: true});
+// cloudinary.v2.uploader.upload("https://upload.wikimedia.org/wikipedia/commons/a/ae/Olympic_flag.jpg",
+//   { public_id: "olympic_flag" }, 
+//   function(error, result) {console.log(result); });

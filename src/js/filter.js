@@ -2,15 +2,14 @@ filterSelection([]);
 
 function filterSelection(filterArray) {
     let filterProducts = document.getElementsByClassName("filter-product");
-    if (filterArray.length <= 0){
+    if (filterArray.length <= 0) {
         for (let i = 0; i < filterProducts.length; i++)
             filterProducts[i].classList.add("display");   
-    }
-    else{
+    } else {
         for (let i = 0; i < filterProducts.length; i++) {
             removeFilterClass(filterProducts[i], "display");
             for (let j = 0; j < filterArray.length; j++) {          
-                if (filterProducts[i].getAttribute("data-category").indexOf(filterArray[j]) > -1){
+                if (filterProducts[i].getAttribute("data-category").indexOf(filterArray[j]) > -1) {
                     addFilterClass(filterProducts[i], "display");
                 }
             }
@@ -41,14 +40,28 @@ function removeFilterClass(element, name) {
     element.className = arr1.join(" ");
 }
 
-const filterBtns = document.querySelectorAll(".brand-filter .filter__item input");
-filterBtns.forEach(filterBtn => {
-    filterBtn.addEventListener('change', function() {
-        let filterSetting = Array.from(filterBtns) // Convert checkboxes to an array to use filter and map.
-                        .filter(item => item.checked) // Use Array.filter to remove unchecked checkboxes.
-                        .map(item => item.getAttribute("data-filter")) // Use Array.map to extract only the checkbox values from the array of objects.          
-        console.log(filterSetting)
-        filterSelection(filterSetting);
-    })
-})
+// Filter by brand
+const brandFilterCheckboxs = document.querySelectorAll(".sidebar__item.brand-filter .filter__item input");
 
+brandFilterCheckboxs.forEach(brandFilterCheckbox => {
+    brandFilterCheckbox.addEventListener('change', function() {
+        let filterSetting = Array.from(brandFilterCheckboxs)                    // Convert checkboxes to an array to use filter and map.
+                                .filter(item => item.checked)                   // Use Array.filter to remove unchecked checkboxes.
+                                .map(item => item.getAttribute("data-filter"))  // Use Array.map to extract only the checkbox values from the array of objects.          
+        filterSelection(filterSetting);
+        console.log(filterSetting);
+    }, false);
+});
+
+const resetBrandFilterBtn = document.querySelector(".sidebar__item.brand-filter .filter__btn");
+
+resetBrandFilterBtn.addEventListener('click', () => {
+    brandFilterCheckboxs.forEach(item => item.checked = false);
+    filterSelection([]);
+}, false);
+
+// Filter by room
+
+// Filter by category
+
+// Filter by price

@@ -738,7 +738,6 @@
                 <!-- Suggestion swiper -->
                 <div class="swiper suggestion-swiper">
                     <div class="swiper-wrapper suggestion-swiper-wrapper">
-                    <!-- JS HERE -->
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
@@ -787,6 +786,11 @@
                 </a>
             </li>
         </ul>
+    </div>
+
+    <!-- BACK TO TOP -->
+    <div class="back-to-top">
+        <i class="far fa-arrow-up"></i>
     </div>
 
     <!-- FOOTER -->
@@ -889,13 +893,15 @@
 
     <script src="./src/plugin/swiper-bundle.min.js"></script>
     <script src="./src/js/swiper.js"></script>
-    <script src="./src/js/active.js"></script>
-    <script src="./src/js/rest-api.js"></script>
-    <script src="./src/js/product-detail-render.js"></script>
+    <script src="./src/js/render.js"></script>
+    <script src="./src/js/detail.js"></script>
     <script src="./src/js/async-data.js"></script>
+    <script src="./src/js/active.js"></script>
 
-    <!-- Change product quantity -->
     <script>
+
+        // 1:: Change product quantity
+
         let qty = document.querySelector(".product__quantity .quantity-value");
         let btnPlus = document.querySelector(".product__quantity .quantity-btn.increase");
         let btnMinus = document.querySelector(".product__quantity .quantity-btn.decrease");
@@ -913,16 +919,17 @@
             quantity = quantity - 1;
             qty.value = quantity;
         });
-    </script>
 
-    <script>
+        // 2:: Toggle description - feedback - guarantee
+
         const panelMenu = document.querySelectorAll(".panel__menu label");
         panelMenu.forEach(item => {
             item.addEventListener('click', event => {
                 panelMenu.forEach(other => {other.classList.remove("active")});
                 event.target.classList.add("active");
-            })
-        })
+            });
+        });
+
     </script>
 </body>
 </html>

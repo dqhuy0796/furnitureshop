@@ -512,7 +512,31 @@
 
 /* 3:: bubble chat */
 
+/* BACK-TO-TOP */
 
+.back-to-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    color: var(--black);
+    background-color: var(--white);
+    box-shadow: 0 0 4px 1px var(--border);
+    pointer-events: none; 
+    opacity: 0;
+}
+.back-to-top.active{
+    pointer-events: auto; 
+    opacity: 1;
+}
+.back-to-top:hover{
+    background-color: var(--primary);
+}
 /* FOOTER */
 
 /* 1:: Footer container */

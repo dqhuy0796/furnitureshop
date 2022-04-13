@@ -1,7 +1,7 @@
 .swiper {
     width: 100%;
     --swiper-theme-color: #eabf7c;
-    --swiper-navigation-color: #fff;
+    --swiper-navigation-color: #eabf7c;
     --swiper-pagination-color: #fff;
     cursor: grab;
 }
