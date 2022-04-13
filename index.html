@@ -576,7 +576,7 @@
         </section>
 
         <!-- Latest product -->
-        <section class="home-section home-latest js-scroll fade-in">
+        <section class="home-section home-latest">
             <div class="wrapper">
                 <h2 class="section-title">Sản phẩm mới</h2>
                 <div class="swiper latest-swiper">
@@ -773,6 +773,46 @@
 
     </div>
     
+    <!-- MODAL -->
+    <div class="modal">
+        <!-- <div class="wrapper"> -->
+            <section class="modal__container">
+                <div class="modal-close-btn">
+                    <span><i class="far fa-times"></i></span>
+                </div>
+                <form action="" method="post" class="modal__form">
+                    <ul>
+                        <li>
+                            <p class="subtitle">Chào mừng đến với Nội thất Công Uẩn</p>
+                            <p class="title">Đăng ký ngay để nhận phiếu giảm giá mua hàng lên đến 20%</p>
+                        </li>
+                        <li>
+                            <label for="modal-email">Email:</label>
+                            <input type="email" name="email" id="modal-email" class="email" placeholder="something@example.com" required>
+                        </li>
+                        <li>
+                            <input type="submit"name="submit" id="modal-submit" value="Gửi yêu cầu" hidden>
+                            <label for="modal-submit" class="btn split-btn modal__btn">
+                                <span class="content">Đăng ký</span>
+                            </label>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </form>
+
+                <div class="modal__img">
+                    <img src="https://res.cloudinary.com/dqhuy/image/upload/v1649848819/CongUanFuniture/product/cuteee_u6yudp.jpg" alt="Voucher giảm giá khi đăng ký">
+                </div>
+    
+            </section>
+        <!-- </div> -->
+    </div>
+
     <!-- SHORTCUT -->
 
     <div class="shortcut">
@@ -917,6 +957,33 @@
     </footer>
 
     <!-- JS -->
+    <script>
+        const overlay = document.querySelector(".modal");
+        const modal = overlay.querySelector(".modal__container");
+        const modalCloseBtn = modal.querySelector(".modal-close-btn");
+        
+        window.addEventListener('load', (event) => {
+            setTimeout(() => {
+                overlay.classList.add("active");
+            }, 2000);
+        });
+        
+        overlay.addEventListener("click",(event) => {
+            if (!event.target.closest(".modal__container"))
+                overlay.classList.remove("active");
+        }, false);
+        
+        modalCloseBtn.addEventListener('click', () => {
+            overlay.classList.remove("active");
+        }, false);
+
+        // overlay.addEventListener("click",(event) => {
+        //     if (event.target.matches(".modal-close-btn") || !event.target.closest(".modal__container")) {
+        //         overlay.classList.remove("active");
+        //     }
+        // }, false);
+    </script>
+
     <script src="./src/plugin/swiper-bundle.min.js"></script>
     <script src="./src/js/render.js"></script>
     <script src="./src/js/homepage.js"></script>
