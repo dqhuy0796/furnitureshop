@@ -1,4 +1,4 @@
-console.log("cart.js has call");
+// console.log("cart.js has call");
 
 const CongUanApi = 'src/json/api.json';
 

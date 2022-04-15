@@ -1,4 +1,4 @@
-console.log("render.js has call");
+// console.log("render.js has call");
 
 // 1:: Render grid items
 

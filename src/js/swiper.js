@@ -1,4 +1,4 @@
-console.log("swiper.js has call");
+// console.log("swiper.js has call");
 
 // swiper in banner
 const bannerSwiper = new Swiper(".banner-swiper", {

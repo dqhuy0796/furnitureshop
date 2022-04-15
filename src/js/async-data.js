@@ -1,4 +1,4 @@
-console.log("async.js has call");
+// console.log("async.js has call");
 
 // Get Current Product
 window.onload = () => {    

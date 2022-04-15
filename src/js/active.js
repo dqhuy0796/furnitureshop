@@ -1,4 +1,4 @@
-console.log("active.js has call");
+// console.log("active.js has call");
 
 // 1:0:: Collapse Mobile Menu
 

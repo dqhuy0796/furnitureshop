@@ -1,4 +1,4 @@
-console.log("filter.js has call");
+// console.log("filter.js has call");
 
 function filterSelection(filterArray) {
     let filterProducts = document.getElementsByClassName("filter-product");

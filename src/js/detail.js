@@ -1,4 +1,4 @@
-console.log("detail.js has call");
+// console.log("detail.js has call");
 
 const CongUanApi = 'src/json/api.json';
 

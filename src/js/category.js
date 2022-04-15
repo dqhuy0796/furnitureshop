@@ -1,4 +1,4 @@
-console.log("category.js has call");
+// console.log("category.js has call");
 
 const CongUanApi = 'src/json/api.json';
 
